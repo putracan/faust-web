@@ -25,6 +25,11 @@
       "source": "/en/",
       "destination": "/en/index.html",
       "permanent": false
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/src/itbatam.ico",
+      "permanent": false
     }
   ],
   "rewrites": [
