@@ -1,0 +1,39 @@
+# Netlify Configuration
+# This file is used by Netlify for redirects and build settings
+
+[[redirects]]
+  from = "/"
+  to = "/id/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/id/index.html"
+  status = 301
+
+# Redirect all HTML files to /id/ version
+[[redirects]]
+  from = "/*.html"
+  to = "/id/:splat.html"
+  status = 301
+  force = false
+
+# Catch-all: redirect everything else to contact page
+[[redirects]]
+  from = "/*"
+  to = "/id/hubungi-kami.html"
+  status = 301
+  force = false
+
+# Build settings
+[build]
+  publish = "."
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

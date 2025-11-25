@@ -1,0 +1,12 @@
+# Netlify/Vercel Redirects
+# This file is used by Netlify and Vercel for redirects
+
+# Redirect root to /id/index.html
+/ /id/index.html 301
+/index.html /id/index.html 301
+
+# Redirect all HTML files to /id/ version if exists, otherwise to hubungi-kami
+/*.html /id/:splat.html 301
+
+# Catch-all: redirect everything else to contact page
+/* /id/hubungi-kami.html 301

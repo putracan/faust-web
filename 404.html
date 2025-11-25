@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Get current URL path
+        const currentPath = window.location.pathname;
+        const currentSearch = window.location.search;
+        const currentHash = window.location.hash;
+
+        // Function to check if file exists
+        async function checkFileExists(url) {
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                return response.ok;
+            } catch (error) {
+                return false;
+            }
+        }
+
+        // Main redirect logic
+        async function redirect() {
+            // If already in /id/ folder, redirect to hubungi-kami
+            if (currentPath.startsWith('/id/')) {
+                window.location.replace('/id/hubungi-kami.html');
+                return;
+            }
+
+            // If root or index.html, redirect to /id/index.html
+            if (currentPath === '/' || currentPath === '/index.html') {
+                window.location.replace('/id/index.html');
+                return;
+            }
+
+            // For HTML files, try to redirect to /id/ version
+            if (currentPath.endsWith('.html') || currentPath.endsWith('/')) {
+                const idPath = '/id' + currentPath;
+
+                // Check if file exists in /id/ folder
+                const exists = await checkFileExists(idPath);
+
+                if (exists) {
+                    window.location.replace(idPath + currentSearch + currentHash);
+                } else {
+                    // File doesn't exist, redirect to contact page
+                    window.location.replace('/id/hubungi-kami.html');
+                }
+            } else {
+                // Non-HTML file, redirect to contact page
+                window.location.replace('/id/hubungi-kami.html');
+            }
+        }
+
+        // Run redirect immediately
+        redirect();
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .loading {
+            text-align: center;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .message {
+            margin-top: 20px;
+        }
+        .fallback-link {
+            margin-top: 30px;
+        }
+        .fallback-link a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+        <div class="message">
+            <h2>Redirecting...</h2>
+            <p>Please wait while we redirect you to the correct page.</p>
+        </div>
+        <div class="fallback-link">
+            <p>If you are not redirected automatically, <a href="/id/index.html">click here</a></p>
+        </div>
+    </div>
+</body>
+</html>

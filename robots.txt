@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://faust.co.id/sitemap.xml
+
+# Allow access to static files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /gambar/
+Allow: /en/
+Allow: /id/
+
+# Disallow unnecessary files
+Disallow: /*.md$
+Disallow: /GITHUB_AUTH_GUIDE.md
+Disallow: /README.md
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Additional directives for better indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

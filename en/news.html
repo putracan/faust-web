@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Latest news and information about IT technology, CCTV, security systems, and digital innovation in Batam and Kepulauan Riau." name="description"/>
+<meta content="Technology News Batam, IT News Batam, Update Teknologi Batam, Informasi IT Batam" name="keywords"/>
+<meta content="Batam Technology Solutions" name="author"/>
+<link href="https://faust.co.id/en/news.html" rel="canonical"/>
+<link href="https://faust.co.id/id/news.html" hreflang="id" rel="alternate"/>
+<link href="https://faust.co.id/en/news.html" hreflang="en" rel="alternate"/>
+<meta content="Latest Technology News Batam - Solution Technology Batam" property="og:title"/>
+<meta content="Latest technology updates, IT Solutions, CCTV, and technology innovation in Batam. Latest news about local and global technology developments." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://faust.co.id/id/news.html" property="og:url"/>
+<title>Latest Technology News Batam - Solution Technology Batam</title>
+<link href="../src/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../src/itbatam.ico" rel="icon" type="image/x-icon"/>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": "Batam Technology Solutions News",
+        "url": "https://faust.co.id/en/news.html",
+        "logo": "../en/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Batam",
+            "addressRegion": "Kepulauan Riau",
+            "addressCountry": "Indonesia"
+        }
+    }
+    </script>
+<style id="ui-fixes">
+/* Layout & body */
+body{color:#0f1724;background:#f8fafc;line-height:1.6;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+main.main-content{padding:32px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* Page Header */
+.page-header{padding:40px 0;background:linear-gradient(135deg,#0b66c3 0%,#4f46e5 100%);color:#ffffff;margin-bottom:32px}
+.page-header-content h1{font-size:2.5rem;font-weight:700;margin:0 0 12px}
+.page-title-subtitle{font-size:1.1rem;opacity:0.95;margin:0}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:0.9rem;opacity:0.9}
+.breadcrumb a{color:#ffffff;text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{opacity:0.7}
+
+/* News Grid */
+.news-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:32px}
+
+/* Cards */
+.news-card{background:#ffffff;border-radius:16px;box-shadow:0 2px 8px rgba(12,18,26,0.06);overflow:hidden;margin-bottom:0;display:flex;flex-direction:row;transition:all 0.3s ease;border:1px solid rgba(15,23,36,0.08);min-height:200px}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(12,18,26,0.12);border-color:rgba(11,102,195,0.2)}
+.news-card.featured{border:2px solid #0b66c3;box-shadow:0 4px 16px rgba(11,102,195,0.15)}
+.news-card .news-image{width:300px;flex-shrink:0;background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.news-card .news-image::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(11,102,195,0.05) 0%,rgba(79,70,229,0.05) 100%);opacity:0;transition:opacity 0.3s ease}
+.news-card:hover .news-image::before{opacity:1}
+.news-card .news-image .news-placeholder{display:flex;flex-direction:column;align-items:center;gap:10px;color:#64748b;font-size:2.5rem;z-index:1;transition:transform 0.3s ease}
+.news-card:hover .news-image .news-placeholder{transform:scale(1.05)}
+.news-card .news-image .news-placeholder span{font-size:0.9rem;font-weight:600;color:#334155;text-align:center;padding:0 12px}
+.news-badge{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,#0b66c3,#4f46e5);color:#ffffff;padding:6px 14px;border-radius:20px;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;z-index:2;box-shadow:0 2px 8px rgba(11,102,195,0.3)}
+.news-card .news-content{padding:28px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.news-card h2,.news-card h3{color:#0b1723;margin:0 0 14px;font-weight:600;line-height:1.35}
+.news-card h2{font-size:1.6rem;letter-spacing:-0.02em}
+.news-card h3{font-size:1.35rem;letter-spacing:-0.01em}
+.news-card p{color:#475569;margin:0 0 18px;line-height:1.75;font-size:0.95rem;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* News Meta */
+.news-meta{display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.news-category{background:linear-gradient(135deg,#e0e7ff,#dbeafe);color:#4f46e5;padding:5px 14px;border-radius:14px;font-size:0.8rem;font-weight:600;letter-spacing:0.3px;border:1px solid rgba(79,70,229,0.1)}
+.news-date{color:#64748b;font-size:0.875rem;display:flex;align-items:center;gap:6px}
+.news-date::before{content:'\f073';font-family:'Font Awesome 6 Free';font-weight:400;font-size:0.75rem;opacity:0.7}
+
+/* News footer */
+.news-footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid rgba(15,23,36,0.1);margin-top:auto;flex-wrap:wrap;gap:12px}
+.news-footer .read-more{color:#0b66c3;text-decoration:none;font-weight:600;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px;font-size:0.95rem;padding:6px 0}
+.news-footer .read-more::after{content:'\f061';font-family:'Font Awesome 6 Free';font-weight:600;font-size:0.75rem;transition:transform 0.3s ease}
+.news-footer .read-more:hover{color:#4f46e5}
+.news-footer .read-more:hover::after{transform:translateX(4px)}
+.news-footer .news-stats{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.news-footer .news-stats span{color:#64748b;font-size:0.85rem;display:inline-flex;align-items:center;gap:6px;font-weight:500}
+.news-footer .news-stats i{font-size:0.8rem;opacity:0.7}
+
+/* Related Pages */
+.related-links{margin:40px 0}
+.related-pages{background:#ffffff;color:#0f1724;padding:24px;border-radius:12px;margin:0;box-shadow:0 4px 12px rgba(12,18,26,0.08);border:1px solid rgba(15,23,36,0.06)}
+.related-pages h3{margin:0 0 16px;font-size:1.3rem;color:#0b1723;font-weight:600}
+.related-pages ul{margin:0;padding-left:1.5rem;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:8px}
+.related-pages li{margin:0}
+.related-pages a{color:#0b66c3;text-decoration:none;transition:color 0.3s ease;display:inline-block;padding:4px 0}
+.related-pages a:hover{color:#4f46e5;text-decoration:underline}
+
+/* News Pagination */
+.news-pagination{display:flex;justify-content:center;margin-top:40px}
+.news-pagination .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;font-size:1rem}
+
+/* Sidebar / Footer */
+aside.sidebar{background:transparent}
+footer{background:linear-gradient(180deg,#0b1220 0%,#050810 100%);color:#e6eef8;padding:0;margin-top:60px;border-top:1px solid rgba(255,255,255,0.05)}
+footer a{color:#9ecbff;transition:all 0.3s ease;text-decoration:none}
+footer a:hover{color:#ffffff;text-decoration:underline}
+.footer-content{max-width:1200px;margin:0 auto;padding:50px 20px 30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px}
+.footer-section{margin:0}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.footer-logo img{width:40px;height:40px;object-fit:contain}
+.footer-logo span{font-size:1.1rem;font-weight:600;color:#ffffff}
+.footer-description{color:#cbd5e1;font-size:0.9rem;line-height:1.7;margin:0 0 24px}
+.footer-section h3{color:#ffffff;font-size:1.1rem;font-weight:600;margin:0 0 20px;padding-bottom:12px;border-bottom:2px solid rgba(255,255,255,0.1)}
+.footer-links{list-style:none;padding:0;margin:0}
+.footer-links li{margin-bottom:12px}
+.footer-links a{color:#cbd5e1;font-size:0.9rem;display:inline-block;padding:4px 0;transition:all 0.3s ease}
+.footer-links a:hover{color:#ffffff;padding-left:8px}
+.footer-social{display:flex;gap:12px;flex-wrap:wrap}
+.footer-social .social-link{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.05);border-radius:10px;border:1px solid rgba(255,255,255,0.1);transition:all 0.3s ease;font-size:1.1rem}
+.footer-social .social-link:hover{background:rgba(11,102,195,0.2);border-color:rgba(11,102,195,0.3);transform:translateY(-2px);color:#ffffff;text-decoration:none}
+.footer-contact{display:flex;flex-direction:column;gap:20px}
+.footer-contact .contact-item{display:flex;align-items:flex-start;gap:14px}
+.footer-contact .contact-item i{width:20px;height:20px;display:flex;align-items:center;justify-content:center;color:#0b66c3;font-size:1rem;flex-shrink:0;margin-top:2px}
+.footer-contact .contact-item h4{color:#ffffff;font-size:0.9rem;font-weight:600;margin:0 0 6px}
+.footer-contact .contact-item p{color:#cbd5e1;font-size:0.9rem;line-height:1.6;margin:0}
+.footer-newsletter{background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.05);padding:40px 20px}
+.newsletter-content{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.newsletter-text{flex:1;min-width:300px}
+.newsletter-text h3{color:#ffffff;font-size:1.3rem;font-weight:600;margin:0 0 10px}
+.newsletter-text p{color:#cbd5e1;font-size:0.95rem;margin:0;line-height:1.6}
+.newsletter-form{display:flex;gap:12px;flex:1;min-width:300px;max-width:500px}
+.newsletter-form input{flex:1;padding:14px 18px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;background:rgba(255,255,255,0.05);color:#ffffff;font-size:0.95rem;transition:all 0.3s ease}
+.newsletter-form input::placeholder{color:#94a3b8}
+.newsletter-form input:focus{outline:none;border-color:#0b66c3;background:rgba(255,255,255,0.08);box-shadow:0 0 0 3px rgba(11,102,195,0.1)}
+.newsletter-form button{padding:14px 28px;white-space:nowrap}
+.footer-bottom{background:rgba(0,0,0,0.2);padding:24px 20px;border-top:1px solid rgba(255,255,255,0.05)}
+.footer-bottom-content{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.copyright p{color:#94a3b8;font-size:0.85rem;margin:0}
+.footer-bottom-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-bottom-links a{color:#94a3b8;font-size:0.85rem;padding:4px 0;transition:all 0.3s ease}
+.footer-bottom-links a:hover{color:#ffffff;text-decoration:underline}
+
+/* Accessibility: ensure contrast for text on colored backgrounds */
+.btn-primary{background:linear-gradient(135deg,#0b66c3,#4f46e5);color:#fff;border:none;transition:opacity 0.3s ease}
+.btn-primary:hover{opacity:0.9}
+.btn-primary .fas{color:inherit}
+
+/* Small screens */
+@media (max-width:800px){
+    .page-header-content h1{font-size:2rem}
+    .page-title-subtitle{font-size:1rem}
+    .news-card{flex-direction:column}
+    .news-card .news-image{width:100%;height:220px}
+    .news-card .news-content{padding:22px}
+    .news-card h2{font-size:1.4rem}
+    .news-card h3{font-size:1.25rem}
+    .related-pages ul{grid-template-columns:1fr}
+    .news-meta{flex-direction:column;align-items:flex-start;gap:10px}
+    .news-footer{flex-direction:column;align-items:flex-start;gap:14px}
+    .news-footer .news-stats{gap:16px}
+    main.main-content{padding:24px 0}
+    .footer-content{grid-template-columns:1fr;gap:32px;padding:40px 20px 24px}
+    .newsletter-content{flex-direction:column;align-items:stretch}
+    .newsletter-form{max-width:100%}
+    .footer-bottom-content{flex-direction:column;align-items:center;text-align:center;gap:16px}
+    .footer-bottom-links{justify-content:center}
+}
+</style></head>
+<body class="page-theme-cyan">
+<!-- Header -->
+<header class="header">
+<div class="container">
+<div class="header-content">
+<!-- Logo -->
+<div class="logo">
+<a href="index.html">
+<img alt="Batam Technology Solutions" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
+<span>Batam Technology Solutions</span>
+</a>
+</div>
+<!-- Navigation -->
+<nav class="nav">
+<ul class="nav-list">
+<li class="nav-item dropdown">
+<a class="nav-link" href="#">
+<i class="fas fa-cogs"></i>
+<span>Services</span>
+<i class="fas fa-chevron-down"></i>
+</a>
+<ul class="dropdown-menu">
+<li><a href="cctv.html"><i class="fas fa-video"></i> CCTV &amp; Security Systems</a></li>
+<li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i> Fingerprint &amp; Access Control</a></li>
+<li><a href="access-door.html"><i class="fas fa-door-open"></i> Access Door System</a></li>
+<li><a href="alarm.html"><i class="fas fa-bell"></i> Alarm System</a></li>
+<li><a href="automation.html"><i class="fas fa-cogs"></i> Automation Systems</a></li>
+<li><a href="software.html"><i class="fas fa-code"></i> Software Development</a></li>
+<li><a href="jaringan.html"><i class="fas fa-network-wired"></i> Networks &amp; Servers</a></li>
+<li><a href="business-development.html"><i class="fas fa-chart-line"></i> Business Development</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-page="news" href="news.html">
+<i class="fas fa-newspaper"></i>
+<span>News</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-page="portfolio" href="portfolio.html">
+<i class="fas fa-briefcase"></i>
+<span>Portfolio</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Social Media Links -->
+<div class="header-social">
+<a aria-label="Indonesian Version" class="social-link" href="../id/news.html" title="Indonesian version">
+<i class="fas fa-globe"></i>
+<span>ID</span>
+</a>
+<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+<!-- CTA Button -->
+<div class="header-cta">
+<a class="btn btn-primary" href="hubungi-kami.html">
+<i class="fas fa-phone"></i>
+<span>Free Consultation</span>
+</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle menu" class="mobile-menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+<div class="mobile-nav-content">
+<div class="mobile-nav-header">
+<div class="logo">
+<img alt="Batam Technology Solutions" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
+<span>Batam Technology Solutions</span>
+</div>
+<button aria-label="Close menu" class="mobile-nav-close">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<nav class="mobile-nav-menu">
+<ul>
+<li class="mobile-dropdown">
+<a class="mobile-dropdown-toggle" href="#">
+<i class="fas fa-cogs"></i> Services
+                        <i class="fas fa-chevron-down"></i>
+</a>
+<ul class="mobile-dropdown-menu">
+<li><a href="cctv.html"><i class="fas fa-video"></i> CCTV &amp; Security Systems</a></li>
+<li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i> Fingerprint &amp; Access Control</a></li>
+<li><a href="access-door.html"><i class="fas fa-door-open"></i> Access Door System</a></li>
+<li><a href="alarm.html"><i class="fas fa-bell"></i> Alarm System</a></li>
+<li><a href="automation.html"><i class="fas fa-cogs"></i> Automation Systems</a></li>
+<li><a href="software.html"><i class="fas fa-code"></i> Software Development</a></li>
+<li><a href="jaringan.html"><i class="fas fa-network-wired"></i> Networks &amp; Servers</a></li>
+<li><a href="business-development.html"><i class="fas fa-chart-line"></i> Business Development</a></li>
+</ul>
+</li>
+<li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+<li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+</ul>
+</nav>
+<div class="mobile-nav-cta">
+<a class="btn btn-primary btn-block" href="hubungi-kami.html">
+<i class="fas fa-phone"></i>
+                Free Consultation
+            </a>
+</div>
+</div>
+</div>
+</header>
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+<div class="sidebar-content">
+<!-- Sidebar Header -->
+<div class="sidebar-header">
+<div class="sidebar-logo">
+<img alt="Batam Technology Solutions" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
+<span>Technology Solutions
+</span>
+</div>
+<button aria-label="Toggle sidebar" class="sidebar-toggle">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<!-- Quick Links -->
+<div class="sidebar-section">
+<h3>Quick Links</h3>
+<ul class="sidebar-menu">
+<li>
+<a class="sidebar-link" href="index.html">
+<i class="fas fa-home"></i>
+<span>Home</span>
+</a>
+</li>
+<li>
+<a class="sidebar-link" href="#services">
+<i class="fas fa-cogs"></i>
+<span>Our Services</span>
+</a>
+</li>
+<li>
+<a class="sidebar-link" href="news.html">
+<i class="fas fa-newspaper"></i>
+<span>Technology News</span>
+</a>
+</li>
+<li>
+<a class="sidebar-link" href="portfolio.html">
+<i class="fas fa-briefcase"></i>
+<span>Portfolio</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Services Menu -->
+<div class="sidebar-section">
+<h3>Services</h3>
+<ul class="sidebar-menu">
+<li>
+<a class="sidebar-link" href="cctv.html">
+<i class="fas fa-video"></i>
+<span>CCTV &amp; Security</span>
+</a>
+</li>
+<li>
+<a class="sidebar-link" href="fingerprint.html">
+<i class="fas fa-fingerprint"></i>
+<span>Fingerprint &amp; Access</span>
+</a>
+</li>
+<li>
+<a class="sidebar-link" href="automation.html">
+<i class="fas fa-cogs"></i>
+<span>Automation Systems</span>
+</a>
+</li>
+<li>
+<a class="sidebar-link" href="software.html">
+<i class="fas fa-code"></i>
+<span>Software Development</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div class="sidebar-section">
+<h3>Contact</h3>
+<div class="contact-info">
+<div class="contact-item">
+<i class="fas fa-phone"></i>
+<span>08111262260</span>
+</div>
+<div class="contact-item">
+<i class="fab fa-whatsapp"></i>
+<span>081363783738</span>
+</div>
+<div class="contact-item">
+<i class="fas fa-envelope"></i>
+<span>Putra@faust.co.id</span>
+</div>
+</div>
+</div>
+<!-- Social Media -->
+<div class="sidebar-section">
+<h3>Follow Us</h3>
+<div class="social-links">
+<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a aria-label="Google" class="social-link" href="https://share.google/exfpqXuWsLvxFWOCk" rel="noopener" target="_blank">
+<i class="fab fa-google"></i>
+</a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+</div>
+<!-- Language switcher removed for cleaner header -->
+<!-- CTA Button -->
+<div class="sidebar-cta">
+<a class="btn btn-primary btn-block" href="hubungi-kami.html">
+<i class="fas fa-phone"></i>
+<span>Free Consultation</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="main-content">
+<!-- Page Header -->
+<section class="page-header">
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a>
+<span>/</span>
+<span>Technology News</span>
+</div>
+<div class="page-header-content">
+<h1>Latest Technology News Batam</h1>
+<p class="page-title-subtitle">Latest technology updates, IT Solutions, and technology innovation in Batam and Riau Islands</p>
+</div>
+</div>
+</section>
+<!-- Related Pages (moved 2 steps down) -->
+<section class="related-section">
+<div class="container">
+</div>
+</section>
+<!-- News Section -->
+<section class="news-section">
+<div class="container">
+<div class="news-grid">
+<!-- News Article 1 -->
+<article class="news-card featured">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-video"></i>
+<span>CCTV AI Batam</span>
+</div>
+<div class="news-badge">Featured</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">CCTV &amp; Security</span>
+<span class="news-date">January 15, 2024</span>
+</div>
+<h2>CCTV AI Revolution in Batam: Leading Face Recognition Technology</h2>
+<p class="paragraph-style-2">CCTV technology with Artificial Intelligence (AI) is now available in Batam, offering advanced face recognition and behavior detection systems. Batam Technology Solutions has successfully implemented the first CCTV AI system in Riau Islands with facial recognition accuracy reaching 99.8%. This system uses the latest machine learning algorithms that can detect up to 1000 faces simultaneously in real-time. This technology has been implemented in various strategic locations in Batam including airports, ports, and shopping centers to enhance security and operational efficiency...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,250</span>
+<span><i class="fas fa-share"></i> 45</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 2 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-fingerprint"></i>
+<span>Biometric Tech</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Access Control</span>
+<span class="news-date">January 12, 2024</span>
+</div>
+<h3>Latest Fingerprint Biometric: Modern Security Solution for Batam Offices</h3>
+<p>Latest generation fingerprint biometric systems with multi-spectral imaging technology provide 99.9% accuracy in fingerprint recognition. This technology is already used in various large companies in Batam...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 890</span>
+<span><i class="fas fa-share"></i> 32</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 3 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-cogs"></i>
+<span>Smart Buildings</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Automation</span>
+<span class="news-date">January 10, 2024</span>
+</div>
+<h3>Smart Building System: First Smart Building in Batam</h3>
+<p class="paragraph-style-3">Implementation of smart building systems with IoT sensors and automation control to optimize energy usage and enhance operational efficiency of office buildings in Batam...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,100</span>
+<span><i class="fas fa-share"></i> 28</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 4 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-code"></i>
+<span>Software Dev</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Software Development</span>
+<span class="news-date">January 8, 2024</span>
+</div>
+<h3>Custom Software Development for Batam SMEs</h3>
+<p class="para-bg-green">Custom software development program specifically for SMEs in Batam with cloud computing technology and mobile-first approach. This solution helps digitize local businesses...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 750</span>
+<span><i class="fas fa-share"></i> 19</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 5 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-network-wired"></i>
+<span>5G Network</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Networks &amp; Servers</span>
+<span class="news-date">January 5, 2024</span>
+</div>
+<h3>5G Infrastructure in Batam: Riau Islands Digital Transformation</h3>
+<p class="paragraph-style-4">Implementation of 5G infrastructure in Batam opens new opportunities for IoT, smart city, and edge computing technology. IT companies in Batam are starting to adopt this technology...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,400</span>
+<span><i class="fas fa-share"></i> 67</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 6 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-shield-alt"></i>
+<span>Cyber ​​Security</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Cybersecurity</span>
+<span class="news-date">January 3, 2024</span>
+</div>
+<h3>Cybersecurity Framework for Batam Companies</h3>
+<p class="para-bg-orange">Implementation of ISO 27001 cybersecurity framework to protect company data in Batam from cyber attacks. Training and awareness programs for employees...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 980</span>
+<span><i class="fas fa-share"></i> 41</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 7 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-cloud"></i>
+<span>Cloud Computing</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Cloud Technology</span>
+<span class="news-date">January 1, 2024</span>
+</div>
+<h3>Cloud Migration: Batam Digital Transformation Strategy</h3>
+<p class="paragraph-style-6">Many companies in Batam are starting to migrate to cloud computing to improve efficiency and scalability. Complete guide to cloud migration for local businesses...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,120</span>
+<span><i class="fas fa-share"></i> 53</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 8 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-mobile-alt"></i>
+<span>Mobile Tech</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Mobile Technology</span>
+<span class="news-date">December 28, 2023</span>
+</div>
+<h3>Mobile App Development: Batam Local Application Trends</h3>
+<p class="para-bg-purple">Mobile application development for local Batam needs is increasing. Transportation, e-commerce, and public service applications are becoming the main focus...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 650</span>
+<span><i class="fas fa-share"></i> 24</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 9 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-database"></i>
+<span>Big Data</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Data Analytics</span>
+<span class="news-date">December 25, 2023</span>
+</div>
+<h3>Big Data Analytics for Smart City Batam</h3>
+<p class="para-with-icon">Implementation of big data analytics to optimize public services and smart city infrastructure in Batam. Data-driven decision making for local government...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,300</span>
+<span><i class="fas fa-share"></i> 58</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 10 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-robot"></i>
+<span>AI &amp; Machine Learning</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Artificial Intelligence</span>
+<span class="news-date">December 22, 2023</span>
+</div>
+<h3>Machine Learning for Business Optimization in Batam</h3>
+<p class="paragraph-style-1">Implementation of machine learning and AI to optimize business processes, demand predictions, and personalize customer service in Batam companies. This technology has helped various industrial sectors in Batam to increase operational efficiency by up to 40% and reduce operational costs by 25%. The developed AI system can analyze historical data patterns to predict market trends and customer needs with high accuracy...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 920</span>
+<span><i class="fas fa-share"></i> 35</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 11 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-lock"></i>
+<span>DataSecurity</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">DataSecurity</span>
+<span class="news-date">December 20, 2023</span>
+</div>
+<h3>End-to-End Encryption for Batam Company Data Protection</h3>
+<p class="paragraph-style-2">Implementation of an end-to-end encryption system to protect sensitive company data in Batam from cyber threats. AES-256 encryption technology has been implemented in more than 50 companies in Batam, providing military-grade protection for financial, personal and operational data. This system includes automatic backup, disaster recovery, and real-time monitoring to ensure 24/7 data security...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,180</span>
+<span><i class="fas fa-share"></i> 42</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 12 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-chart-bar"></i>
+<span>Business Intelligence</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Business Intelligence</span>
+<span class="news-date">December 18, 2023</span>
+</div>
+<h3>Business Intelligence Dashboard for Batam MSMEs</h3>
+<p>Development of a Business Intelligence dashboard specifically for MSMEs in Batam with real-time analytics, forecasting and automatic reporting features. This dashboard has helped 200+ MSMEs in Batam to increase revenue by 35% through accurate data insights. This system is integrated with various e-commerce and social media platforms to provide comprehensive analysis of business performance...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 850</span>
+<span><i class="fas fa-share"></i> 28</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 13 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-satellite"></i>
+<span>IoT &amp; Sensors</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">IoT &amp; Sensors</span>
+<span class="news-date">December 15, 2023</span>
+</div>
+<h3>Smart Agriculture with IoT Sensors in Batam</h3>
+<p class="paragraph-style-3">Implementation of the Smart Agriculture system using IoT sensors for monitoring soil, weather and plant growth on Batam farms. This system uses 50+ sensors connected in real-time to optimize irrigation, fertilization, and harvest. As a result, agricultural productivity in Batam increased by 45% with a reduction in water use of up to 30% and pesticides by 25%...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,320</span>
+<span><i class="fas fa-share"></i> 56</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 14 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-car"></i>
+<span>Smart Transportation</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Smart Transportation</span>
+<span class="news-date">December 12, 2023</span>
+</div>
+<h3>Fleet Management System for Batam Transportation</h3>
+<p class="para-bg-green">Implementation of a Fleet Management System with GPS tracking, fuel monitoring and predictive maintenance for the transportation fleet in Batam. This system has been adopted by 15 transportation companies in Batam, reducing operational costs by 20% and increasing route efficiency by up to 35%. The real-time tracking feature allows live monitoring of vehicle location, speed and performance...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 980</span>
+<span><i class="fas fa-share"></i> 31</span>
+</div>
+</div>
+</div>
+</article>
+<!-- News Article 15 -->
+<article class="news-card">
+<div class="news-image">
+<div class="news-placeholder">
+<i class="fas fa-warehouse"></i>
+<span>Warehouse Automation</span>
+</div>
+</div>
+<div class="news-content">
+<div class="news-meta">
+<span class="news-category">Warehouse Automation</span>
+<span class="news-date">December 10, 2023</span>
+</div>
+<h3>Warehouse Automation with Robotics in Batam</h3>
+<p class="paragraph-style-4">Implementation of a warehouse automation system using robotic arms, conveyor systems, and AI-powered inventory management in Batam warehouses. This system can process up to 10,000 items per day with 99.9% accuracy. The robotic arms used can work 24/7 without stopping, increasing operational throughput by up to 300% compared to manual systems...</p>
+<div class="news-footer">
+<a class="read-more" href="#">Read More</a>
+<div class="news-stats">
+<span><i class="fas fa-eye"></i> 1,450</span>
+<span><i class="fas fa-share"></i> 67</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Load More Button -->
+<div class="news-pagination">
+<button class="btn btn-primary">
+<i class="fas fa-plus"></i>
+<span>Load More News</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Related Links -->
+<section class="related-links"><div class="container">
+<div class="related-pages">
+<!-- Right Sidebar --><aside class="right-sidebar"><div id="right-sidebar-content"></div></aside>
+<ul>
+<li><a href="../id/news.html">Indonesian version</a></li>
+<li><a href="hubungi-kami.html">Contact Us - Solution Technology Batam</a></li>
+<li><a href="index.html">Solution Technology Batam - Trusted IT Solution &amp; Security System</a></li>
+<li><a href="jasa-it-batam.html">Service IT Professional - Solution Technology for Business Anda</a></li>
+<li><a href="portfolio.html">Portfolio Solution Technology Batam - Best IT Solution Projects</a></li>
+<li><a href="produk-dan-layanan.html">Products and Services - Solution Technology Batam</a></li>
+<li><a href="cctv.html">CCTV &amp; Security Systems</a></li>
+<li><a href="keamanan-siber-batam.html">Cybersecurity Services</a></li>
+<li><a href="software.html">Software Development</a></li>
+<li><a href="maintenance-jaringan-batam.html">Network Maintenance</a></li>
+<li><a href="optimasi-website-batam.html">Website Optimization</a></li>
+</ul>
+</div>
+</div></section>
+</main>
+<!-- Footer --><footer class="footer">
+<div class="container">
+<div class="footer-content">
+<!-- Company Info -->
+<div class="footer-section">
+<div class="footer-logo">
+<img alt="Batam Technology Solutions" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
+<span>Batam Technology Solutions</span>
+</div>
+<p class="footer-description">
+                Trusted Batam IT Solution provider specializing in Batam Technology Development,
+                CCTV, Fingerprint, Access Door, Automation System, Software Development, and Security System
+                to support Batam Business Development.
+            </p>
+<div class="footer-social">
+<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a aria-label="Google" class="social-link" href="https://share.google/exfpqXuWsLvxFWOCk" rel="noopener" target="_blank">
+<i class="fab fa-google"></i>
+</a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="footer-section">
+<h3>Quick Menu</h3>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="produk-dan-layanan.html">Products &amp; Services</a></li>
+<li><a href="news.html">Technology News</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="hubungi-kami.html">Contact Us</a></li>
+<li><a href="hubungi-kami.html">Privacy Policy</a></li>
+<li><a href="produk-dan-layanan.html">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+<!-- Services -->
+<div class="footer-section">
+<h3>Our Services</h3>
+<ul class="footer-links">
+<li><a href="cctv.html">CCTV &amp; Security Systems</a></li>
+<li><a href="fingerprint.html">Fingerprint &amp; Access Control</a></li>
+<li><a href="automation.html">Automation Systems</a></li>
+<li><a href="software.html">Software Development</a></li>
+<li><a href="jaringan.html">Networks &amp; Servers</a></li>
+<li><a href="business-development.html">Business Development</a></li>
+<li><a href="hubungi-kami.html">Maintenance &amp; Support</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div class="footer-section">
+<h3>Contact Us</h3>
+<div class="footer-contact">
+<div class="contact-item">
+<i class="fas fa-map-marker-alt"></i>
+<div>
+<h4>Address</h4>
+<p class="paragraph-style-6">Batam, Riau Islands<br/>Indonesia</p>
+</div>
+</div>
+<div class="contact-item">
+<i class="fas fa-phone"></i>
+<div>
+<h4>Phone</h4>
+<p class="para-bg-purple">08111262260</p>
+</div>
+</div>
+<div class="contact-item">
+<i class="fas fa-envelope"></i>
+<div>
+<h4>E-mail</h4>
+<p class="para-with-icon">Putra@faust.co.id</p>
+</div>
+</div>
+<div class="contact-item">
+<i class="fab fa-whatsapp"></i>
+<div>
+<h4>WhatsApp</h4>
+<p class="paragraph-style-2">081363783738</p>
+</div>
+</div>
+<div class="contact-item">
+<i class="fas fa-clock"></i>
+<div>
+<h4>Business Hours</h4>
+<p>Monday - Friday: 08:00 - 17:00<br/>Saturday: 08:00 - 12:00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="footer-newsletter">
+<div class="newsletter-content">
+<div class="newsletter-text">
+<h3>Subscribe to Technology Newsletter</h3>
+<p class="paragraph-style-3">Get the latest updates on technology, IT solutions, and innovation in Batam</p>
+</div>
+<form class="newsletter-form">
+<input placeholder="Enter your email" required="" type="email"/>
+<button class="btn btn-primary" type="submit">
+<i class="fas fa-paper-plane"></i>
+<span>Subscribe</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="footer-bottom-content">
+<div class="copyright">
+<p class="para-bg-green">© 2024 Batam Technology Solutions. All rights reserved.</p>
+</div>
+<div class="footer-bottom-links">
+<a href="hubungi-kami.html">Privacy Policy</a>
+<a href="produk-dan-layanan.html">Terms &amp; Conditions</a>
+<a href="index.html">Sitemap</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="../src/main.js"></script><script src="../src/load-right-sidebar.js"></script>
+</body>
+</html>
