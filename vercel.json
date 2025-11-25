@@ -37,14 +37,12 @@
       "destination": "/en/index.html"
     },
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "(.*)"
-        }
-      ],
-      "destination": "/:path*"
+      "source": "/en/:path*",
+      "destination": "/en/:path*"
+    },
+    {
+      "source": "/id/:path*",
+      "destination": "/id/:path*"
     }
   ],
   "headers": [
