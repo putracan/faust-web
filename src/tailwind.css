@@ -1,12 +1,8 @@
-(function() {
-  if (document.getElementById('tailwind-shadcn-layers')) {
-    return;
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  const style = document.createElement('style');
-  style.id = 'tailwind-shadcn-layers';
-  style.type = 'text/tailwindcss';
-  style.textContent = `@layer base {
+@layer base {
   :root {
     --background: 210 40% 97%;
     --foreground: 222.2 47.4% 11.2%;
@@ -109,15 +105,15 @@
   }
 
   .btn-primary {
-    @apply btn bg-slate-900 text-white shadow-lg shadow-slate-900/30 hover:bg-slate-800 focus-visible:outline-slate-900;
+    @apply bg-slate-900 text-white shadow-lg shadow-slate-900/30 hover:bg-slate-800 focus-visible:outline-slate-900;
   }
 
   .btn-secondary {
-    @apply btn border border-white/40 bg-transparent text-white hover:bg-white/10 focus-visible:outline-white;
+    @apply border border-white/40 bg-transparent text-white hover:bg-white/10 focus-visible:outline-white;
   }
 
   .btn-tertiary {
-    @apply btn border border-slate-900/20 bg-white text-slate-900 hover:border-slate-900/40;
+    @apply border border-slate-900/20 bg-white text-slate-900 hover:border-slate-900/40;
   }
 
   .hero-badge {
@@ -234,9 +230,6 @@
 @layer utilities {
   .bg-glow {
     background: radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.25), transparent 45%),
-                radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.3), transparent 35%);
+      radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.3), transparent 35%);
   }
-}`;
-
-  document.head.appendChild(style);
-})();
+}
