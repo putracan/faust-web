@@ -3,6 +3,7 @@ const APP_SHELL = [
   '/',
   '/id/index.html',
   '/src/style.css',
+  '/src/tailwind-build.css',
   '/src/main.js',
   '/src/load-right-sidebar.js',
   '/src/logo-solusi-teknologi.png',

@@ -1,0 +1,30 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000f\u0000a\u0000u\u0000s\u0000t\u0000-\u0000w\u0000e\u0000b\u0000\r\u0000 \u0000",
+  "main": "sw.js",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind-build.css --watch",
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind-build.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/putracan/faust-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/putracan/faust-web/issues"
+  },
+  "homepage": "https://github.com/putracan/faust-web#readme",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.13"
+  }
+}
