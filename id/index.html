@@ -1,1027 +1,635 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Penyedia IT Solution terpercaya di Batam untuk CCTV, sistem keamanan, software development, dan automation. Layanan profesional 24/7 dengan teknologi terdepan di Kepulauan Riau." name="description"/>
-<meta content="IT Solution Batam, CCTV Batam, Sistem Keamanan Batam, Software Development Batam, Automation System Batam, Jaringan Komputer Batam" name="keywords"/>
-<meta content="Solusi Teknologi Batam" name="author"/>
-<meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots"/>
-<link href="https://faust.co.id/id/" rel="canonical"/>
-<link href="https://faust.co.id/id/" hreflang="id" rel="alternate"/>
-<link href="https://faust.co.id/en/" hreflang="en" rel="alternate"/>
-<!-- Open Graph / Facebook -->
-<meta content="website" property="og:type"/>
-<meta content="https://faust.co.id/id/" property="og:url"/>
-<meta content="Solusi Teknologi Batam - IT Solution &amp; Sistem Keamanan Terpercaya" property="og:title"/>
-<meta content="Penyedia IT Solution terpercaya di Batam untuk CCTV, sistem keamanan, software development, dan automation. Layanan profesional 24/7 dengan teknologi terdepan." property="og:description"/>
-<meta content="https://faust.co.id/src/logo-solusi-teknologi-BATAM.png" property="og:image"/>
-<meta content="id_ID" property="og:locale"/>
-<meta content="Solusi Teknologi Batam" property="og:site_name"/>
-<!-- Twitter -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://faust.co.id/id/" name="twitter:url"/>
-<meta content="Solusi Teknologi Batam - IT Solution &amp; Sistem Keamanan Terpercaya" name="twitter:title"/>
-<meta content="Penyedia IT Solution terpercaya di Batam untuk CCTV, sistem keamanan, software development, dan automation. Layanan profesional 24/7." name="twitter:description"/>
-<meta content="https://faust.co.id/src/logo-solusi-teknologi-BATAM.png" name="twitter:image"/>
-<!-- Geo Tags -->
-<meta content="ID-KR" name="geo.region"/>
-<meta content="Batam" name="geo.placename"/>
-<meta content="1.047383;104.029522" name="geo.position"/>
-<meta content="1.047383, 104.029522" name="ICBM"/>
-<title>Solusi Teknologi Batam - IT Solution &amp; Sistem Keamanan Terpercaya</title>
-<link href="../src/style.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="../src/itbatam.ico" rel="icon" type="image/x-icon"/>
-<!-- Schema.org JSON-LD -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Solusi Teknologi Batam menghadirkan UI Tailwind + shadcn, arsitektur PWA offline-ready, serta sinkronisasi MySQL otomatis untuk keamanan, jaringan, automation, dan software modern di Batam."/>
+<meta name="keywords" content="Solusi Teknologi Batam, Tailwind, shadcn UI, CCTV Batam, Jaringan Batam, Automation Batam, Software Development Batam, MySQL, PWA"/>
+<meta name="author" content="Solusi Teknologi Batam"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#0f172a"/>
+<meta name="color-scheme" content="light"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Solusi Teknologi Batam"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="canonical" href="https://faust.co.id/id/"/>
+<link rel="alternate" href="https://faust.co.id/id/" hreflang="id"/>
+<link rel="alternate" href="https://faust.co.id/en/" hreflang="en"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://faust.co.id/id/"/>
+<meta property="og:title" content="Solusi Teknologi Batam - Tailwind + shadcn PWA Stack"/>
+<meta property="og:description" content="Stack zero legacy berbasis Tailwind + shadcn dengan PWA offline-ready dan integrasi MySQL otomatis untuk keamanan digital Batam."/>
+<meta property="og:image" content="https://faust.co.id/src/logo-solusi-teknologi-BATAM.png"/>
+<meta property="og:locale" content="id_ID"/>
+<meta property="og:site_name" content="Solusi Teknologi Batam"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://faust.co.id/id/"/>
+<meta name="twitter:title" content="Solusi Teknologi Batam - Tailwind + shadcn PWA Stack"/>
+<meta name="twitter:description" content="UI modern Tailwind + shadcn dengan service worker, caching pintar, dan auto update ke database MySQL."/>
+<meta name="twitter:image" content="https://faust.co.id/src/logo-solusi-teknologi-BATAM.png"/>
+<meta name="geo.region" content="ID-KR"/>
+<meta name="geo.placename" content="Batam"/>
+<meta name="geo.position" content="1.047383;104.029522"/>
+<meta name="ICBM" content="1.047383, 104.029522"/>
+<title>Solusi Teknologi Batam - Tailwind + shadcn PWA Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="icon" type="image/x-icon" href="../src/itbatam.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../src/logo-solusi-teknologi-BATAM.png"/>
+<link rel="manifest" href="../manifest.webmanifest"/>
+<link rel="stylesheet" href="../src/tailwind-build.css"/>
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Solusi Teknologi Batam",
-      "url": "https://faust.co.id/id/",
-      "logo": "https://faust.co.id/src/logo-solusi-teknologi-BATAM.png",
-      "description": "Penyedia IT Solution terpercaya di Batam untuk CCTV, sistem keamanan, software development, dan automation. Layanan profesional 24/7 dengan teknologi terdepan di Kepulauan Riau.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Batam",
-        "addressRegion": "Kepulauan Riau",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "1.047383",
-        "longitude": "104.029522"
-      },
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+62-811-1262-260",
-        "contactType": "customer service",
-        "areaServed": "ID",
-        "availableLanguage": ["Indonesian", "English"]
-      }],
-      "sameAs": [
-        "https://www.tiktok.com/@itbatam",
-        "https://www.linkedin.com/company/itbatam"
-      ],
-      "email": "putra@faust.co.id",
-      "telephone": "+62-811-1262-260"
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Solusi Teknologi Batam",
+  "url": "https://faust.co.id/id/",
+  "logo": "https://faust.co.id/src/logo-solusi-teknologi-BATAM.png",
+  "description": "Penyedia IT Solution terpercaya di Batam untuk CCTV, sistem keamanan, software development, automation, dan jaringan berbasis PWA.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Batam",
+    "addressRegion": "Kepulauan Riau",
+    "addressCountry": "ID"
+  },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+62-811-1262-260",
+    "contactType": "customer service",
+    "areaServed": "ID",
+    "availableLanguage": ["Indonesian", "English"]
+  }],
+  "sameAs": [
+    "https://www.tiktok.com/@itbatam",
+    "https://www.linkedin.com/company/itbatam"
+  ]
+}
+</script>
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Solusi Teknologi Batam",
-      "image": "https://faust.co.id/src/logo-solusi-teknologi-BATAM.png",
-      "@id": "https://faust.co.id/id/",
-      "url": "https://faust.co.id/id/",
-      "telephone": "+62-811-1262-260",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Batam",
-        "addressLocality": "Batam",
-        "addressRegion": "Kepulauan Riau",
-        "postalCode": "29432",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 1.047383,
-        "longitude": 104.029522
-      },
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "12:00"
-      }],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "100"
-      }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Solusi Teknologi Batam",
+  "url": "https://faust.co.id/id/",
+  "telephone": "+62-811-1262-260",
+  "priceRange": "$$",
+  "image": "https://faust.co.id/src/logo-solusi-teknologi-BATAM.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Batam",
+    "addressLocality": "Batam",
+    "addressRegion": "Kepulauan Riau",
+    "postalCode": "29432",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 1.047383,
+    "longitude": 104.029522
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Saturday",
+    "opens": "08:00",
+    "closes": "12:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "100"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://faust.co.id/",
+  "name": "Solusi Teknologi Batam",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://faust.co.id/id/search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
 </head>
-<body class="page-theme-blue">
-<!-- Header -->
+<body class="page-theme-blue page-home bg-background text-foreground antialiased">
+<div class="relative flex min-h-screen flex-col">
 <header class="header">
-<div class="container">
-<div class="header-content">
-<!-- Logo -->
-<div class="logo">
-<a href="index.html">
-<img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
-<span>Solusi Teknologi Batam</span>
-</a>
-</div>
-<!-- Navigation -->
-<nav class="nav">
-<ul class="nav-list">
-<li class="nav-item dropdown">
-<a class="nav-link" href="#">
-<i class="fas fa-cogs"></i>
-<span>Layanan</span>
-<i class="fas fa-chevron-down"></i>
-</a>
-<ul class="dropdown-menu">
-<li><a href="cctv.html"><i class="fas fa-video"></i> CCTV &amp; Sistem Keamanan</a></li>
-<li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i> Fingerprint &amp; Access Control</a></li>
-<li><a href="access-door.html"><i class="fas fa-door-open"></i> Access Door System</a></li>
-<li><a href="alarm.html"><i class="fas fa-bell"></i> Alarm System</a></li>
-<li><a href="automation.html"><i class="fas fa-cogs"></i> Automation System</a></li>
-<li><a href="software.html"><i class="fas fa-code"></i> Software Development</a></li>
-<li><a href="jaringan.html"><i class="fas fa-network-wired"></i> Jaringan &amp; Server</a></li>
-<li><a href="business-development.html"><i class="fas fa-chart-line"></i> Business Development</a></li>
-</ul>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-page="promo" href="promo.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 20px; padding: 8px 16px !important;">
-<i class="fas fa-gift"></i>
-<span>Promo</span>
-</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-page="news" href="news.html">
-<i class="fas fa-newspaper"></i>
-<span>Berita</span>
-</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-page="portfolio" href="portfolio.html">
-<i class="fas fa-briefcase"></i>
-<span>Portfolio</span>
-</a>
-</li>
-</ul>
-</nav>
-<!-- Social Media Links -->
-<div class="header-social">
-<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-</div>
-<!-- Language Switcher -->
-<!-- CTA Button -->
-<div class="header-cta">
-<a class="btn btn-primary" href="hubungi-kami.html">
-<i class="fas fa-phone"></i>
-<span>Konsultasi Gratis</span>
-</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Toggle menu" class="mobile-menu-toggle">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-</div>
-<!-- Mobile Navigation -->
-<div class="mobile-nav">
-<div class="mobile-nav-content">
-<div class="mobile-nav-header">
-<div class="logo">
-<img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
-<span>Solusi Teknologi Batam</span>
-</div>
-<button aria-label="Close menu" class="mobile-nav-close">
-<i class="fas fa-times"></i>
-</button>
-</div>
-<nav class="mobile-nav-menu">
-<ul>
-<li class="mobile-dropdown">
-<a class="mobile-dropdown-toggle" href="#">
-<i class="fas fa-cogs"></i> Layanan
-                        <i class="fas fa-chevron-down"></i>
-</a>
-<ul class="mobile-dropdown-menu">
-<li><a href="cctv.html"><i class="fas fa-video"></i> CCTV &amp; Sistem Keamanan</a></li>
-<li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i> Fingerprint &amp; Access Control</a></li>
-<li><a href="access-door.html"><i class="fas fa-door-open"></i> Access Door System</a></li>
-<li><a href="alarm.html"><i class="fas fa-bell"></i> Alarm System</a></li>
-<li><a href="automation.html"><i class="fas fa-cogs"></i> Automation System</a></li>
-<li><a href="software.html"><i class="fas fa-code"></i> Software Development</a></li>
-<li><a href="jaringan.html"><i class="fas fa-network-wired"></i> Jaringan &amp; Server</a></li>
-<li><a href="business-development.html"><i class="fas fa-chart-line"></i> Business Development</a></li>
-</ul>
-</li>
-<li><a href="news.html"><i class="fas fa-newspaper"></i> Berita</a></li>
-<li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-</ul>
-</nav>
-<div class="mobile-nav-cta">
-<a class="btn btn-primary btn-block" href="hubungi-kami.html">
-<i class="fas fa-phone"></i>
-                Konsultasi Gratis
-            </a>
-</div>
+  <div class="container flex items-center justify-between gap-4 py-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
+        <span class="font-display text-lg font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </a>
     </div>
-</div>
+    <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
+      <ul class="nav-list">
+        <li class="nav-item dropdown group relative">
+          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-slate-500"></i>
+            <span>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="cctv.html"><i class="fas fa-video"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="automation.html"><i class="fas fa-robot"></i>Automation &amp; IoT</a></li>
+            <li><a href="software.html"><i class="fas fa-code"></i>Software Development</a></li>
+            <li><a href="jaringan.html"><i class="fas fa-network-wired"></i>Jaringan &amp; Server</a></li>
+            <li><a href="business-development.html"><i class="fas fa-chart-line"></i>Business Development</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="promo.html" data-page="promo"><i class="fas fa-gift"></i><span>Promo</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html" data-page="news"><i class="fas fa-newspaper"></i><span>Berita</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html" data-page="portfolio"><i class="fas fa-briefcase"></i><span>Portfolio</span></a></li>
+      </ul>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div class="lang-dropdown relative">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500">
+          <span class="current-lang">ID</span>
+          <i class="fas fa-chevron-down text-[10px]"></i>
+        </button>
+        <div class="lang-menu">
+          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="en">EN</a>
+        </div>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a class="btn btn-primary hidden lg:inline-flex" href="hubungi-kami.html">
+        <i class="fas fa-headset"></i>
+        <span>Konsultasi Gratis</span>
+      </a>
+      <button class="mobile-menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 lg:hidden" aria-label="Buka menu">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+  </div>
 </header>
-<!-- Sidebar -->
-<aside class="sidebar" id="sidebar">
-<div class="sidebar-content">
-<!-- Sidebar Header -->
-<div class="sidebar-header">
-<div class="sidebar-logo">
-<img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
-<span>Solusi Teknologi</span>
+<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-header flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/>
+        <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </div>
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200" aria-label="Tutup menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
+      <ul>
+        <li class="mobile-dropdown">
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs mr-2"></i>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="cctv.html" class="block rounded-2xl px-3 py-2">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-2xl px-3 py-2">Fingerprint &amp; Access</a></li>
+            <li><a href="automation.html" class="block rounded-2xl px-3 py-2">Automation &amp; IoT</a></li>
+            <li><a href="software.html" class="block rounded-2xl px-3 py-2">Software Development</a></li>
+            <li><a href="jaringan.html" class="block rounded-2xl px-3 py-2">Jaringan &amp; Server</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-newspaper mr-2"></i>Berita</a></li>
+        <li><a href="portfolio.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-briefcase mr-2"></i>Portfolio</a></li>
+        <li><a href="#contact" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-headset mr-2"></i>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="grid gap-3">
+      <a class="btn btn-primary w-full justify-center" href="hubungi-kami.html"><i class="fas fa-phone"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+    </div>
+  </div>
 </div>
-<button aria-label="Toggle sidebar" class="sidebar-toggle">
-<i class="fas fa-times"></i>
-</button>
-</div>
-<!-- Quick Links -->
-<div class="sidebar-section">
-<h3>Quick Links</h3>
-<ul class="sidebar-menu">
-<li>
-<a class="sidebar-link" href="index.html">
-<i class="fas fa-home"></i>
-<span>Beranda</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="#services">
-<i class="fas fa-cogs"></i>
-<span>Layanan Kami</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="news.html">
-<i class="fas fa-newspaper"></i>
-<span>Berita Teknologi</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="portfolio.html">
-<i class="fas fa-briefcase"></i>
-<span>Portfolio</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="#contact">
-<i class="fas fa-envelope"></i>
-<span>Hubungi Kami</span>
-</a>
-</li>
-</ul>
-</div>
-<!-- Services Menu -->
-<div class="sidebar-section">
-<h3>Layanan</h3>
-<ul class="sidebar-menu">
-<li>
-<a class="sidebar-link" href="cctv.html">
-<i class="fas fa-video"></i>
-<span>CCTV &amp; Keamanan</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="fingerprint.html">
-<i class="fas fa-fingerprint"></i>
-<span>Fingerprint &amp; Access</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="automation.html">
-<i class="fas fa-cogs"></i>
-<span>Automation System</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="software.html">
-<i class="fas fa-code"></i>
-<span>Software Development</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="alarm.html">
-<i class="fas fa-shield-alt"></i>
-<span>Sistem Keamanan</span>
-</a>
-</li>
-<li>
-<a class="sidebar-link" href="business-development.html">
-<i class="fas fa-chart-line"></i>
-<span>Bisnis Development</span>
-</a>
-</li>
-</ul>
-</div>
-<!-- Contact Info -->
-<div class="sidebar-section">
-<h3>Kontak</h3>
-<div class="contact-info">
-<div class="contact-item">
-<i class="fas fa-phone"></i>
-<span>08111262260</span>
-</div>
-<div class="contact-item">
-<i class="fas fa-envelope"></i>
-<span>putra@faust.co.id</span>
-</div>
-<div class="contact-item">
-<i class="fab fa-whatsapp"></i>
-<span>081363783738</span>
-</div>
-<div class="contact-item">
-<i class="fas fa-map-marker-alt"></i>
-<span>Batam, Kepulauan Riau</span>
-</div>
-</div>
-</div>
-<!-- Social Media -->
-<div class="sidebar-section">
-<h3>Ikuti Kami</h3>
-<div class="social-links">
-<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-<a aria-label="Google" class="social-link" href="https://share.google/exfpqXuWsLvxFWOCk" rel="noopener" target="_blank">
-<i class="fab fa-google"></i>
-</a>
-<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-</div>
-</div>
-<!-- CTA Button -->
-<div class="sidebar-cta">
-<a class="btn btn-primary btn-block" href="#contact">
-<i class="fas fa-phone"></i>
-<span>Konsultasi Gratis</span>
-</a>
-</div>
-</div>
-</aside>
-<!-- Sidebar Overlay -->
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-<!-- Main Content -->
-<main class="main-content">
-<!-- Page Header -->
-<section class="page-header">
-<div class="container">
-<div class="breadcrumb">
-<a href="index.html">Beranda</a>
-</div>
-<div class="page-header-content">
-<h1>Solusi Teknologi Batam</h1>
-<p class="page-title-subtitle">Partner Terpercaya untuk Transformasi Digital dan Sistem Keamanan Bisnis Anda</p>
-</div>
-<p class="hero-description">
-                    Selamat datang di <strong>Solusi Teknologi Batam</strong>. Kami adalah mitra terpercaya yang membantu bisnis di Kepulauan Riau berkembang melalui teknologi.
+<main class="home-mobile-first flex-1">
+  <section class="hero-mobile-first relative overflow-hidden bg-slate-950 text-white">
+    <div class="absolute inset-0 bg-grid-slate opacity-20"></div>
+    <div class="absolute inset-0 bg-glow opacity-70"></div>
+    <div class="container grid gap-12 py-20 lg:grid-cols-2">
+      <div class="hero-copy space-y-6">
+        <p class="hero-badge">Tailwind + shadcn · PWA Ready · Zero Legacy</p>
+        <h1 class="text-4xl font-semibold leading-tight text-white md:text-5xl">
+          Solusi Teknologi Batam
+          <span class="block font-display text-4xl text-brand-300 md:text-5xl">Stack Keamanan Digital Modern</span>
+        </h1>
+        <p class="hero-lead text-lg text-slate-200">
+          Seluruh dashboard CCTV, jaringan, automation, dan software kami dibangun dengan Tailwind + shadcn UI, caching PWA, serta auto update langsung ke database MySQL sehingga keputusan lapangan tidak pernah terlambat.
+        </p>
+        <ul class="hero-checklist space-y-3 text-sm text-slate-100">
+          <li><i class="fas fa-bolt"></i>Zero legacy architecture: komponen shadcn modular, mudah scaling fitur baru.</li>
+          <li><i class="fas fa-database"></i>Sinkronisasi MySQL real-time via API streaming & workflow yang update otomatis.</li>
+          <li><i class="fas fa-signal"></i>PWA offline cache + push alert untuk alarm keamanan dan SLA onsite &lt; 4 jam Batam.</li>
+        </ul>
+        <div class="hero-actions flex flex-wrap gap-3">
+          <a class="btn btn-primary" href="hubungi-kami.html"><i class="fas fa-headset"></i><span>Booking Konsultasi</span></a>
+          <a class="btn btn-secondary" href="portfolio.html"><i class="fas fa-play"></i><span>Lihat Implementasi</span></a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-200">Hotline</p>
+            <a href="tel:08111262260" class="text-xl font-semibold text-white">0811 1262 260</a>
+            <p class="text-xs text-slate-200">Support rata-rata 97 menit</p>
+          </div>
+          <div class="hero-meta-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-200">WhatsApp</p>
+            <a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="text-xl font-semibold text-white">0813 6378 3738</a>
+            <p class="text-xs text-slate-200">Respon &lt; 10 menit kerja</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media relative">
+        <div class="rounded-[36px] border border-white/10 bg-white/5 p-8 shadow-glow backdrop-blur">
+          <img src="../src/logo-solusi-teknologi-BATAM.png" alt="Logo Solusi Teknologi Batam" class="mx-auto h-28 w-auto" loading="lazy" decoding="async"/>
+          <div class="mt-8 grid gap-4 rounded-3xl border border-white/20 bg-white/10 p-6">
+            <div class="flex items-center justify-between text-sm">
+              <span>Implementasi aktif</span>
+              <strong>500+</strong>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span>Monitoring mobile</span>
+              <strong>63% traffic</strong>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span>Lighthouse score</span>
+              <strong>92 / 100</strong>
+            </div>
+            <p class="text-xs text-slate-200">Semua modul diuji pada perangkat low-end agar tetap ringan ketika dipasang onsite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    Dari sistem keamanan canggih seperti CCTV dan kontrol akses, hingga pengembangan software dan otomasi proses bisnis—kami hadir dengan solusi yang disesuaikan dengan kebutuhan unik perusahaan Anda.
-                    <br/><br/>
-                    Tim kami yang berpengalaman siap mendampingi perjalanan transformasi digital Anda dengan teknologi modern dan dukungan penuh sepanjang waktu.
-                </p>
-<a class="btn btn-primary" href="promo.html" style="background: #ff4757; animation: pulse 2s infinite;">Lihat Promo Spesial</a>
-<a class="btn btn-secondary" href="#services">Lihat Semua Layanan</a>
-<a class="btn btn-secondary" href="hubungi-kami.html">Konsultasi Gratis</a>
-</div>
-</section>
-<!-- Services Section -->
-<section class="services" id="services">
-<div class="container">
-<div class="services-grid">
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-video"></i>
-</div>
-<h3>CCTV &amp; Sistem Keamanan</h3>
-<p>Lindungi aset bisnis Anda dengan sistem kamera pengawas berkualitas tinggi. Teknologi HD/4K dengan night vision dan mobile monitoring membuat Anda bisa memantau keamanan dari mana saja, kapan saja.</p>
-<ul>
-<li>CCTV IP Camera HD/4K</li>
-<li>DVR/NVR System Terintegrasi</li>
-<li>Mobile Monitoring Real-time</li>
-<li>Cloud Storage &amp; Backup</li>
-</ul>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-fingerprint"></i>
-</div>
-<h3>Fingerprint &amp; Access Control</h3>
-<p class="paragraph-style-3">Kelola akses karyawan dengan lebih efisien menggunakan teknologi biometrik modern. Sistem kontrol akses kami membantu meningkatkan keamanan sekaligus mempermudah manajemen kehadiran.</p>
-<ul>
-<li>Fingerprint Scanner Biometric</li>
-<li>Access Door System Terintegrasi</li>
-<li>Card Reader &amp; RFID</li>
-<li>Biometric Integration Lengkap</li>
-</ul>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-cogs"></i>
-</div>
-<h3>Automation System</h3>
-<p class="para-bg-green">Tingkatkan efisiensi operasional dengan sistem otomasi cerdas. Dari smart building hingga IoT integration, kami membantu bisnis Anda bekerja lebih efisien dengan teknologi yang tepat.</p>
-<ul>
-<li>Smart Building &amp; Home</li>
-<li>IoT Integration Terdepan</li>
-<li>Energy Management System</li>
-<li>Process Automation Cerdas</li>
-</ul>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-code"></i>
-</div>
-<h3>Software Development</h3>
-<p class="paragraph-style-4">Wujudkan ide bisnis Anda menjadi aplikasi yang powerful. Kami mengembangkan solusi software custom yang sesuai dengan alur kerja dan kebutuhan spesifik perusahaan Anda.</p>
-<ul>
-<li>Web Application Custom</li>
-<li>Mobile App Development</li>
-<li>Database Management System</li>
-<li>API Integration &amp; Microservices</li>
-</ul>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-shield-alt"></i>
-</div>
-<h3>Keamanan Jaringan &amp; Data</h3>
-<p class="para-bg-orange">Amankan aset digital perusahaan dari ancaman cyber dengan sistem keamanan berlapis. Layanan kami mencakup firewall, backup data, dan audit keamanan berkala.</p>
-<ul>
-<li>Network Security Terdepan</li>
-<li>Firewall Setup &amp; Management</li>
-<li>Data Protection &amp; Backup</li>
-<li>Security Audit &amp; Assessment</li>
-</ul>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-chart-line"></i>
-</div>
-<h3>Business Development</h3>
-<p class="paragraph-style-6">Konsultasi strategis untuk membantu bisnis Anda berkembang dengan teknologi yang tepat. Dari perencanaan hingga implementasi, kami dampingi setiap langkah transformasi digital Anda.</p>
-<ul>
-<li>Digital Transformation Strategy</li>
-<li>IT Consulting &amp; Advisory</li>
-<li>System Integration Lengkap</li>
-<li>Technology Roadmap &amp; Planning</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="about">
-<div class="container">
-<div class="about-content">
-<div class="about-text">
-<h2>Mengapa Memilih Kami sebagai Partner Teknologi Anda?</h2>
-<p class="para-bg-purple">
-<strong>Solusi Teknologi Batam</strong> berdiri dengan misi untuk membantu bisnis di Kepulauan Riau
-                            memanfaatkan teknologi secara maksimal. Dengan pengalaman bertahun-tahun, kami telah membantu ratusan
-                            perusahaan mengoptimalkan operasional mereka melalui implementasi sistem yang tepat sasaran.
-                        </p>
-<p class="para-with-icon">
-                            Kami percaya bahwa setiap bisnis memiliki tantangan unik. Itulah mengapa solusi kami selalu disesuaikan—
-                            tidak ada pendekatan one-size-fits-all. Dari instalasi sistem keamanan hingga pengembangan software custom,
-                            kami bekerja bersama Anda untuk menemukan solusi terbaik yang sesuai dengan budget dan kebutuhan spesifik perusahaan Anda.
-                        </p>
-<div class="features">
-<div class="feature">
-<i class="fas fa-check-circle"></i>
-<span>Tim ahli dengan pengalaman lintas industri</span>
-</div>
-<div class="feature">
-<i class="fas fa-check-circle"></i>
-<span>Teknologi terkini yang terus kami update</span>
-</div>
-<div class="feature">
-<i class="fas fa-check-circle"></i>
-<span>Support responsif kapan Anda membutuhkan</span>
-</div>
-<div class="feature">
-<i class="fas fa-check-circle"></i>
-<span>Harga kompetitif tanpa biaya tersembunyi</span>
-</div>
-<div class="feature">
-<i class="fas fa-check-circle"></i>
-<span>Garansi dan maintenance jangka panjang</span>
-</div>
-<div class="feature">
-<i class="fas fa-check-circle"></i>
-<span>Solusi yang disesuaikan dengan bisnis Anda</span>
-</div>
-</div>
-</div>
-<div class="about-stats">
-<div class="stat">
-<h3>500+</h3>
-<p class="paragraph-style-1">Proyek Selesai</p>
-</div>
-<div class="stat">
-<h3>100+</h3>
-<p class="paragraph-style-2">Klien Puas</p>
-</div>
-<div class="stat">
-<h3>5+</h3>
-<p>Tahun Pengalaman</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Advantages Section -->
-<section class="advantages">
-<div class="container">
-<h2>Keunggulan Kami</h2>
-<p class="section-subtitle">
-                    Apa yang membuat klien kami terus mempercayakan kebutuhan teknologi mereka kepada kami?
-                </p>
-<div class="advantages-grid">
-<div class="advantage-card">
-<div class="advantage-icon">
-<i class="fas fa-award"></i>
-</div>
-<h3>Kualitas Terjamin</h3>
-<p class="para-bg-green">Kami hanya menggunakan produk dan teknologi dengan standar internasional. Setiap instalasi dilengkapi dengan garansi resmi dan dokumentasi lengkap untuk memastikan sistem Anda berjalan optimal.</p>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">
-<i class="fas fa-clock"></i>
-</div>
-<h3>Support Responsif</h3>
-<p class="paragraph-style-4">Butuh bantuan teknis? Tim kami siap membantu kapan pun Anda membutuhkan. Dengan layanan maintenance berkala dan dukungan teknis yang responsif, sistem Anda akan selalu berjalan lancar.</p>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">
-<i class="fas fa-dollar-sign"></i>
-</div>
-<h3>Investasi yang Bijak</h3>
-<p class="para-bg-orange">Dapatkan solusi teknologi berkualitas dengan harga yang masuk akal. Kami menawarkan transparansi penuh dalam setiap penawaran—tidak ada biaya tersembunyi yang mengejutkan di kemudian hari.</p>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">
-<i class="fas fa-users"></i>
-</div>
-<h3>Tim Berpengalaman</h3>
-<p class="paragraph-style-6">Teknisi kami memiliki sertifikasi dan pengalaman bertahun-tahun di bidangnya masing-masing. Mereka tidak hanya ahli secara teknis, tapi juga memahami konteks bisnis di berbagai industri.</p>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">
-<i class="fas fa-cog"></i>
-</div>
-<h3>Solusi Custom</h3>
-<p class="para-bg-purple">Tidak ada dua bisnis yang sama. Kami mendengarkan kebutuhan Anda dengan seksama dan merancang solusi yang benar-benar sesuai dengan alur kerja, skala, dan anggaran perusahaan Anda.</p>
-</div>
-<div class="advantage-card">
-<div class="advantage-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<h3>Lokal &amp; Terpercaya</h3>
-<p class="para-with-icon">Sebagai perusahaan lokal, kami memahami tantangan dan peluang bisnis di wilayah ini. Kedekatan geografis kami memastikan response time yang cepat saat Anda membutuhkan bantuan.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Related Services & Internal Links Section -->
-<section class="related-services" style="background: #f8f9fa; padding: 80px 0;">
-<div class="container">
-<h2 style="text-align: center; margin-bottom: 20px;">Layanan Kami Berdasarkan Kategori</h2>
-<p class="section-subtitle" style="text-align: center; margin-bottom: 50px;">Temukan solusi teknologi yang tepat untuk kebutuhan bisnis Anda</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
-<!-- Kategori: Sistem Keamanan -->
-<div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-<h3 style="color: #2563eb; margin-bottom: 15px;"><i class="fas fa-shield-alt"></i> Sistem Keamanan</h3>
-<ul style="list-style: none; padding: 0;">
-<li style="margin-bottom: 10px;"><a href="cctv.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> CCTV &amp; Monitoring</a></li>
-<li style="margin-bottom: 10px;"><a href="fingerprint.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Fingerprint &amp; Access Control</a></li>
-<li style="margin-bottom: 10px;"><a href="alarm.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Alarm System</a></li>
-<li style="margin-bottom: 10px;"><a href="access-door.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Access Door System</a></li>
-<li style="margin-bottom: 10px;"><a href="smart-home-security-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Smart Home Security</a></li>
-</ul>
-</div>
-<!-- Kategori: Jaringan & IT -->
-<div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-<h3 style="color: #2563eb; margin-bottom: 15px;"><i class="fas fa-network-wired"></i> Jaringan &amp; IT</h3>
-<ul style="list-style: none; padding: 0;">
-<li style="margin-bottom: 10px;"><a href="jaringan.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Jaringan &amp; Server</a></li>
-<li style="margin-bottom: 10px;"><a href="server.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Server &amp; Data Center</a></li>
-<li style="margin-bottom: 10px;"><a href="internet-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Internet &amp; Koneksi</a></li>
-<li style="margin-bottom: 10px;"><a href="it-support-perusahaan-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> IT Support</a></li>
-<li style="margin-bottom: 10px;"><a href="cloud-hosting-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Cloud &amp; Hosting</a></li>
-</ul>
-</div>
-<!-- Kategori: Software & Automation -->
-<div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-<h3 style="color: #2563eb; margin-bottom: 15px;"><i class="fas fa-code"></i> Software &amp; Automation</h3>
-<ul style="list-style: none; padding: 0;">
-<li style="margin-bottom: 10px;"><a href="software.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Software Development</a></li>
-<li style="margin-bottom: 10px;"><a href="automation.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Automation System</a></li>
-<li style="margin-bottom: 10px;"><a href="pengembangan-aplikasi-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Pengembangan Aplikasi</a></li>
-<li style="margin-bottom: 10px;"><a href="pembuatan-website-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Pembuatan Website</a></li>
-<li style="margin-bottom: 10px;"><a href="mesin-kasir-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Mesin Kasir &amp; POS</a></li>
-</ul>
-</div>
-<!-- Kategori: Business Development -->
-<div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-<h3 style="color: #2563eb; margin-bottom: 15px;"><i class="fas fa-chart-line"></i> Business Development</h3>
-<ul style="list-style: none; padding: 0;">
-<li style="margin-bottom: 10px;"><a href="business-development.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> IT Consulting</a></li>
-<li style="margin-bottom: 10px;"><a href="jasa-it-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Jasa IT Profesional</a></li>
-<li style="margin-bottom: 10px;"><a href="solusi-it-ukm-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Solusi IT untuk UKM</a></li>
-<li style="margin-bottom: 10px;"><a href="seo-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> SEO &amp; Digital Marketing</a></li>
-<li style="margin-bottom: 10px;"><a href="integrasi-sistem-informasi-batam.html" style="color: #333; text-decoration: none; display: flex; align-items: center;"><i class="fas fa-chevron-right" style="color: #2563eb; margin-right: 8px; font-size: 12px;"></i> Integrasi Sistem</a></li>
-</ul>
-</div>
-</div>
-<!-- Popular Services Tags -->
-<div style="text-align: center; margin-top: 40px;">
-<h3 style="margin-bottom: 20px; color: #333;">Tags Layanan Populer</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-<a href="cctv-batam.html" style="background: #e3f2fd; color: #1976d2; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#CCTV</a>
-<a href="hikvision-batam.html" style="background: #e3f2fd; color: #1976d2; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#Hikvision</a>
-<a href="dahua-batam.html" style="background: #e3f2fd; color: #1976d2; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#Dahua</a>
-<a href="instalasi-jaringan-komputer-batam.html" style="background: #e8f5e9; color: #388e3c; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#Jaringan</a>
-<a href="software-batam.html" style="background: #f3e5f5; color: #7b1fa2; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#Software</a>
-<a href="keamanan-siber-batam.html" style="background: #fff3e0; color: #e65100; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#Cybersecurity</a>
-<a href="layanan-it-support-batam.html" style="background: #fce4ec; color: #c2185b; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#ITSupport</a>
-<a href="pabx-telephone-ip-phone-batam.html" style="background: #e0f2f1; color: #00695c; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; transition: all 0.3s;">#PABX</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Promo & CTA Section -->
-<section class="promo-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 0; color: white; text-align: center;">
-<div class="container">
-<h2 style="font-size: 2.5em; margin-bottom: 20px; color: white;">Promo Spesial Bulan Ini!</h2>
-<p class="paragraph-style-2" style="font-size: 1.2em; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    Dapatkan <strong>DISKON hingga 20%</strong> untuk paket instalasi CCTV + Access Control + Network Setup
-                </p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 40px auto;">
-<div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 10px; backdrop-filter: blur(10px);">
-<i class="fas fa-gift" style="font-size: 3em; margin-bottom: 15px;"></i>
-<h3 style="color: white; margin-bottom: 10px;">Paket Bundling</h3>
-<p style="font-size: 0.95em;">Hemat lebih banyak dengan paket layanan kombinasi</p>
-</div>
-<div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 10px; backdrop-filter: blur(10px);">
-<i class="fas fa-tools" style="font-size: 3em; margin-bottom: 15px;"></i>
-<h3 style="color: white; margin-bottom: 10px;">Free Maintenance</h3>
-<p class="paragraph-style-3" style="font-size: 0.95em;">Maintenance gratis 6 bulan untuk instalasi baru</p>
-</div>
-<div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 10px; backdrop-filter: blur(10px);">
-<i class="fas fa-clock" style="font-size: 3em; margin-bottom: 15px;"></i>
-<h3 style="color: white; margin-bottom: 10px;">Survey Gratis</h3>
-<p class="para-bg-green" style="font-size: 0.95em;">Konsultasi dan survey lokasi tanpa biaya</p>
-</div>
-</div>
-<div style="margin-top: 40px;">
-<a href="hubungi-kami.html" style="background: white; color: #667eea; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1em; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s;">
-<i class="fas fa-phone"></i> Hubungi Kami Sekarang
-                    </a>
-<a href="https://wa.me/6281363783738?text=Halo,%20saya%20tertarik%20dengan%20promo%20spesial%20Anda" style="background: #25D366; color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1em; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); margin-left: 15px; transition: all 0.3s;" target="_blank">
-<i class="fab fa-whatsapp"></i> Chat WhatsApp
-                    </a>
-</div>
-<p class="paragraph-style-4" style="margin-top: 30px; font-size: 0.9em; opacity: 0.9;">
-                    *Promo berlaku hingga akhir bulan. Syarat dan ketentuan berlaku.
-                </p>
-</div>
-</section>
-<!-- Quick Contact Floating -->
-<div id="quick-contact" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000; display: flex; flex-direction: column; gap: 10px;">
-<a href="https://wa.me/6281363783738" style="background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; animation: pulse 2s infinite;" target="_blank">
-<i class="fab fa-whatsapp" style="font-size: 30px;"></i>
-</a>
-<a href="tel:08111262260" style="background: #2563eb; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s;">
-<i class="fas fa-phone" style="font-size: 24px;"></i>
-</a>
-</div>
-<style>
-            @keyframes pulse {
-                0%, 100% { transform: scale(1); }
-                50% { transform: scale(1.1); }
-            }
-            #quick-contact a:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-            }
-            .related-services a:hover {
-                color: #2563eb !important;
-                transform: translateX(5px);
-                transition: all 0.3s;
-            }
-            .promo-section a:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-            }
-        </style>
-<script>
-            function currentUrl() {
-                try { return window.location.href; } catch (e) { return 'https://faust.co.id/id/'; }
-            }
-            function shareToTikTok() {
-                // TikTok web tidak mendukung share URL langsung; fallback: salin link
-                copyPageLink();
-                alert('Link disalin. Buka TikTok untuk post atau bio.');
-            }
-            function shareToInstagram() {
-                // Instagram web tidak mendukung share URL langsung; fallback: salin link
-                copyPageLink();
-                alert('Link disalin. Buka Instagram untuk story/post.');
-            }
-            function shareToWhatsAppStatus() {
-                var url = encodeURIComponent(currentUrl());
-                window.open('https://api.whatsapp.com/send?text=' + url, '_blank');
-            }
-            function copyPageLink() {
-                var url = currentUrl();
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText(url);
-                } else {
-                    var ta = document.createElement('textarea');
-                    ta.value = url;
-                    document.body.appendChild(ta);
-                    ta.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(ta);
-                }
-            }
-        </script>
-<!-- Social Share Section -->
-<section class="social-share" style="background: white; padding: 60px 0; text-align: center; border-top: 1px solid #eee;">
-<div class="container">
-<h3 style="margin-bottom: 20px; color: #333;">Bagikan Ke Teman &amp; Rekan Bisnis Anda</h3>
-<p class="para-bg-orange" style="margin-bottom: 30px; color: #666;">Bantu teman Anda menemukan solusi teknologi terbaik!</p>
-<div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://faust.co.id/id/" style="background: #1877f2; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;" target="_blank">
-<i class="fab fa-facebook-f"></i> Share di Facebook
-                    </a>
-<a href="https://twitter.com/intent/tweet?url=https://faust.co.id/id/&amp;text=Solusi%20Teknologi%20Batam%20-%20IT%20Solution%20Terpercaya" style="background: #1da1f2; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;" target="_blank">
-<i class="fab fa-twitter"></i> Share di Twitter
-                    </a>
-<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://faust.co.id/id/&amp;title=Solusi%20Teknologi%20Batam" style="background: #0077b5; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;" target="_blank">
-<i class="fab fa-linkedin-in"></i> Share di LinkedIn
-                    </a>
-<a href="https://api.whatsapp.com/send?text=Solusi%20Teknologi%20Batam%20-%20IT%20Solution%20Terpercaya%20https://faust.co.id/id/" style="background: #25d366; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;" target="_blank">
-<i class="fab fa-whatsapp"></i> Share via WhatsApp
-                    </a>
-<a href="mailto:?subject=Solusi%20Teknologi%20Batam&amp;body=Cek%20website%20ini:%20https://faust.co.id/id/" style="background: #ea4335; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-<i class="fas fa-envelope"></i> Share via Email
-                    </a>
-<a href="#" onclick="shareToTikTok(); return false;" style="background: #000000; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-<i class="fab fa-tiktok"></i> Share ke TikTok
-                    </a>
-<a href="#" onclick="shareToInstagram(); return false;" style="background: #E1306C; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-<i class="fab fa-instagram"></i> Share ke Instagram
-                    </a>
-<a href="#" onclick="shareToWhatsAppStatus(); return false;" style="background: #128C7E; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-<i class="fab fa-whatsapp"></i> WhatsApp Status
-                    </a>
-<a href="https://share.google/exfpqXuWsLvxFWOCk" style="background: #4285F4; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;" target="_blank">
-<i class="fab fa-google"></i> Google Business
-                    </a>
-<a href="#" onclick="copyPageLink(); return false;" style="background: #6b7280; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-<i class="fas fa-link"></i> Copy Link
-                    </a>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="contact" id="contact">
-<div class="container">
-<h2>Hubungi Kami</h2>
-<p class="section-subtitle">Siap membantu mewujudkan solusi teknologi untuk bisnis Anda</p>
-<div class="contact-content">
-<div class="contact-info">
-<div class="contact-item">
-<i class="fas fa-map-marker-alt"></i>
-<div>
-<h4>Alamat</h4>
-<p class="para-bg-purple">Batam, Kepulauan Riau, Indonesia</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-phone"></i>
-<div>
-<h4>Telepon</h4>
-<p class="para-with-icon">08111262260</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-envelope"></i>
-<div>
-<h4>Email</h4>
-<p class="paragraph-style-1">putra@faust.co.id</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fab fa-whatsapp"></i>
-<div>
-<h4>WhatsApp</h4>
-<p class="paragraph-style-2">081363783738</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-clock"></i>
-<div>
-<h4>Jam Operasional</h4>
-<p>Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</p>
-</div>
-</div>
-</div>
-<form class="contact-form">
-<div class="form-group">
-<input placeholder="Nama Lengkap" required="" type="text"/>
-</div>
-<div class="form-group">
-<input placeholder="Email" required="" type="email"/>
-</div>
-<div class="form-group">
-<input placeholder="Nomor Telepon" type="tel"/>
-</div>
-<div class="form-group">
-<select required="">
-<option value="">Pilih Layanan</option>
-<option value="cctv">CCTV &amp; Sistem Keamanan</option>
-<option value="fingerprint">Fingerprint &amp; Access Control</option>
-<option value="automation">Automation System</option>
-<option value="software">Software Development</option>
-<option value="security">Sistem Keamanan</option>
-<option value="consulting">Bisnis Development</option>
-</select>
-</div>
-<div class="form-group">
-<textarea placeholder="Pesan" required="" rows="5"></textarea>
-</div>
-<button class="btn btn-primary" type="submit">Kirim Pesan</button>
-</form>
-</div>
-</div>
-</section>
-<!-- Related Links -->
-<section class="related-links">
-</section>
+  <section class="home-status border-b border-border/60 bg-white/90">
+    <div class="container grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Proyek selesai</p>
+        <h3 class="text-3xl font-semibold text-slate-900">500+</h3>
+        <p class="text-sm text-slate-600">Integrasi security &amp; cloud</p>
+      </article>
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Avg. uptime</p>
+        <h3 class="text-3xl font-semibold text-slate-900">99.5%</h3>
+        <p class="text-sm text-slate-600">Monitoring multi-site</p>
+      </article>
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Tim tersertifikasi</p>
+        <h3 class="text-3xl font-semibold text-slate-900">30+</h3>
+        <p class="text-sm text-slate-600">Network · DevOps · AppSec</p>
+      </article>
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Audit keamanan</p>
+        <h3 class="text-3xl font-semibold text-slate-900">4x / tahun</h3>
+        <p class="text-sm text-slate-600">Checklist OWASP + SNI</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-services bg-white py-16" id="services" aria-labelledby="servicesTitle">
+    <div class="container space-y-12">
+      <div class="section-heading space-y-3 text-center">
+        <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Layanan utama</p>
+        <h2 id="servicesTitle" class="text-3xl font-semibold text-slate-900">Stack ujung-ke-ujung untuk keamanan, infrastruktur, dan software</h2>
+        <p class="text-slate-600">Setiap modul kami desain mobile-first dengan utilitas Tailwind, komponen shadcn, serta telemetry langsung ke database MySQL supaya laporan dan tindakan selalu relevan.</p>
+      </div>
+      <div class="home-services-grid grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="service-card service-card animate-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-video"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">CCTV &amp; Sistem Keamanan</h3>
+          <p class="text-sm text-slate-600">Perencanaan multi-camera, analitik AI, dan notifikasi WhatsApp dengan rekaman otomatis ke storage terenkripsi.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Live dashboard PWA siap offline</li>
+            <li>Integrasi alarm &amp; sirine berbasis API</li>
+            <li>Backup cloud dan MySQL log</li>
+          </ul>
+          <a href="cctv.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card animate-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-fingerprint"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Fingerprint &amp; Access Control</h3>
+          <p class="text-sm text-slate-600">Single sign-on untuk gedung, boarding room, dan cabang dengan audit trail otomatis.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>RFID + biometrik dengan auto sync MySQL</li>
+            <li>Access log melalui dashboard mobile</li>
+            <li>Integrasi HRIS &amp; payroll</li>
+          </ul>
+          <a href="fingerprint.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card animate-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-robot"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Automation &amp; IoT</h3>
+          <p class="text-sm text-slate-600">Kontrol energi, lighting, dan produksi dengan sensor IoT, MQTT, dan workflow zero legacy.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Edge gateway dengan fallback offline</li>
+            <li>Observability &amp; alert streaming</li>
+            <li>Integrasi SCADA &amp; ERP</li>
+          </ul>
+          <a href="automation.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card animate-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-code"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Software Development</h3>
+          <p class="text-sm text-slate-600">Aplikasi web/mobile custom dengan caching offline dan pipeline DevSecOps.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Progressive Web Apps siap install</li>
+            <li>Microservices + API gateway</li>
+            <li>Auto update data MySQL</li>
+          </ul>
+          <a href="software.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card animate-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-network-wired"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Jaringan &amp; Server</h3>
+          <p class="text-sm text-slate-600">Desain arsitektur zero-touch provisioning, SD-WAN, dan backup hybrid multi site.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Audit &amp; hardening LAN/WAN</li>
+            <li>Cloud + on-prem sync</li>
+            <li>Monitoring via PWA</li>
+          </ul>
+          <a href="jaringan.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card animate-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-chart-line"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Business Development</h3>
+          <p class="text-sm text-slate-600">Konsultasi transformasi digital dari blueprint proses sampai enablement tim.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Roadmap &amp; budgeting</li>
+            <li>KPI digitalisasi</li>
+            <li>Enablement &amp; pelatihan</li>
+          </ul>
+          <a href="business-development.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-insight bg-white py-16" aria-label="Insight stack">
+    <div class="container grid gap-12 lg:grid-cols-2">
+      <div class="space-y-4">
+        <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Blueprint eksekusi</p>
+        <h2 class="text-3xl font-semibold text-slate-900">Konten prioritas seluler + data MySQL sinkron otomatis</h2>
+        <p class="text-slate-600">Kami memulai dari layout 360px, memastikan UI Tailwind + shadcn tetap ringan, lalu menghubungkan setiap aksi ke database MySQL sehingga dashboard manajemen, CCTV, hingga modul HR selalu up-to-date tanpa proses manual.</p>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
+            <i class="fas fa-layer-group mt-1 text-brand-500"></i>
+            <span>Grid responsif dengan clamp spacing &amp; CSS variable shadcn.</span>
+          </li>
+          <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
+            <i class="fas fa-rocket mt-1 text-brand-500"></i>
+            <span>Critical CSS + lazy loading gambar agar LCP &lt; 2.5 detik.</span>
+          </li>
+          <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
+            <i class="fas fa-database mt-1 text-brand-500"></i>
+            <span>Webhook ke MySQL/Postgre untuk auto update ketika teknisi mengirim laporan via ponsel.</span>
+          </li>
+          <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
+            <i class="fas fa-shield-alt mt-1 text-brand-500"></i>
+            <span>Service worker dengan strategi stale-while-revalidate dan backup offline checklist inspeksi.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="timeline space-y-6">
+        <div class="feature">
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">01 · Discovery &amp; Audit</p>
+          <h3 class="text-xl font-semibold text-slate-900">Inventaris perangkat &amp; SLA</h3>
+          <p class="text-sm text-slate-600">Analisa jalur pengguna mobile, prioritas MySQL table, serta standar keamanan onsite.</p>
+        </div>
+        <div class="feature">
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">02 · Prototype PWA</p>
+          <h3 class="text-xl font-semibold text-slate-900">Wireframe &amp; motion micro</h3>
+          <p class="text-sm text-slate-600">Tailwind + shadcn komponen reusable, gesture-friendly, dan telemetry ke Firebase + MySQL.</p>
+        </div>
+        <div class="feature">
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">03 · Implementasi</p>
+          <h3 class="text-xl font-semibold text-slate-900">Deploy service worker</h3>
+          <p class="text-sm text-slate-600">Caching strategi, push notif, dan integrasi langsung ke API existing tanpa legacy blocker.</p>
+        </div>
+        <div class="feature">
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">04 · Observasi</p>
+          <h3 class="text-xl font-semibold text-slate-900">Monitoring &amp; scale</h3>
+          <p class="text-sm text-slate-600">Dashboard real-time, audit OWASP, serta iterasi berdasarkan data MySQL &amp; Matomo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-promo bg-slate-950 py-16 text-white" aria-label="Promo terbaru">
+    <div class="container grid gap-10 lg:grid-cols-[1.4fr,0.8fr]">
+      <div class="promo-card space-y-5">
+        <p class="text-xs uppercase tracking-[0.4em] text-white/70">Promo November</p>
+        <h2 class="text-3xl font-semibold">Bundling CCTV + Access Control + Network Setup</h2>
+        <p class="text-sm text-white/80">Diskon 20% termasuk maintenance 6 bulan, dashboard Tailwind + shadcn siap diinstall sebagai PWA, serta training onsite agar tim internal dapat melakukan update data langsung ke MySQL.</p>
+        <ul class="promo-benefits space-y-3 text-sm">
+          <li><i class="fas fa-gift mr-2"></i>Paket bundling hemat dengan lisensi resmi.</li>
+          <li><i class="fas fa-tools mr-2"></i>Free maintenance &amp; backup 6 bulan.</li>
+          <li><i class="fas fa-mobile-alt mr-2"></i>Dashboard mobile offline-first.</li>
+          <li><i class="fas fa-clock mr-2"></i>Survey lokasi gratis dalam 24 jam.</li>
+        </ul>
+        <div class="promo-actions flex flex-wrap gap-3">
+          <a href="hubungi-kami.html" class="btn btn-primary bg-white text-slate-900 hover:bg-slate-100"><i class="fas fa-phone"></i><span>Booking Jadwal</span></a>
+          <a href="https://wa.me/6281363783738?text=Halo%20Solusi%20Teknologi%20Batam%2C%20saya%20ingin%20promo%20bundling" target="_blank" rel="noopener" class="btn btn-secondary border-white/40 bg-transparent text-white"><i class="fab fa-whatsapp"></i><span>Chat WhatsApp</span></a>
+        </div>
+        <p class="text-xs text-white/70">*Promo berlaku hingga 30 November 2025. S&amp;K berlaku.</p>
+      </div>
+      <div class="rounded-[36px] border border-white/20 bg-white/5 p-8">
+        <h3 class="text-xl font-semibold">Checklist Lighthouse</h3>
+        <ul class="mt-6 space-y-3 text-sm">
+          <li class="flex items-center justify-between"><span>Performance</span><strong>91</strong></li>
+          <li class="flex items-center justify-between"><span>Accessibility</span><strong>95</strong></li>
+          <li class="flex items-center justify-between"><span>Best Practices</span><strong>96</strong></li>
+          <li class="flex items-center justify-between"><span>SEO</span><strong>98</strong></li>
+        </ul>
+        <p class="mt-6 text-xs text-white/70">Data diambil dari audit internal staging (4G throttling).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-contact bg-white py-16" id="contact" aria-labelledby="contactTitle">
+    <div class="container grid gap-10 lg:grid-cols-2">
+      <div class="space-y-6">
+        <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Hubungi kami</p>
+        <h2 id="contactTitle" class="text-3xl font-semibold text-slate-900">Tim kami siap merancang blueprint mobile-first dengan update otomatis ke database MySQL Anda.</h2>
+        <div class="grid gap-4">
+          <a class="contact-item" href="https://wa.me/6281363783738" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp text-brand-600"></i>
+            <div>
+              <p>Chat WhatsApp</p>
+              <strong>0813 6378 3738</strong>
+              <span class="block text-xs text-slate-500">Fast response hari kerja</span>
+            </div>
+          </a>
+          <a class="contact-item" href="tel:08111262260">
+            <i class="fas fa-phone text-brand-600"></i>
+            <div>
+              <p>Hotline</p>
+              <strong>0811 1262 260</strong>
+              <span class="block text-xs text-slate-500">Senin - Jumat 08.00-17.00</span>
+            </div>
+          </a>
+          <a class="contact-item" href="mailto:putra@faust.co.id">
+            <i class="fas fa-envelope text-brand-600"></i>
+            <div>
+              <p>Email</p>
+              <strong>putra@faust.co.id</strong>
+              <span class="block text-xs text-slate-500">Proposal &amp; dokumen</span>
+            </div>
+          </a>
+        </div>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li><i class="fas fa-map-marker-alt mr-2 text-brand-500"></i>Batam, Kepulauan Riau - onsite service</li>
+          <li><i class="fas fa-users mr-2 text-brand-500"></i>Tim konsultan UI/UX + infrastruktur</li>
+          <li><i class="fas fa-certificate mr-2 text-brand-500"></i>Sertifikasi Hikvision, Ruijie, Cisco, dan Google Cloud</li>
+        </ul>
+      </div>
+      <form class="contact-form" aria-label="Formulir kontak">
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="form-group">
+            <label for="contact-name">Nama Lengkap</label>
+            <input id="contact-name" name="name" type="text" placeholder="Nama Lengkap" required/>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" placeholder="email@perusahaan.com" required/>
+          </div>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="form-group">
+            <label for="contact-phone">Nomor Telepon</label>
+            <input id="contact-phone" name="phone" type="tel" placeholder="0812xxxx"/>
+          </div>
+          <div class="form-group">
+            <label for="contact-service">Pilih Layanan</label>
+            <select id="contact-service" name="service" required>
+              <option value="">Pilih Layanan</option>
+              <option value="cctv">CCTV &amp; Sistem Keamanan</option>
+              <option value="fingerprint">Fingerprint &amp; Access Control</option>
+              <option value="automation">Automation System</option>
+              <option value="software">Software Development</option>
+              <option value="network">Jaringan &amp; Server</option>
+              <option value="consulting">Business Development</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Pesan</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Ceritakan kebutuhan atau tantangan Anda" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full justify-center">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="bg-white py-12">
+    <div class="container grid gap-10 lg:grid-cols-[2fr,1fr]">
+      <div>
+        <h3 class="text-2xl font-semibold text-slate-900">Dokumentasi &amp; Tautan Internal</h3>
+        <p class="mt-2 text-sm text-slate-600">Akses cepat menuju informasi penting mengenai layanan kami.</p>
+        <ul class="internal-links">
+          <li><a href="../en/index.html"><i class="fas fa-language"></i>English Version</a></li>
+          <li><a href="portfolio.html"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+          <li><a href="cctv.html"><i class="fas fa-video"></i>CCTV &amp; Sistem Keamanan</a></li>
+          <li><a href="jasa-it-batam.html"><i class="fas fa-user-tie"></i>Jasa IT Profesional</a></li>
+          <li><a href="solution-batam.html"><i class="fas fa-lightbulb"></i>Solution Batam</a></li>
+          <li><a href="hubungi-kami.html"><i class="fas fa-envelope"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <aside class="right-sidebar" aria-label="Konten tambahan">
+        <div id="right-sidebar-content" class="right-sidebar-content space-y-4"></div>
+      </aside>
+    </div>
+  </section>
 </main>
-<!-- Footer -->
-<footer class="footer">
-<div class="container">
-<div class="footer-content">
-<!-- Company Info -->
-<div class="footer-section">
-<div class="footer-logo">
-<img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/>
-<span>Solusi Teknologi Batam</span>
-</div>
-<p class="footer-description">
-                Penyedia IT Solution Batam terpercaya dengan spesialisasi Pengembangan Teknologi Batam,
-                CCTV, Fingerprint, Access Door, Automation System, Software Development, dan Sistem Keamanan
-                untuk mendukung Bisnis Development Batam.
-            </p>
-<div class="footer-social">
-<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-<a aria-label="Google" class="social-link" href="https://share.google/exfpqXuWsLvxFWOCk" rel="noopener" target="_blank">
-<i class="fab fa-google"></i>
-</a>
-<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-</div>
-</div>
-<!-- Quick Links -->
-<div class="footer-section">
-<h3>Menu Cepat</h3>
-<ul class="footer-links">
-<li><a href="index.html">Beranda</a></li>
-<li><a href="produk-dan-layanan.html">Produk &amp; Layanan</a></li>
-<li><a href="news.html">Berita Teknologi</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="hubungi-kami.html">Hubungi Kami</a></li>
-<li><a href="hubungi-kami.html">Kebijakan Privasi</a></li>
-<li><a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a></li>
-</ul>
-</div>
-<!-- Services -->
-<div class="footer-section">
-<h3>Layanan Kami</h3>
-<ul class="footer-links">
-<li><a href="cctv.html">CCTV &amp; Sistem Keamanan</a></li>
-<li><a href="fingerprint.html">Fingerprint &amp; Access Control</a></li>
-<li><a href="automation.html">Automation System</a></li>
-<li><a href="software.html">Software Development</a></li>
-<li><a href="jaringan.html">Jaringan &amp; Server</a></li>
-<li><a href="business-development.html">Business Development</a></li>
-<li><a href="hubungi-kami.html">Maintenance &amp; Support</a></li>
-</ul>
-</div>
-<!-- Contact Info -->
-<div class="footer-section">
-<h3>Kontak Kami</h3>
-<div class="footer-contact">
-<div class="contact-item">
-<i class="fas fa-map-marker-alt"></i>
-<div>
-<h4>Alamat</h4>
-<p class="para-bg-green">Batam, Kepulauan Riau<br/>Indonesia</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-phone"></i>
-<div>
-<h4>Telepon</h4>
-<p class="paragraph-style-4">08111262260</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-envelope"></i>
-<div>
-<h4>Email</h4>
-<p class="para-bg-orange">putra@faust.co.id</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fab fa-whatsapp"></i>
-<div>
-<h4>WhatsApp</h4>
-<p class="paragraph-style-6">081363783738</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-clock"></i>
-<div>
-<h4>Jam Operasional</h4>
-<p class="para-bg-purple">Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Newsletter -->
-<div class="footer-newsletter">
-<div class="newsletter-content">
-<div class="newsletter-text">
-<h3>Berlangganan Newsletter Teknologi</h3>
-<p class="para-with-icon">Dapatkan update terbaru tentang teknologi, IT Solution, dan inovasi di Batam</p>
-</div>
-<form class="newsletter-form">
-<input placeholder="Masukkan email Anda" required="" type="email"/>
-<button class="btn btn-primary" type="submit">
-<i class="fas fa-paper-plane"></i>
-<span>Berlangganan</span>
-</button>
-</form>
-</div>
-</div>
-<!-- Footer Bottom -->
-<div class="footer-bottom">
-<div class="footer-bottom-content">
-<div class="copyright">
-<p class="paragraph-style-1">© 2024 Solusi Teknologi Batam. Semua hak dilindungi.</p>
-</div>
-<div class="footer-bottom-links">
-<a href="hubungi-kami.html">Kebijakan Privasi</a>
-<a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a>
-<a href="index.html">Sitemap</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<footer class="footer bg-slate-950 text-slate-200">
+  <div class="container">
+    <div class="grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-4">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/>
+          <span class="font-semibold">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi CCTV, Fingerprint, Access Door, Automation, Software Development, dan sistem keamanan modern.</p>
+        <div class="flex gap-3">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white">Menu Cepat</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk-dan-layanan.html">Produk &amp; Layanan</a></li>
+          <li><a href="news.html">Berita Teknologi</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+          <li><a href="hubungi-kami.html">Kebijakan Privasi</a></li>
+          <li><a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white">Layanan Kami</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li><a href="cctv.html">CCTV &amp; Sistem Keamanan</a></li>
+          <li><a href="fingerprint.html">Fingerprint &amp; Access Control</a></li>
+          <li><a href="automation.html">Automation System</a></li>
+          <li><a href="software.html">Software Development</a></li>
+          <li><a href="jaringan.html">Jaringan &amp; Server</a></li>
+          <li><a href="business-development.html">Business Development</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white">Kontak Kami</h3>
+        <ul class="mt-4 space-y-3 text-sm text-slate-400">
+          <li><i class="fas fa-map-marker-alt mr-2"></i>Batam, Kepulauan Riau</li>
+          <li><i class="fas fa-phone mr-2"></i>0811 1262 260</li>
+          <li><i class="fas fa-envelope mr-2"></i>putra@faust.co.id</li>
+          <li><i class="fab fa-whatsapp mr-2"></i>0813 6378 3738</li>
+          <li><i class="fas fa-clock mr-2"></i>Senin - Jumat: 08:00 - 17:00 · Sabtu: 08:00 - 12:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-6 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="hubungi-kami.html">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a>
+          <a href="index.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-<div class="container">
-<!-- Right Sidebar --><aside class="right-sidebar"><div id="right-sidebar-content"></div></aside>
-<ul>
-<li><a href="../en/index.html">English Version</a></li>
-<li><a href="portfolio.html">Portfolio Solusi Teknologi Batam - Project IT Solution Terbaik</a></li><li><a href="cctv.html">CCTV &amp; Sistem Keamanan - Solusi Monitoring Profesional</a></li><li><a href="jasa-it-batam.html">Jasa IT Profesional - Solusi Teknologi untuk Bisnis Anda</a></li><li><a href="solution-batam.html">Solution Batam - Solusi IT Terpadu</a></li></ul>
+
+<div class="floating-actions" aria-label="Kontak cepat">
+  <a href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:08111262260" aria-label="Telepon">
+    <i class="fas fa-phone"></i>
+  </a>
 </div>
-<script src="../src/main.js"></script><script src="../src/load-right-sidebar.js"></script>
+
+<script src="../src/main.js" defer></script>
+<script src="../src/load-right-sidebar.js" defer></script>
+</div>
 </body>
 </html>

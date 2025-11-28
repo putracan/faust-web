@@ -1,5 +1,7 @@
 // Main JavaScript file for Solusi Teknologi Batam website
 
+const PHONE_DETECT_REGEX = /((?:\+?62|0)[0-9\s\-()]{7,}[0-9])/;
+
 // Load includes from separate files
 async function loadIncludes() {
     try {
@@ -198,6 +200,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initPortfolioFilter();
     setActiveNavigation();
+    initWhatsAppLinks();
+    setTimeout(initWhatsAppLinks, 1500);
 });
 
 // Note: Header, sidebar, and footer are now inlined directly in HTML files
@@ -511,6 +515,147 @@ function initSmoothScroll() {
     });
 }
 
+function initWhatsAppLinks() {
+    convertTelAnchorsToWhatsApp();
+    convertTextNodesToWhatsApp(document.body);
+}
+
+function sanitizePhoneNumber(value) {
+    if (!value) return null;
+    const digits = value.replace(/\D+/g, '');
+    if (!digits) return null;
+
+    let formatted = digits;
+    if (formatted.startsWith('62')) {
+        formatted = formatted;
+    } else if (formatted.startsWith('0')) {
+        formatted = '62' + formatted.slice(1);
+    } else if (formatted.startsWith('8')) {
+        formatted = '62' + formatted;
+    }
+
+    if (formatted.length < 10 || formatted.length > 16) {
+        return null;
+    }
+
+    return formatted;
+}
+
+function createWhatsAppAnchor(rawNumber, displayText) {
+    const sanitized = sanitizePhoneNumber(rawNumber);
+    if (!sanitized) return null;
+
+    const anchor = document.createElement('a');
+    anchor.href = `https://wa.me/${sanitized}`;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener noreferrer';
+    anchor.classList.add('wa-link');
+    anchor.dataset.waSource = 'auto';
+    anchor.textContent = displayText || rawNumber.trim();
+    return anchor;
+}
+
+function convertTelAnchorsToWhatsApp() {
+    const telLinks = document.querySelectorAll('a[href^="tel:"]');
+    telLinks.forEach(link => {
+        const rawValue = link.getAttribute('href').replace('tel:', '');
+        const waAnchor = createWhatsAppAnchor(rawValue, link.textContent.trim() || rawValue);
+        if (!waAnchor) return;
+
+        link.href = waAnchor.href;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.classList.add('wa-link');
+    });
+}
+
+function convertTextNodesToWhatsApp(root) {
+    if (!root) return;
+
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+            if (!node.nodeValue || !PHONE_DETECT_REGEX.test(node.nodeValue)) {
+                return NodeFilter.FILTER_REJECT;
+            }
+
+            const parentElement = node.parentElement;
+            if (!parentElement) {
+                return NodeFilter.FILTER_REJECT;
+            }
+
+            if (parentElement.closest('a')) {
+                return NodeFilter.FILTER_REJECT;
+            }
+
+            if (['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(parentElement.tagName)) {
+                return NodeFilter.FILTER_REJECT;
+            }
+
+            return NodeFilter.FILTER_ACCEPT;
+        }
+    });
+
+    let currentNode;
+    while ((currentNode = walker.nextNode())) {
+        replaceTextNodeWithWaLinks(currentNode);
+    }
+}
+
+function replaceTextNodeWithWaLinks(textNode) {
+    const content = textNode.nodeValue;
+    if (!content) return;
+
+    const phoneRegex = /((?:\+?62|0)[0-9\s\-()]{7,}[0-9])/g;
+    let lastIndex = 0;
+    let hasReplacement = false;
+    const fragment = document.createDocumentFragment();
+    let match;
+
+    while ((match = phoneRegex.exec(content)) !== null) {
+        const preceding = content.slice(lastIndex, match.index);
+        if (preceding) {
+            fragment.appendChild(document.createTextNode(preceding));
+        }
+
+        const waAnchor = createWhatsAppAnchor(match[0], match[0]);
+        if (waAnchor) {
+            fragment.appendChild(waAnchor);
+            hasReplacement = true;
+        } else {
+            fragment.appendChild(document.createTextNode(match[0]));
+        }
+
+        lastIndex = phoneRegex.lastIndex;
+    }
+
+    if (!hasReplacement) {
+        return;
+    }
+
+    const trailing = content.slice(lastIndex);
+    if (trailing) {
+        fragment.appendChild(document.createTextNode(trailing));
+    }
+
+    textNode.parentNode.replaceChild(fragment, textNode);
+}
+
+function registerServiceWorker() {
+    if (!('serviceWorker' in navigator)) {
+        return;
+    }
+
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('Service worker terdaftar:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Gagal mendaftarkan service worker:', error);
+            });
+    });
+}
+
 // Utility functions
 function debounce(func, wait) {
     let timeout;
@@ -598,3 +743,5 @@ window.SolusiTech = {
     debounce,
     throttle
 };
+
+registerServiceWorker();
