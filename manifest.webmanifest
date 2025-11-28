@@ -1,0 +1,47 @@
+{
+  "name": "Solusi Teknologi Batam",
+  "short_name": "ST Batam",
+  "description": "Solusi Teknologi Batam menghadirkan layanan CCTV, access control, jaringan, automation, dan software development dengan desain mobile-first dan PWA.",
+  "start_url": "/id/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Hubungi Kami",
+      "url": "/id/hubungi-kami.html",
+      "description": "Kontak cepat tim Solusi Teknologi Batam"
+    },
+    {
+      "name": "Daftar Layanan",
+      "url": "/id/produk-dan-layanan.html",
+      "description": "Jelajahi produk & layanan utama"
+    },
+    {
+      "name": "Promo Aktif",
+      "url": "/id/promo.html",
+      "description": "Promo instalasi & paket bundling"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

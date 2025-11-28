@@ -511,6 +511,22 @@ function initSmoothScroll() {
     });
 }
 
+function registerServiceWorker() {
+    if (!('serviceWorker' in navigator)) {
+        return;
+    }
+
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('Service worker terdaftar:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Gagal mendaftarkan service worker:', error);
+            });
+    });
+}
+
 // Utility functions
 function debounce(func, wait) {
     let timeout;
@@ -598,3 +614,5 @@ window.SolusiTech = {
     debounce,
     throttle
 };
+
+registerServiceWorker();
