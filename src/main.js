@@ -2,6 +2,174 @@
 
 const PHONE_DETECT_REGEX = /((?:\+?62|0)[0-9\s\-()]{7,}[0-9])/;
 
+const MODERN_SHELL = {
+    header: `<!-- Header -->
+<header class="header">
+  <div class="container flex items-center justify-between gap-4 py-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
+        <span class="font-display text-lg font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </a>
+    </div>
+    <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
+      <ul class="nav-list">
+        <li class="nav-item dropdown group relative">
+          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-slate-500"></i>
+            <span>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="cctv.html"><i class="fas fa-video"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="automation.html"><i class="fas fa-robot"></i>Automation &amp; IoT</a></li>
+            <li><a href="software.html"><i class="fas fa-code"></i>Software Development</a></li>
+            <li><a href="jaringan.html"><i class="fas fa-network-wired"></i>Jaringan &amp; Server</a></li>
+            <li><a href="business-development.html"><i class="fas fa-chart-line"></i>Business Development</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="promo.html" data-page="promo"><i class="fas fa-gift"></i><span>Promo</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html" data-page="news"><i class="fas fa-newspaper"></i><span>Berita</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html" data-page="portfolio"><i class="fas fa-briefcase"></i><span>Portfolio</span></a></li>
+      </ul>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div class="lang-dropdown relative">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500">
+          <span class="current-lang">ID</span>
+          <i class="fas fa-chevron-down text-[10px]"></i>
+        </button>
+        <div class="lang-menu">
+          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="en">EN</a>
+        </div>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a class="btn btn-primary hidden lg:inline-flex" href="hubungi-kami.html">
+        <i class="fas fa-headset"></i>
+        <span>Konsultasi Gratis</span>
+      </a>
+      <button class="mobile-menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 lg:hidden" aria-label="Buka menu">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+  </div>
+</header>`.trim(),
+    mobileNav: `<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-header flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/>
+        <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </div>
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200" aria-label="Tutup menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
+      <ul>
+        <li class="mobile-dropdown">
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs mr-2"></i>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="cctv.html" class="block rounded-2xl px-3 py-2">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-2xl px-3 py-2">Fingerprint &amp; Access</a></li>
+            <li><a href="automation.html" class="block rounded-2xl px-3 py-2">Automation &amp; IoT</a></li>
+            <li><a href="software.html" class="block rounded-2xl px-3 py-2">Software Development</a></li>
+            <li><a href="jaringan.html" class="block rounded-2xl px-3 py-2">Jaringan &amp; Server</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-newspaper mr-2"></i>Berita</a></li>
+        <li><a href="portfolio.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-briefcase mr-2"></i>Portfolio</a></li>
+        <li><a href="#contact" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-headset mr-2"></i>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="grid gap-3">
+      <a class="btn btn-primary w-full justify-center" href="hubungi-kami.html"><i class="fas fa-phone"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+    </div>
+  </div>
+</div>`.trim(),
+    footer: `<!-- Footer -->
+<footer class="footer bg-slate-950 text-slate-200">
+  <div class="container">
+    <div class="grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-4">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/>
+          <span class="font-semibold">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi CCTV, Fingerprint, Access Door, Automation, Software Development, dan sistem keamanan modern.</p>
+        <div class="flex gap-3">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white">Menu Cepat</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk-dan-layanan.html">Produk &amp; Layanan</a></li>
+          <li><a href="news.html">Berita Teknologi</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+          <li><a href="hubungi-kami.html">Kebijakan Privasi</a></li>
+          <li><a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white">Layanan Kami</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li><a href="cctv.html">CCTV &amp; Sistem Keamanan</a></li>
+          <li><a href="fingerprint.html">Fingerprint &amp; Access Control</a></li>
+          <li><a href="automation.html">Automation System</a></li>
+          <li><a href="software.html">Software Development</a></li>
+          <li><a href="jaringan.html">Jaringan &amp; Server</a></li>
+          <li><a href="business-development.html">Business Development</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white">Kontak Kami</h3>
+        <ul class="mt-4 space-y-3 text-sm text-slate-400">
+          <li><i class="fas fa-map-marker-alt mr-2"></i>Batam, Kepulauan Riau</li>
+          <li><i class="fas fa-phone mr-2"></i>0811 1262 260</li>
+          <li><i class="fas fa-envelope mr-2"></i>putra@faust.co.id</li>
+          <li><i class="fab fa-whatsapp mr-2"></i>0813 6378 3738</li>
+          <li><i class="fas fa-clock mr-2"></i>Senin - Jumat: 08:00 - 17:00 · Sabtu: 08:00 - 12:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-6 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="hubungi-kami.html">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a>
+          <a href="index.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>`.trim(),
+    floatingActions: `<div class="floating-actions" aria-label="Kontak cepat">
+  <a href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:08111262260" aria-label="Telepon">
+    <i class="fas fa-phone"></i>
+  </a>
+</div>`.trim()
+};
+
 // Load includes from separate files
 async function loadIncludes() {
     try {
@@ -72,6 +240,52 @@ async function loadIncludes() {
         initSmoothScroll();
         initPortfolioFilter();
         setActiveNavigation();
+    }
+}
+
+function applyModernChrome() {
+    const pathname = (window.location.pathname || '').toLowerCase();
+    if (!pathname.includes('/id/')) {
+        return;
+    }
+
+    if (document.body.dataset.modernChromeApplied === 'true') {
+        return;
+    }
+
+    if (document.body.classList.contains('page-home')) {
+        return;
+    }
+
+    document.body.dataset.modernChromeApplied = 'true';
+    document.body.classList.add('page-inner', 'bg-background', 'text-foreground', 'antialiased', 'relative', 'flex', 'flex-col', 'min-h-screen');
+    if (!document.body.classList.contains('page-theme-blue')) {
+        document.body.classList.add('page-theme-blue');
+    }
+
+    document.querySelectorAll('.mobile-nav').forEach((nav) => nav.remove());
+
+    const header = document.querySelector('.header');
+    const headerMarkup = `${MODERN_SHELL.header}\n${MODERN_SHELL.mobileNav}`;
+    if (header) {
+        header.outerHTML = headerMarkup;
+    } else {
+        document.body.insertAdjacentHTML('afterbegin', headerMarkup);
+    }
+
+    const footer = document.querySelector('.footer');
+    if (footer) {
+        footer.outerHTML = MODERN_SHELL.footer;
+    } else {
+        document.body.insertAdjacentHTML('beforeend', MODERN_SHELL.footer);
+    }
+
+    document.querySelectorAll('.floating-actions').forEach((fab) => fab.remove());
+    const mainScript = document.querySelector('script[src*="main.js"]');
+    if (mainScript) {
+        mainScript.insertAdjacentHTML('beforebegin', MODERN_SHELL.floatingActions);
+    } else {
+        document.body.insertAdjacentHTML('beforeend', MODERN_SHELL.floatingActions);
     }
 }
 
@@ -190,6 +404,7 @@ function initLanguageSwitcher() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    applyModernChrome();
     // Initialize all components directly (header is now inlined)
     initLanguageSwitcher();
     initMobileMenu();
@@ -641,6 +856,12 @@ function replaceTextNodeWithWaLinks(textNode) {
 }
 
 function registerServiceWorker() {
+    // Skip service worker registration for file:// protocol (local development)
+    if (window.location.protocol === 'file:') {
+        console.log('File protocol detected, skipping service worker registration');
+        return;
+    }
+
     if (!('serviceWorker' in navigator)) {
         return;
     }
@@ -651,7 +872,10 @@ function registerServiceWorker() {
                 console.log('Service worker terdaftar:', registration.scope);
             })
             .catch(error => {
-                console.error('Gagal mendaftarkan service worker:', error);
+                // Only log error if not file:// protocol
+                if (window.location.protocol !== 'file:') {
+                    console.error('Gagal mendaftarkan service worker:', error);
+                }
             });
     });
 }

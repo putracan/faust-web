@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta content="Special Promo Solution Technology Batam! Diskon hingga 20% for paket CCTV, Fingerprint, dan Network Setup. Maintenance gratis 6 bulan. Hubungi sekarang!" name="description"/>
 <meta content="Promo IT Batam, Diskon CCTV, Promo Keamanan, Paket Bundling IT, Promo Teknologi" name="keywords"/>
 <meta content="Batam Technology Solutions" name="author"/>
@@ -19,12 +19,24 @@
 <meta content="https://faust.co.id/src/logo-solusi-teknologi-BATAM.png" property="og:image"/>
 <meta content="en_US" property="og:locale"/>
 <title>🎉 Special Promo - Diskon hingga 20% | Solution Technology Batam</title>
-<link href="../src/style.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="../src/itbatam.ico" rel="icon" type="image/x-icon"/>
+<link rel="icon" type="image/x-icon" href="../src/itbatam.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../src/logo-solusi-teknologi-BATAM.png"/>
+<link rel="manifest" href="../manifest.webmanifest"/>
+<link rel="stylesheet" href="../src/tailwind-build.css"/>
+<link rel="stylesheet" href="../src/global-enhancements.css"/>
+<link rel="stylesheet" href="../src/visual-enhancements.css"/>
+
+
+
+
+
+
+
 <style>
         .countdown {
             display: flex;
@@ -104,15 +116,18 @@
             margin-bottom: 10px;
         }
     </style>
-  <link rel="stylesheet" href="../src/tailwind-build.css"/>
+  
+    
+    
 </head>
 <body class="page-theme-blue">
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
 <!-- Header -->
 <header class="header" style="background: #667eea; padding: 15px 0;">
 <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
 <div class="logo">
 <a href="index.html" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 10px;">
-<img alt="Batam Technology Solutions" src="../src/logo-solusi-teknologi.png" style="height: 40px;"/>
+<img alt="Batam Technology Solutions" src="../src/logo-solusi-teknologi.png" style="height: 40px;"/ loading="lazy" decoding="async">
 <span style="font-weight: bold;">Batam Technology Solutions</span>
 </a>
 </div>
@@ -344,6 +359,8 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
     </script>
-<script src="../src/main.js"></script><script src="../src/load-right-sidebar.js"></script>
+<script src="../src/global-enhancements.js" defer defer></script>
+    <script src="../src/main.js" defer defer></script>
+    <script src="../src/load-right-sidebar.js" defer defer></script><script src="../src/load-right-sidebar.js" defer></script>
 </body>
 </html>

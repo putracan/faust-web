@@ -1,0 +1,464 @@
+/* ============================================
+   Visual Enhancements - Enhanced Interactions
+   ============================================ */
+
+/* Enhanced Button with Ripple Effect */
+.btn-primary,
+button[type="submit"],
+.button-primary {
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-xl);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all var(--transition-base);
+    border: none;
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.btn-primary::before,
+button[type="submit"]::before,
+.button-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+    pointer-events: none;
+}
+
+.btn-primary:hover::before,
+button[type="submit"]:hover::before,
+.button-primary:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover,
+.button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.btn-primary:active,
+button[type="submit"]:active,
+.button-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Enhanced Card with Hover Effects */
+.card::before,
+.service-card::before,
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform var(--transition-base);
+    transform-origin: left;
+}
+
+.card:hover::before,
+.service-card:hover::before,
+.product-card:hover::before {
+    transform: scaleX(1);
+}
+
+.card:hover,
+.service-card:hover,
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 12px 24px rgba(102, 126, 234, 0.15),
+        0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Link Hover Effects */
+a:not(.btn-primary):not(.button-primary):not(.skip-link) {
+    position: relative;
+    transition: color var(--transition-fast);
+    text-decoration: none;
+}
+
+a:not(.btn-primary):not(.button-primary):not(.skip-link)::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: width var(--transition-base);
+}
+
+a:not(.btn-primary):not(.button-primary):not(.skip-link):hover::after {
+    width: 100%;
+}
+
+a:not(.btn-primary):not(.button-primary):not(.skip-link):hover {
+    color: var(--color-primary);
+}
+
+/* Enhanced Icon Hover Effects */
+.icon:hover,
+.fa:hover,
+[class*="icon-"]:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: var(--color-primary);
+}
+
+/* ============================================
+   Loading States & Skeleton Screens
+   ============================================ */
+
+.skeleton,
+.skeleton-loader {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: var(--radius-md);
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton-text {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-title {
+    height: 2rem;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.skeleton-image {
+    height: 200px;
+    width: 100%;
+    border-radius: var(--radius-lg);
+}
+
+.spinner,
+.loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(102, 126, 234, 0.1);
+    border-top: 3px solid var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner-sm {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+}
+
+.spinner-lg {
+    width: 60px;
+    height: 60px;
+    border-width: 4px;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* ============================================
+   Glassmorphism Effects
+   ============================================ */
+
+.glass-card,
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-2xl);
+}
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-overlay {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* ============================================
+   Enhanced Gradient Effects
+   ============================================ */
+
+.animated-gradient,
+.gradient-animated {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #4facfe);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-gradient-overlay {
+    position: relative;
+}
+
+.hero-gradient-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ============================================
+   Enhanced Typography
+   ============================================ */
+
+.content-text,
+.paragraph {
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    word-spacing: 0.05em;
+}
+
+.heading-gradient,
+h1.gradient-text,
+h2.gradient-text,
+h3.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   Enhanced Image Effects
+   ============================================ */
+
+.image-card,
+.img-card {
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-base);
+}
+
+.image-card:hover,
+.img-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.image-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.image-overlay:hover::after {
+    opacity: 1;
+}
+
+/* ============================================
+   Enhanced Form Elements
+   ============================================ */
+
+.form-input:focus,
+input:focus:not([type="checkbox"]):not([type="radio"]),
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+.form-label,
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================
+   Scroll Animations
+   ============================================ */
+
+.fade-in,
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible,
+.fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.stagger-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-item:nth-child(1) { transition-delay: 0.1s; }
+.stagger-item:nth-child(2) { transition-delay: 0.2s; }
+.stagger-item:nth-child(3) { transition-delay: 0.3s; }
+.stagger-item:nth-child(4) { transition-delay: 0.4s; }
+.stagger-item:nth-child(5) { transition-delay: 0.5s; }
+
+/* ============================================
+   Touch-Friendly Interactions (Mobile)
+   ============================================ */
+
+@media (max-width: 768px) {
+    .touch-target,
+    button,
+    .btn-primary,
+    a:not(.skip-link) {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 0.75rem;
+    }
+
+    .card:hover,
+    .service-card:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+}
+
+/* ============================================
+   Performance: Respect Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in,
+    .stagger-item {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .animated-gradient,
+    .gradient-animated {
+        animation: none;
+        background: var(--gradient-primary);
+    }
+}

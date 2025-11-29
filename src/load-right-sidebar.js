@@ -217,6 +217,16 @@
                          (document.querySelector('img.service-hero-image img, img.brand-logo')?.src ||
                           'https://faust.co.id/logo-solusi-teknologi-BATAM.png');
 
+        // Check if we're in file:// protocol (local development)
+        const isFileProtocol = window.location.protocol === 'file:';
+
+        // If file:// protocol, skip fetch and use inline fallback directly
+        if (isFileProtocol) {
+            console.log('File protocol detected, using inline sidebar fallback');
+            loadInlineSidebar(sidebarContainers, currentUrl, currentTitle, pageSubtitle, pageImage);
+            return;
+        }
+
         // Determine if we're in 'id' or 'en' folder
         const isEnglish = window.location.pathname.includes('/en/');
         const lang = isEnglish ? 'en' : 'id';
@@ -310,7 +320,10 @@
                 }, 100);
             })
             .catch(error => {
-                console.warn('Could not load sidebar from file, using inline fallback:', error);
+                // Only log warning if not file:// protocol (file:// errors are expected)
+                if (window.location.protocol !== 'file:') {
+                    console.warn('Could not load sidebar from file, using inline fallback:', error);
+                }
                 // Fallback: use inline content if file not found
                 loadInlineSidebar(sidebarContainers, currentUrl, currentTitle, pageSubtitle, pageImage);
             });

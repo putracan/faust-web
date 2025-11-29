@@ -1,21 +1,62 @@
 {
-  "name": "Solusi Teknologi Batam",
+  "name": "Solusi Teknologi Batam - IT Solution & Sistem Keamanan",
   "short_name": "SolusiTech",
-  "description": "UI Tailwind + shadcn dengan layanan CCTV, jaringan, automation, dan software berbasis PWA serta auto update MySQL untuk bisnis di Batam.",
-  "start_url": "/id/index.html",
+  "description": "Penyedia IT Solution terpercaya di Batam untuk CCTV, Fingerprint, Automation, Software Development, dan Jaringan. PWA offline-ready dengan performa optimal.",
+  "start_url": "/id/index.html?source=pwa",
   "scope": "/",
+  "id": "solusi-teknologi-batam",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "background_color": "#ffffff",
-  "theme_color": "#0f172a",
+  "theme_color": "#6366f1",
   "lang": "id",
   "dir": "ltr",
-  "categories": ["business", "productivity", "utilities"],
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "utilities", "security"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/src/logo-solusi-teknologi-BATAM.png",
@@ -24,20 +65,58 @@
       "purpose": "any maskable"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Solusi Teknologi Batam - Homepage"
+    },
+    {
+      "src": "/src/logo-solusi-teknologi-BATAM.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Solusi Teknologi Batam - Mobile View"
+    }
+  ],
   "shortcuts": [
     {
       "name": "Hubungi Kami",
       "short_name": "Kontak",
-      "description": "Buka formulir konsultasi Solusi Teknologi Batam",
-      "url": "/id/hubungi-kami.html",
+      "description": "Konsultasi gratis dengan tim ahli",
+      "url": "/id/hubungi-kami.html?source=shortcut",
       "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
     },
     {
-      "name": "Portfolio Proyek",
+      "name": "CCTV & Keamanan",
+      "short_name": "CCTV",
+      "description": "Sistem CCTV dan keamanan profesional",
+      "url": "/id/cctv.html?source=shortcut",
+      "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Portfolio",
       "short_name": "Portfolio",
-      "description": "Lihat implementasi terbaru",
-      "url": "/id/portfolio.html",
+      "description": "Lihat project implementasi",
+      "url": "/id/portfolio.html?source=shortcut",
+      "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Promo Terbaru",
+      "short_name": "Promo",
+      "description": "Penawaran dan diskon spesial",
+      "url": "/id/promo.html?source=shortcut",
       "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
     }
-  ]
+  ],
+  "related_applications": [],
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
 }

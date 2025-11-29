@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="description" content="Solusi Teknologi Batam menghadirkan UI Tailwind + shadcn, arsitektur PWA offline-ready, serta sinkronisasi MySQL otomatis untuk keamanan, jaringan, automation, dan software modern di Batam."/>
 <meta name="keywords" content="Solusi Teknologi Batam, Tailwind, shadcn UI, CCTV Batam, Jaringan Batam, Automation Batam, Software Development Batam, MySQL, PWA"/>
 <meta name="author" content="Solusi Teknologi Batam"/>
@@ -41,6 +41,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="../src/logo-solusi-teknologi-BATAM.png"/>
 <link rel="manifest" href="../manifest.webmanifest"/>
 <link rel="stylesheet" href="../src/tailwind-build.css"/>
+<link rel="stylesheet" href="../src/global-enhancements.css"/>
+<link rel="stylesheet" href="../src/visual-enhancements.css"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,6 +125,7 @@
 </script>
 </head>
 <body class="page-theme-blue page-home bg-background text-foreground antialiased">
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
 <div class="relative flex min-h-screen flex-col">
 <header class="header">
   <div class="container flex items-center justify-between gap-4 py-4">
@@ -184,7 +187,7 @@
   <div class="mobile-nav-content">
     <div class="mobile-nav-header flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/>
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/ loading="lazy" decoding="async">
         <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
       </div>
       <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200" aria-label="Tutup menu">
@@ -217,7 +220,7 @@
     </div>
   </div>
 </div>
-<main class="home-mobile-first flex-1">
+<main class="home-mobile-first flex-1" id="main-content">
   <section class="hero-mobile-first relative overflow-hidden bg-slate-950 text-white">
     <div class="absolute inset-0 bg-grid-slate opacity-20"></div>
     <div class="absolute inset-0 bg-glow opacity-70"></div>
@@ -309,7 +312,7 @@
         <p class="text-slate-600">Setiap modul kami desain mobile-first dengan utilitas Tailwind, komponen shadcn, serta telemetry langsung ke database MySQL supaya laporan dan tindakan selalu relevan.</p>
       </div>
       <div class="home-services-grid grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <article class="service-card service-card animate-in">
+        <article class="service-card fade-in">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-video"></i></div>
           <h3 class="text-xl font-semibold text-slate-900">CCTV &amp; Sistem Keamanan</h3>
           <p class="text-sm text-slate-600">Perencanaan multi-camera, analitik AI, dan notifikasi WhatsApp dengan rekaman otomatis ke storage terenkripsi.</p>
@@ -320,7 +323,7 @@
           </ul>
           <a href="cctv.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card animate-in">
+        <article class="service-card fade-in">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-fingerprint"></i></div>
           <h3 class="text-xl font-semibold text-slate-900">Fingerprint &amp; Access Control</h3>
           <p class="text-sm text-slate-600">Single sign-on untuk gedung, boarding room, dan cabang dengan audit trail otomatis.</p>
@@ -331,7 +334,7 @@
           </ul>
           <a href="fingerprint.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card animate-in">
+        <article class="service-card fade-in">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-robot"></i></div>
           <h3 class="text-xl font-semibold text-slate-900">Automation &amp; IoT</h3>
           <p class="text-sm text-slate-600">Kontrol energi, lighting, dan produksi dengan sensor IoT, MQTT, dan workflow zero legacy.</p>
@@ -342,7 +345,7 @@
           </ul>
           <a href="automation.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card animate-in">
+        <article class="service-card fade-in">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-code"></i></div>
           <h3 class="text-xl font-semibold text-slate-900">Software Development</h3>
           <p class="text-sm text-slate-600">Aplikasi web/mobile custom dengan caching offline dan pipeline DevSecOps.</p>
@@ -353,7 +356,7 @@
           </ul>
           <a href="software.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card animate-in">
+        <article class="service-card fade-in">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-network-wired"></i></div>
           <h3 class="text-xl font-semibold text-slate-900">Jaringan &amp; Server</h3>
           <p class="text-sm text-slate-600">Desain arsitektur zero-touch provisioning, SD-WAN, dan backup hybrid multi site.</p>
@@ -364,7 +367,7 @@
           </ul>
           <a href="jaringan.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card animate-in">
+        <article class="service-card fade-in">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600"><i class="fas fa-chart-line"></i></div>
           <h3 class="text-xl font-semibold text-slate-900">Business Development</h3>
           <p class="text-sm text-slate-600">Konsultasi transformasi digital dari blueprint proses sampai enablement tim.</p>
@@ -561,7 +564,7 @@
     <div class="grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
       <div class="space-y-4">
         <div class="footer-logo flex items-center gap-3">
-          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/>
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/ loading="lazy" decoding="async">
           <span class="font-semibold">Solusi Teknologi Batam</span>
         </div>
         <p class="text-sm text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi CCTV, Fingerprint, Access Door, Automation, Software Development, dan sistem keamanan modern.</p>
@@ -628,8 +631,9 @@
   </a>
 </div>
 
-<script src="../src/main.js" defer></script>
-<script src="../src/load-right-sidebar.js" defer></script>
+<script src="../src/global-enhancements.js" defer defer></script>
+<script src="../src/main.js" defer defer></script>
+<script src="../src/load-right-sidebar.js" defer defer></script>
 </div>
 </body>
 </html>
