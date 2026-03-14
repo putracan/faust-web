@@ -4069,3 +4069,44 @@ table:not(.bg-gradient-primary):not(.bg-gradient-secondary):not(.bg-gradient-acc
         font-size: 1.125rem;
     }
 }
+
+/* Security-focused visual refresh */
+body {
+    background: radial-gradient(circle at top, #e0ecff 0%, #f8fbff 40%, #ffffff 100%);
+}
+
+.header,
+.mobile-nav-content,
+.card,
+section {
+    border-radius: 1rem;
+}
+
+.header {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #dbeafe;
+}
+
+.btn-primary,
+.button-primary {
+    background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 10px 24px rgba(29, 78, 216, 0.25);
+}
+
+.btn-primary:hover,
+.button-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.3);
+}
+
+h1, h2 {
+    letter-spacing: -0.02em;
+}
+
+.nav-link,
+.mobile-nav-menu a {
+    font-weight: 600;
+}
