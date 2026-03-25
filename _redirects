@@ -8,14 +8,7 @@
 /id /id/index.html 301
 /id/ /id/index.html 301
 
-# Redirect all retired pages to corresponding home
-/en/* /en/index.html 302
-/id/* /id/index.html 302
-
-# Fallback to home
-/* /id/index.html 302
-
-# Redirect deleted irrelevant pages to index
+# SPECIFIC Redirects for deleted irrelevant pages to index
 /id/audit-keamanan-ti-batam.html /id/index.html 301
 /id/business-development-strategy.html /id/index.html 301
 /id/business-development.html /id/index.html 301
@@ -28,7 +21,20 @@
 /id/optimasi-website-batam.html /id/index.html 301
 /id/pembuatan-website-batam.html /id/index.html 301
 /id/pengembangan-aplikasi-batam.html /id/index.html 301
-/id/pengembangan-teknologi-*.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-billiard-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-dealer-showroom-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-hiburan-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-kuliner-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-kurir-pengiriman-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-mall-plaza-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-pelayanan-kesehatan-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-perusahaan-jasa-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-sewa-menyewa-batam.html /id/index.html 301
+/id/pengembangan-teknologi-bisnis-travel-wisata-batam.html /id/index.html 301
+/id/pengembangan-teknologi-pengelola-kawasan-batam.html /id/index.html 301
+/id/pengembangan-teknologi-perusahaan-industri-lain-batam.html /id/index.html 301
+/id/pengembangan-teknologi-perusahaan-konstruksi-batam.html /id/index.html 301
+/id/pengembangan-teknologi-perusahaan-manufakturing-batam.html /id/index.html 301
 /id/seo-batam.html /id/index.html 301
 /id/software-batam.html /id/index.html 301
 /id/software-web-development.html /id/index.html 301
@@ -48,10 +54,26 @@
 /en/optimasi-website-batam.html /en/index.html 301
 /en/pembuatan-website-batam.html /en/index.html 301
 /en/pengembangan-aplikasi-batam.html /en/index.html 301
-/en/pengembangan-teknologi-*.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-billiard-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-dealer-showroom-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-hiburan-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-kuliner-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-kurir-pengiriman-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-mall-plaza-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-pelayanan-kesehatan-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-perusahaan-jasa-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-sewa-menyewa-batam.html /en/index.html 301
+/en/pengembangan-teknologi-bisnis-travel-wisata-batam.html /en/index.html 301
+/en/pengembangan-teknologi-pengelola-kawasan-batam.html /en/index.html 301
+/en/pengembangan-teknologi-perusahaan-industri-lain-batam.html /en/index.html 301
+/en/pengembangan-teknologi-perusahaan-konstruksi-batam.html /en/index.html 301
+/en/pengembangan-teknologi-perusahaan-manufakturing-batam.html /en/index.html 301
 /en/seo-batam.html /en/index.html 301
 /en/software-batam.html /en/index.html 301
 /en/software-web-development.html /en/index.html 301
 /en/software.html /en/index.html 301
 /en/solusi-it-ukm-batam.html /en/index.html 301
 /en/solution-batam.html /en/index.html 301
+
+# Finally, fallback for missing files (acts as 404 handling using 200 rewrite locally, or explicit 302 locally. Better handled by hosting provider)
+/* /id/index.html 404

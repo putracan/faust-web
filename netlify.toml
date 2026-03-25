@@ -11,20 +11,6 @@
   to = "/id/index.html"
   status = 301
 
-# Redirect all HTML files to /id/ version
-[[redirects]]
-  from = "/*.html"
-  to = "/id/:splat.html"
-  status = 301
-  force = false
-
-# Catch-all: redirect everything else to contact page
-[[redirects]]
-  from = "/*"
-  to = "/id/hubungi-kami.html"
-  status = 301
-  force = false
-
 # Build settings
 [build]
   publish = "."
