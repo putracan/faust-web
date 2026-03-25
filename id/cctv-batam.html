@@ -74,7 +74,497 @@
 </head>
 <body class="page-theme-blue">
     <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
-<header class="header">
+<header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+  <div class="container flex items-center justify-between gap-4 py-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
+        <span class="font-sans font-bold tracking-tight text-lg text-slate-900">Solusi Teknologi Batam</span>
+      </a>
+    </div>
+    <!-- Desktop Nav -->
+    <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
+      <ul class="nav-list flex items-center gap-6">
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition" href="index.html">Beranda</a></li>
+        <li class="nav-item dropdown group relative">
+          <a href="#" class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-blue-600"></i>
+            <span>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="dropdown-menu absolute left-0 top-full mt-2 w-64 rounded-lg bg-white p-2 shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-video w-5"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-fingerprint w-5"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-door-closed w-5"></i>Access Door &amp; Barrier Gate</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-bell w-5"></i>Alarm &amp; Early Warning</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-shield-alt w-5"></i>Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-network-wired w-5"></i>Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-phone-volume w-5"></i>PABX &amp; IP Phone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="portfolio.html"><i class="fas fa-briefcase text-blue-600"></i><span>Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="hubungi-kami.html"><i class="fas fa-phone text-blue-600"></i><span>Hubungi Kami</span></a></li>
+      </ul>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div class="lang-dropdown relative">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500 hover:bg-slate-50 transition">
+          <span class="current-lang">ID</span>
+          <i class="fas fa-chevron-down text-[10px]"></i>
+        </button>
+        <div class="lang-menu absolute right-0 top-full mt-2 w-20 rounded-md bg-white p-1 shadow-md border border-slate-100 opacity-0 invisible transition-all">
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="en">EN</a>
+        </div>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <a class="social-link flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-blue-600 hover:border-blue-200 bg-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a class="btn btn-primary hidden lg:inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-blue-700 transition shadow-sm" href="hubungi-kami.html">
+        <i class="fas fa-headset"></i>
+        <span>Konsultasi Gratis</span>
+      </a>
+      <button class="mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-slate-700 lg:hidden hover:bg-slate-50 transition" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-header flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto" loading="lazy" decoding="async">
+        <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </div>
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200" aria-label="Tutup menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
+      <ul>
+        <li><a href="index.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-home w-6 text-blue-600"></i>Beranda</a></li>
+        <li class="mobile-dropdown">
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs w-6 text-blue-600"></i>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-slate-700">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-slate-700">Fingerprint &amp; Access</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-slate-700">Access Door &amp; Barrier</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-slate-700">Alarm &amp; Sensor</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-slate-700">Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-slate-700">Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-slate-700">PABX &amp; IP Phone</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-briefcase w-6 text-blue-600"></i>Portfolio</a></li>
+        <li><a href="hubungi-kami.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-headset w-6 text-blue-600"></i>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="grid gap-3 mt-6">
+      <a class="btn btn-primary w-full justify-center rounded-md bg-blue-600 text-white font-medium py-3" href="hubungi-kami.html"><i class="fas fa-phone mr-2"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center rounded-md bg-emerald-500 text-white font-medium py-3" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp mr-2"></i> Chat WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main class="main-content" id="main-content">
+<!-- Page Header -->
+<section class="page-header">
 <div class="container">
-<div class="header-content">
-<div class="logo"><a href="index.html"><img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/ loading="lazy" decoding="async"><span>Solusi Teknologi Batam</span></a></div>
+<div class="breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 14px; margin-bottom: 20px;">
+<a href="index.html" style="color: #2563eb; text-decoration: none;"><i class="fas fa-home"></i> Beranda</a>
+<span style="color: #999;">›</span>
+<a href="cctv.html" style="color: #2563eb; text-decoration: none;">Sistem Keamanan</a>
+<span style="color: #999;">›</span>
+<span style="color: #666;">CCTV Professional</span>
+</div>
+<h1>Sistem CCTV Profesional</h1>
+<p class="page-title-subtitle">Lindungi aset bisnis Anda dengan sistem kamera keamanan canggih. Dari instalasi hingga monitoring real-time, kami menyediakan solusi keamanan yang dapat diandalkan untuk berbagai jenis properti.</p>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h2>Solusi Keamanan Visual yang Dapat Diandalkan</h2>
+<p class="paragraph-style-2">Keamanan adalah investasi, bukan biaya. Dengan sistem CCTV yang tepat, Anda tidak hanya mencegah kehilangan aset, tapi juga mendapatkan peace of mind. Tim kami yang berpengalaman lebih dari 10 tahun siap membantu Anda merancang dan mengimplementasikan sistem keamanan visual yang sesuai dengan kebutuhan spesifik properti Anda.</p>
+<div class="hero-features">
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Teknologi Terdepan</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Instalasi Profesional</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Monitoring 24/7</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Support Lokal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Section -->
+<section class="services">
+<div class="container">
+<div class="section-header">
+<h2>Layanan CCTV Batam yang Kami Sediakan</h2>
+<p class="para-bg-blue">Solusi keamanan komprehensif untuk berbagai kebutuhan di Batam &amp; Kepulauan Riau</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-video"></i></div>
+<h3>Instalasi CCTV Profesional</h3>
+<p class="paragraph-style-3">Pemasangan sistem CCTV dengan standar internasional untuk rumah, kantor, dan industri di Batam. Kami melayani instalasi di seluruh wilayah Kepulauan Riau dengan teknologi terdepan dan kualitas terjamin.</p>
+<ul>
+<li>Survey lokasi gratis di Batam &amp; sekitarnya</li>
+<li>Perencanaan titik kamera optimal</li>
+<li>Penarikan kabel rapi dengan conduit</li>
+<li>Konfigurasi NVR/DVR &amp; remote monitoring</li>
+<li>Optimasi rekaman &amp; kualitas video 4K</li>
+<li>Training penggunaan sistem untuk user</li>
+</ul>
+<div class="service-highlight">
+<strong>Area Layanan:</strong> Batam, Tanjung Pinang, Karimun, Bintan, Natuna, Lingga, Anambas
+                    </div>
+</div>
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Integrasi Sistem Keamanan</h3>
+<p class="para-bg-green">Mengintegrasikan CCTV dengan sistem keamanan lainnya seperti access control, alarm, dan video analytics untuk memberikan perlindungan menyeluruh bagi properti Anda di Batam.</p>
+<ul>
+<li>Face recognition &amp; people counting</li>
+<li>ANPR (Automatic Number Plate Recognition)</li>
+<li>Line crossing &amp; intrusion detection</li>
+<li>Integrasi dengan access control system</li>
+<li>Centralized monitoring &amp; management</li>
+<li>Mobile app untuk monitoring jarak jauh</li>
+</ul>
+<div class="service-highlight">
+<strong>Keunggulan:</strong> Teknologi AI terbaru untuk deteksi akurat
+                    </div>
+</div>
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-tools"></i></div>
+<h3>Maintenance &amp; Support 24/7</h3>
+<p class="paragraph-style-4">Layanan perawatan berkala dan dukungan teknis 24 jam untuk memastikan sistem CCTV Anda berjalan optimal. Kami memiliki tim teknis lokal di Batam yang siap merespons kapan saja.</p>
+<ul>
+<li>Maintenance preventif bulanan/triwulanan</li>
+<li>Health check sistem secara berkala</li>
+<li>Backup &amp; restore konfigurasi</li>
+<li>Update firmware &amp; perangkat keras</li>
+<li>SLA response time &lt; 4 jam</li>
+<li>Garansi pekerjaan 2 tahun</li>
+</ul>
+<div class="service-highlight">
+<strong>Support Area:</strong> Seluruh Kepulauan Riau dengan tim lokal
+                    </div>
+</div>
+</div>
+<!-- CCTV Types -->
+<div class="cctv-types">
+<h3>Jenis CCTV yang Kami Sediakan di Batam</h3>
+<div class="types-grid">
+<div class="type-item">
+<i class="fas fa-home"></i>
+<h4>CCTV Residential</h4>
+<p class="para-bg-orange">Sistem CCTV untuk rumah dan perumahan</p>
+<ul>
+<li>IP Camera dengan resolusi HD/4K</li>
+<li>Dome Camera untuk indoor</li>
+<li>Bullet Camera untuk outdoor</li>
+<li>NVR untuk recording</li>
+<li>Mobile app monitoring</li>
+<li>Night vision capabilities</li>
+</ul>
+</div>
+<div class="type-item">
+<i class="fas fa-building"></i>
+<h4>CCTV Commercial</h4>
+<p class="paragraph-style-6">Sistem CCTV untuk kantor dan bisnis</p>
+<ul>
+<li>Multi-channel NVR systems</li>
+<li>PTZ cameras untuk area luas</li>
+<li>Facial recognition technology</li>
+<li>Integration dengan access control</li>
+<li>Centralized monitoring</li>
+<li>Advanced analytics</li>
+</ul>
+</div>
+<div class="type-item">
+<i class="fas fa-industry"></i>
+<h4>CCTV Industrial</h4>
+<p class="para-bg-purple">Sistem CCTV untuk industri dan pabrik</p>
+<ul>
+<li>Industrial-grade IP cameras</li>
+<li>Explosion-proof systems</li>
+<li>High-temperature resistant</li>
+<li>Corrosion-resistant housing</li>
+<li>Long-range surveillance</li>
+<li>24/7 monitoring capabilities</li>
+</ul>
+</div>
+<div class="type-item">
+<i class="fas fa-warehouse"></i>
+<h4>CCTV Warehouse</h4>
+<p class="para-with-icon">Sistem CCTV untuk pergudangan</p>
+<ul>
+<li>Fisheye cameras untuk area luas</li>
+<li>License plate recognition</li>
+<li>Inventory monitoring</li>
+<li>Motion tracking &amp; analytics</li>
+<li>Low-light performance</li>
+<li>Remote monitoring</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- CCTV Technology -->
+<div class="cctv-technology">
+<h3>Teknologi CCTV Terdepan yang Kami Gunakan</h3>
+<div class="technology-grid">
+<div class="tech-category">
+<h4><i class="fas fa-video"></i> Camera Technology</h4>
+<div class="tech-items">
+<span class="tech-item">4K Ultra HD Resolution</span>
+<span class="tech-item">H.265+ Compression</span>
+<span class="tech-item">Night Vision Technology</span>
+<span class="tech-item">Wide Dynamic Range</span>
+<span class="tech-item">Smart Motion Detection</span>
+<span class="tech-item">Weather Resistance IP66/67</span>
+</div>
+</div>
+<div class="tech-category">
+<h4><i class="fas fa-brain"></i> AI &amp; Analytics</h4>
+<div class="tech-items">
+<span class="tech-item">Face Recognition</span>
+<span class="tech-item">People Counting</span>
+<span class="tech-item">Vehicle Detection</span>
+<span class="tech-item">Behavior Analysis</span>
+<span class="tech-item">Anomaly Detection</span>
+<span class="tech-item">Real-time Alerts</span>
+</div>
+</div>
+<div class="tech-category">
+<h4><i class="fas fa-cloud"></i> Storage &amp; Access</h4>
+<div class="tech-items">
+<span class="tech-item">Cloud Storage Solutions</span>
+<span class="tech-item">Mobile App Access</span>
+<span class="tech-item">Remote Monitoring</span>
+<span class="tech-item">Push Notifications</span>
+<span class="tech-item">Multi-device Sync</span>
+<span class="tech-item">Offline Viewing</span>
+</div>
+</div>
+<div class="tech-category">
+<h4><i class="fas fa-shield-alt"></i> Security Features</h4>
+<div class="tech-items">
+<span class="tech-item">Encrypted Transmission</span>
+<span class="tech-item">Secure Authentication</span>
+<span class="tech-item">Tamper Detection</span>
+<span class="tech-item">Vandal-proof Design</span>
+<span class="tech-item">Cyber Security</span>
+<span class="tech-item">Access Control Integration</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CCTV Applications -->
+<div class="cctv-applications">
+<h3>Aplikasi CCTV di Berbagai Sektor di Batam</h3>
+<div class="applications-grid">
+<div class="application-item">
+<i class="fas fa-building"></i>
+<h4>Office &amp; Corporate</h4>
+<p class="paragraph-style-1">Sistem keamanan untuk kantor dan korporasi</p>
+<ul>
+<li>Reception &amp; lobby monitoring</li>
+<li>Parking area surveillance</li>
+<li>Meeting room security</li>
+<li>Employee access monitoring</li>
+<li>Visitor management system</li>
+<li>After-hours security</li>
+</ul>
+</div>
+<div class="application-item">
+<i class="fas fa-industry"></i>
+<h4>Manufacturing &amp; Industrial</h4>
+<p class="paragraph-style-2">Sistem keamanan untuk industri dan manufaktur</p>
+<ul>
+<li>Production floor monitoring</li>
+<li>Equipment security</li>
+<li>Safety compliance tracking</li>
+<li>Quality control monitoring</li>
+<li>Asset protection</li>
+<li>Environmental monitoring</li>
+</ul>
+</div>
+<div class="application-item">
+<i class="fas fa-store"></i>
+<h4>Retail &amp; Commercial</h4>
+<p class="para-bg-blue">Sistem keamanan untuk retail dan komersial</p>
+<ul>
+<li>Store surveillance</li>
+<li>Customer behavior analysis</li>
+<li>Loss prevention</li>
+<li>Cashier monitoring</li>
+<li>Inventory tracking</li>
+<li>Marketing analytics</li>
+</ul>
+</div>
+<div class="application-item">
+<i class="fas fa-home"></i>
+<h4>Residential &amp; Housing</h4>
+<p class="paragraph-style-3">Sistem keamanan untuk perumahan dan rumah</p>
+<ul>
+<li>Perimeter security</li>
+<li>Gate &amp; entrance monitoring</li>
+<li>Garden &amp; outdoor surveillance</li>
+<li>Family safety monitoring</li>
+<li>Pet &amp; child monitoring</li>
+<li>Home automation integration</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Why Choose Us -->
+<div class="why-choose-us">
+<h3>Mengapa Memilih Kami untuk CCTV di Batam?</h3>
+<div class="reasons-grid">
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-certificate"></i>
+</div>
+<div class="reason-content">
+<h4>Berpengalaman &amp; Terpercaya</h4>
+<p class="para-bg-green">Tim kami memiliki pengalaman lebih dari 10 tahun dalam instalasi dan maintenance sistem CCTV di Batam. Kami telah melayani ratusan klien di seluruh Kepulauan Riau dengan kepuasan tinggi.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="reason-content">
+<h4>Coverage Seluruh Kepri</h4>
+<p class="paragraph-style-4">Melayani instalasi CCTV di seluruh wilayah Kepulauan Riau termasuk Batam, Tanjung Pinang, Karimun, Bintan, Natuna, dan pulau-pulau terluar. Tim teknis lokal siap melayani kebutuhan Anda.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-headset"></i>
+</div>
+<div class="reason-content">
+<h4>Support 24/7 &amp; Garansi Lengkap</h4>
+<p class="para-bg-orange">Dukungan teknis 24 jam dengan SLA response time kurang dari 4 jam. Garansi produk dan pekerjaan pemasangan 2 tahun untuk ketenangan Anda.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<div class="reason-content">
+<h4>Harga Kompetitif &amp; Transparan</h4>
+<p class="paragraph-style-6">Harga CCTV yang kompetitif dengan kualitas terbaik. Tidak ada hidden cost, semua biaya transparan dari awal hingga selesai instalasi.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cta-buttons" style="margin-top: 40px;">
+<a class="btn btn-primary" href="hubungi-kami.html">
+<i class="fas fa-phone"></i>
+                    Konsultasi CCTV Gratis
+                </a>
+<a class="btn btn-secondary" href="portfolio.html">
+<i class="fas fa-briefcase"></i>
+                    Lihat Portfolio CCTV
+                </a>
+</div>
+</div>
+</section>
+<!-- Related Links -->
+<section class="related-links">
+</section>
+</main>
+<div class="container">
+<!-- Right Sidebar --><aside class="right-sidebar"><div id="right-sidebar-content"></div></aside>
+<ul>
+<li><a href="../en/cctv-batam.html">English Version</a></li>
+<li><a href="cctv.html">CCTV &amp; Sistem Keamanan - Solusi Monitoring Profesional</a></li><li><a href="dahua-batam.html">Dahua Batam - CCTV &amp; Sistem Keamanan</a></li><li><a href="fingerprint.html">Fingerprint &amp; Access Control - Sistem Biometric Profesional</a></li><li><a href="../en/cctv.html">CCTV &amp; Security Systems - Professional Monitoring Solution</a></li></ul>
+</div>
+<footer class="footer bg-slate-900 border-t border-slate-800 text-slate-300">
+  <div class="container">
+    <div class="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-6">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-10 w-auto" loading="lazy" decoding="async">
+          <span class="font-sans font-bold tracking-tight text-xl text-white">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi infrastruktur jaringan, server, CCTV, Access Door, Fingerprint, dan sistem keamanan terpadu.</p>
+        <div class="flex gap-4">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Menu Utama</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="index.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Beranda</a></li>
+          <li><a href="produk-dan-layanan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Produk &amp; Layanan</a></li>
+          <li><a href="portfolio.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Portfolio Proyek</a></li>
+          <li><a href="news.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Berita &amp; Artikel</a></li>
+          <li><a href="hubungi-kami.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Spesialisasi Kami</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="jaringan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-network-wired w-5 text-blue-500"></i>Jaringan &amp; Server</a></li>
+          <li><a href="cctv.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-video w-5 text-blue-500"></i>Sistem CCTV HD/IP</a></li>
+          <li><a href="fingerprint.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-fingerprint w-5 text-blue-500"></i>Mesin Absensi (Fingerprint)</a></li>
+          <li><a href="access-door.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-door-closed w-5 text-blue-500"></i>Sistem Akses Pintu</a></li>
+          <li><a href="pabx-telephone-ip-phone-batam.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-phone-volume w-5 text-blue-500"></i>PABX &amp; IP Phone</a></li>
+          <li><a href="alarm.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-bell w-5 text-blue-500"></i>Sistem Alarm Keamanan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Kantor &amp; Kontak</h3>
+        <ul class="mt-6 space-y-4 text-sm text-slate-400">
+          <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-blue-500"></i><span>Batam, Kepulauan Riau<br/>Indonesia</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-phone text-blue-500"></i><a href="tel:08111262260" class="hover:text-blue-400 font-medium text-white transition">0811 1262 260</a></li>
+          <li class="flex items-center gap-3"><i class="fab fa-whatsapp text-blue-500"></i><a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="hover:text-blue-400 font-medium text-white transition">0813 6378 3738</a></li>
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500"></i><a href="mailto:putra@faust.co.id" class="hover:text-blue-400 transition">putra@faust.co.id</a></li>
+          <li class="flex items-start gap-3"><i class="fas fa-clock mt-1 text-blue-500"></i><span>Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-8 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-6 font-medium">
+          <a href="hubungi-kami.html" class="hover:text-blue-400 transition">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html" class="hover:text-blue-400 transition">Syarat &amp; Ketentuan</a>
+          <a href="index.html" class="hover:text-blue-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../src/global-enhancements.js" defer></script>
+    <script src="../src/main.js" defer></script>
+    <script src="../src/load-right-sidebar.js" defer></script><script src="../src/load-right-sidebar.js" defer></script>
+</body>
+</html>

@@ -6,9 +6,9 @@
 
 :root {
     /* Elegant Gradient Colors - Balanced & Soft */
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    --gradient-secondary: linear-gradient(135deg, #334155 0%, #475569 100%);
+    --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
     --gradient-success: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
     --gradient-warm: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
     --gradient-cool: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
@@ -16,11 +16,11 @@
     --gradient-dark: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
 
     /* Balanced Color Palette */
-    --color-primary: #667eea;
-    --color-primary-dark: #5568d3;
-    --color-primary-light: #818cf8;
-    --color-secondary: #764ba2;
-    --color-accent: #4facfe;
+    --color-primary: #1e40af;
+    --color-primary-dark: #1e3a8a;
+    --color-primary-light: #3b82f6;
+    --color-secondary: #475569;
+    --color-accent: #2563eb;
     --color-success: #43e97b;
     --color-warning: #fee140;
     --color-error: #f5576c;
@@ -62,9 +62,9 @@
     /* Border Radius - Modern & Soft */
     --radius-sm: 0.375rem;
     --radius-md: 0.5rem;
-    --radius-lg: 0.75rem;
-    --radius-xl: 1rem;
-    --radius-2xl: 1.5rem;
+    --radius-lg: 0.375rem;
+    --radius-xl: 0.5rem;
+    --radius-2xl: 0.75rem;
     --radius-full: 9999px;
 }
 
@@ -86,7 +86,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.7;
     color: var(--color-text-primary);
     background-color: var(--color-bg-primary);
@@ -4009,7 +4009,7 @@ table:not(.bg-gradient-primary):not(.bg-gradient-secondary):not(.bg-gradient-acc
 
 /* Font Display Class */
 .font-display {
-    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ============================================

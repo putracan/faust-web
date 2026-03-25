@@ -50,7 +50,7 @@
   "name": "Solusi Teknologi Batam",
   "url": "https://faust.co.id/id/",
   "logo": "https://faust.co.id/src/logo-solusi-teknologi-BATAM.png",
-  "description": "Penyedia IT Solution terpercaya di Batam untuk infrastruktur IT, jaringan server, CCTV, sistem keamanan, dan automation devices berbasis cloud.",
+  "description": "Penyedia IT Solution terpercaya di Batam untuk CCTV, sistem keamanan, Infrastruktur IT, automation, dan jaringan berbasis PWA.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Batam",
@@ -150,53 +150,60 @@
 <body class="page-theme-blue page-home bg-background text-foreground antialiased">
     <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
 <div class="relative flex min-h-screen flex-col">
-<header class="header">
+<header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
   <div class="container flex items-center justify-between gap-4 py-4">
     <div class="flex items-center gap-3">
       <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
         <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
-        <span class="font-display text-lg font-semibold text-slate-900">Solusi Teknologi Batam</span>
+        <span class="font-sans font-bold tracking-tight text-lg text-slate-900">Solusi Teknologi Batam</span>
       </a>
     </div>
+    <!-- Desktop Nav -->
     <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
-      <ul class="nav-list">
+      <ul class="nav-list flex items-center gap-6">
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition" href="index.html">Beranda</a></li>
         <li class="nav-item dropdown group relative">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-cogs text-slate-500"></i>
+          <a href="#" class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-blue-600"></i>
             <span>Layanan</span>
             <i class="fas fa-chevron-down text-xs"></i>
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="hubungi-kami.html"><i class="fas fa-headset"></i>Konsultasi Proyek</a></li>
+          <ul class="dropdown-menu absolute left-0 top-full mt-2 w-64 rounded-lg bg-white p-2 shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-video w-5"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-fingerprint w-5"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-door-closed w-5"></i>Access Door &amp; Barrier Gate</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-bell w-5"></i>Alarm &amp; Early Warning</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-shield-alt w-5"></i>Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-network-wired w-5"></i>Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-phone-volume w-5"></i>PABX &amp; IP Phone</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="cctv-batam.html"><i class="fas fa-map-marker-alt"></i><span>CCTV Batam</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="fingerprint.html"><i class="fas fa-fingerprint"></i><span>Access Control</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="hubungi-kami.html"><i class="fas fa-phone"></i><span>Hubungi Kami</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="portfolio.html"><i class="fas fa-briefcase text-blue-600"></i><span>Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="hubungi-kami.html"><i class="fas fa-phone text-blue-600"></i><span>Hubungi Kami</span></a></li>
       </ul>
     </nav>
     <div class="flex items-center gap-3">
       <div class="lang-dropdown relative">
-        <button class="lang-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500 hover:bg-slate-50 transition">
           <span class="current-lang">ID</span>
           <i class="fas fa-chevron-down text-[10px]"></i>
         </button>
-        <div class="lang-menu">
-          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="id">ID</a>
-          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="en">EN</a>
+        <div class="lang-menu absolute right-0 top-full mt-2 w-20 rounded-md bg-white p-1 shadow-md border border-slate-100 opacity-0 invisible transition-all">
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="en">EN</a>
         </div>
       </div>
       <div class="hidden items-center gap-2 md:flex">
-        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-link flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-blue-600 hover:border-blue-200 bg-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <a class="btn btn-primary hidden lg:inline-flex" href="hubungi-kami.html">
+      <a class="btn btn-primary hidden lg:inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-blue-700 transition shadow-sm" href="hubungi-kami.html">
         <i class="fas fa-headset"></i>
         <span>Konsultasi Gratis</span>
       </a>
-      <button class="mobile-menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 lg:hidden" aria-label="Buka menu">
-        <i class="fas fa-bars text-lg"></i>
+      <button class="mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-slate-700 lg:hidden hover:bg-slate-50 transition" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </div>
@@ -205,26 +212,199 @@
   <div class="mobile-nav-content">
     <div class="mobile-nav-header flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/ loading="lazy" decoding="async">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto" loading="lazy" decoding="async">
         <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
       </div>
-      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200" aria-label="Tutup menu">
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200" aria-label="Tutup menu">
         <i class="fas fa-times"></i>
       </button>
     </div>
     <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
       <ul>
+        <li><a href="index.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-home w-6 text-blue-600"></i>Beranda</a></li>
         <li class="mobile-dropdown">
-          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3" href="#">
-            <span><i class="fas fa-cogs mr-2"></i>Layanan</span>
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs w-6 text-blue-600"></i>Layanan</span>
             <i class="fas fa-chevron-down text-xs"></i>
           </a>
           <ul class="mobile-dropdown-menu">
-            <li><a href="smart-home-security-batam.html" class="block rounded-2xl px-3 py-2">Smart Home Security</a></li>
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-slate-700">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-slate-700">Fingerprint &amp; Access</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-slate-700">Access Door &amp; Barrier</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-slate-700">Alarm &amp; Sensor</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-slate-700">Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-slate-700">Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-slate-700">PABX &amp; IP Phone</a></li>
           </ul>
         </li>
-            <li>Integrasi Cabang Antar Kota</li>
+        <li><a href="portfolio.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-briefcase w-6 text-blue-600"></i>Portfolio</a></li>
+        <li><a href="hubungi-kami.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-headset w-6 text-blue-600"></i>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="grid gap-3 mt-6">
+      <a class="btn btn-primary w-full justify-center rounded-md bg-blue-600 text-white font-medium py-3" href="hubungi-kami.html"><i class="fas fa-phone mr-2"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center rounded-md bg-emerald-500 text-white font-medium py-3" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp mr-2"></i> Chat WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main class="home-mobile-first flex-1" id="main-content">
+  <section class="hero-mobile-first relative overflow-hidden bg-slate-950 text-white">
+    <div class="absolute inset-0 bg-grid-slate opacity-20"></div>
+    <div class="absolute inset-0 bg-slate-900 opacity-70"></div>
+    <div class="container grid gap-12 py-20 lg:grid-cols-2">
+      <div class="hero-copy space-y-6">
+        <p class="hero-badge">Tailwind + shadcn · PWA Ready · Zero Legacy</p>
+        <h1 class="text-4xl font-semibold leading-tight text-white md:text-5xl">
+          Solusi Teknologi Batam
+          <span class="block font-sans tracking-tight text-4xl text-brand-300 md:text-5xl">Stack Keamanan Digital Modern</span>
+        </h1>
+        <p class="hero-lead text-lg text-slate-200">
+          Seluruh dashboard CCTV, jaringan, automation, dan perangkat keras kami dibangun dengan Tailwind + shadcn UI, caching PWA, serta auto update langsung ke database MySQL sehingga keputusan lapangan tidak pernah terlambat.
+        </p>
+        <ul class="hero-checklist space-y-3 text-sm text-slate-100">
+          <li><i class="fas fa-bolt"></i>Zero legacy architecture: komponen shadcn modular, mudah scaling fitur baru.</li>
+          <li><i class="fas fa-database"></i>Sinkronisasi MySQL real-time via API streaming & workflow yang update otomatis.</li>
+          <li><i class="fas fa-signal"></i>PWA offline cache + push alert untuk alarm keamanan dan SLA onsite &lt; 4 jam Batam.</li>
+        </ul>
+        <div class="hero-actions flex flex-wrap gap-3">
+          <a class="btn btn-primary" href="hubungi-kami.html"><i class="fas fa-headset"></i><span>Booking Konsultasi</span></a>
+          <a class="btn btn-secondary" href="portfolio.html"><i class="fas fa-play"></i><span>Lihat Implementasi</span></a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-200">Hotline</p>
+            <a href="tel:08111262260" class="text-xl font-semibold text-white">0811 1262 260</a>
+            <p class="text-xs text-slate-200">Support rata-rata 97 menit</p>
+          </div>
+          <div class="hero-meta-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-200">WhatsApp</p>
+            <a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="text-xl font-semibold text-white">0813 6378 3738</a>
+            <p class="text-xs text-slate-200">Respon &lt; 10 menit kerja</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media relative">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-md backdrop-blur">
+          <img src="../src/logo-solusi-teknologi-BATAM.png" alt="Logo Solusi Teknologi Batam" class="mx-auto h-28 w-auto" loading="lazy" decoding="async"/>
+          <div class="mt-8 grid gap-4 rounded-3xl border border-white/20 bg-white/10 p-6">
+            <div class="flex items-center justify-between text-sm">
+              <span>Implementasi aktif</span>
+              <strong>500+</strong>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span>Monitoring mobile</span>
+              <strong>63% traffic</strong>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span>Lighthouse score</span>
+              <strong>92 / 100</strong>
+            </div>
+            <p class="text-xs text-slate-200">Semua modul diuji pada perangkat low-end agar tetap ringan ketika dipasang onsite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-status border-b border-border/60 bg-white/90">
+    <div class="container grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Proyek selesai</p>
+        <h3 class="text-3xl font-semibold text-slate-900">500+</h3>
+        <p class="text-sm text-slate-600">Integrasi security &amp; cloud</p>
+      </article>
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Avg. uptime</p>
+        <h3 class="text-3xl font-semibold text-slate-900">99.5%</h3>
+        <p class="text-sm text-slate-600">Monitoring multi-site</p>
+      </article>
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Tim tersertifikasi</p>
+        <h3 class="text-3xl font-semibold text-slate-900">30+</h3>
+        <p class="text-sm text-slate-600">Network · DevOps · AppSec</p>
+      </article>
+      <article class="stat">
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Audit keamanan</p>
+        <h3 class="text-3xl font-semibold text-slate-900">4x / tahun</h3>
+        <p class="text-sm text-slate-600">Checklist OWASP + SNI</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-services bg-white py-16" id="services" aria-labelledby="servicesTitle">
+    <div class="container space-y-12">
+      <div class="section-heading space-y-3 text-center">
+        <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Layanan utama</p>
+        <h2 id="servicesTitle" class="text-3xl font-semibold text-slate-900">Stack ujung-ke-ujung untuk keamanan, infrastruktur, dan perangkat keras</h2>
+        <p class="text-slate-600">Setiap modul kami desain mobile-first dengan utilitas Tailwind, komponen shadcn, serta telemetry langsung ke database MySQL supaya laporan dan tindakan selalu relevan.</p>
+      </div>
+      <div class="home-services-grid grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="service-card fade-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-video"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">CCTV &amp; Sistem Keamanan</h3>
+          <p class="text-sm text-slate-600">Perencanaan multi-camera, analitik AI, dan notifikasi WhatsApp dengan rekaman otomatis ke storage terenkripsi.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Live dashboard PWA siap offline</li>
+            <li>Integrasi alarm &amp; sirine berbasis API</li>
+            <li>Backup cloud dan MySQL log</li>
           </ul>
+          <a href="cctv.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-fingerprint"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Fingerprint &amp; Access Control</h3>
+          <p class="text-sm text-slate-600">Single sign-on untuk gedung, boarding room, dan cabang dengan audit trail otomatis.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>RFID + biometrik dengan auto sync MySQL</li>
+            <li>Access log melalui dashboard mobile</li>
+            <li>Integrasi HRIS &amp; payroll</li>
+          </ul>
+          <a href="fingerprint.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-robot"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Automation &amp; IoT</h3>
+          <p class="text-sm text-slate-600">Kontrol energi, lighting, dan produksi dengan sensor IoT, MQTT, dan workflow zero legacy.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Edge gateway dengan fallback offline</li>
+            <li>Observability &amp; alert streaming</li>
+            <li>Integrasi SCADA &amp; ERP</li>
+          </ul>
+          <a href="automation.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-code"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Infrastruktur IT &amp; Server</h3>
+          <p class="text-sm text-slate-600">Kami merancang sistem infrastruktur server dan database yang andal, scalable, dan aman.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Instalasi Server &amp; Data Center</li>
+            <li>Manajemen Jaringan Lokal (LAN/WAN)</li>
+            <li>Backup &amp; Pemulihan Bencana</li>
+          </ul>
+          <a href="software.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-network-wired"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Jaringan &amp; Server</h3>
+          <p class="text-sm text-slate-600">Desain arsitektur zero-touch provisioning, SD-WAN, dan backup hybrid multi site.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Audit &amp; hardening LAN/WAN</li>
+            <li>Cloud + on-prem sync</li>
+            <li>Monitoring via PWA</li>
+          </ul>
+          <a href="jaringan.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-chart-line"></i></div>
+          <h3 class="text-xl font-semibold text-slate-900">Business Development</h3>
+          <p class="text-sm text-slate-600">Konsultasi transformasi digital dari blueprint proses sampai enablement tim.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Roadmap &amp; budgeting</li>
+            <li>KPI digitalisasi</li>
+            <li>Enablement &amp; pelatihan</li>
+          </ul>
+          <a href="business-development.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
       </div>
     </div>
@@ -233,48 +413,48 @@
   <section class="home-insight bg-white py-16" aria-label="Insight stack">
     <div class="container grid gap-12 lg:grid-cols-2">
       <div class="space-y-4">
-        <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Blueprint Eksekusi</p>
-        <h2 class="text-3xl font-semibold text-slate-900">Infrastruktur Aman, Jaringan Stabil, dan Pemantauan Real-Time</h2>
-        <p class="text-slate-600">Kami memastikan seluruh ekosistem IT Anda, mulai dari CCTV, akses pintu, hingga server jaringan, berjalan lancar tanpa hambatan. Perangkat saling terhubung dan terpusat dalam satu kendali, membuat operasional bisnis menjadi lebih efektif.</p>
+        <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Blueprint eksekusi</p>
+        <h2 class="text-3xl font-semibold text-slate-900">Konten prioritas seluler + data MySQL sinkron otomatis</h2>
+        <p class="text-slate-600">Kami memulai dari layout 360px, memastikan UI Tailwind + shadcn tetap ringan, lalu menghubungkan setiap aksi ke database MySQL sehingga dashboard manajemen, CCTV, hingga modul HR selalu up-to-date tanpa proses manual.</p>
         <ul class="space-y-3 text-sm text-slate-600">
           <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
             <i class="fas fa-layer-group mt-1 text-brand-500"></i>
-            <span>Perencanaan jaringan terstruktur dan rapi (Structured Cabling).</span>
+            <span>Grid responsif dengan clamp spacing &amp; CSS variable shadcn.</span>
           </li>
           <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
             <i class="fas fa-rocket mt-1 text-brand-500"></i>
-            <span>Konektivitas cepat tanpa gangguan antar cabang perusahaan.</span>
+            <span>Critical CSS + lazy loading gambar agar LCP &lt; 2.5 detik.</span>
           </li>
           <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
             <i class="fas fa-database mt-1 text-brand-500"></i>
-            <span>Penyimpanan rekaman CCTV yang andal dan aman di server lokal maupun cloud.</span>
+            <span>Webhook ke MySQL/Postgre untuk auto update ketika teknisi mengirim laporan via ponsel.</span>
           </li>
           <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
             <i class="fas fa-shield-alt mt-1 text-brand-500"></i>
-            <span>Proteksi ekstra dari ancaman fisik dan jaringan (Firewall &amp; Access Control).</span>
+            <span>Service worker dengan strategi stale-while-revalidate dan backup offline checklist inspeksi.</span>
           </li>
         </ul>
       </div>
       <div class="timeline space-y-6">
         <div class="feature">
-          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">01 · Konsultasi &amp; Survei</p>
-          <h3 class="text-xl font-semibold text-slate-900">Analisis Kebutuhan Lokasi</h3>
-          <p class="text-sm text-slate-600">Kami melakukan peninjauan lapangan untuk merekomendasikan penempatan titik kamera, rute kabel jaringan, dan perangkat yang sesuai.</p>
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">01 · Discovery &amp; Audit</p>
+          <h3 class="text-xl font-semibold text-slate-900">Inventaris perangkat &amp; SLA</h3>
+          <p class="text-sm text-slate-600">Analisa jalur pengguna mobile, prioritas MySQL table, serta standar keamanan onsite.</p>
         </div>
         <div class="feature">
-          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">02 · Perancangan Sistem</p>
-          <h3 class="text-xl font-semibold text-slate-900">Desain Topologi</h3>
-          <p class="text-sm text-slate-600">Menyusun kerangka jaringan IT dan keamanan yang terintegrasi penuh untuk menjamin operasional tetap stabil.</p>
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">02 · Prototype PWA</p>
+          <h3 class="text-xl font-semibold text-slate-900">Wireframe &amp; motion micro</h3>
+          <p class="text-sm text-slate-600">Tailwind + shadcn komponen reusable, gesture-friendly, dan telemetry ke Firebase + MySQL.</p>
         </div>
         <div class="feature">
           <p class="text-xs uppercase tracking-[0.4em] text-slate-500">03 · Implementasi</p>
-          <h3 class="text-xl font-semibold text-slate-900">Instalasi &amp; Konfigurasi</h3>
-          <p class="text-sm text-slate-600">Tim profesional kami melakukan pemasangan dengan standar tinggi, memastikan keamanan fisik dan logis perangkat Anda.</p>
+          <h3 class="text-xl font-semibold text-slate-900">Deploy service worker</h3>
+          <p class="text-sm text-slate-600">Caching strategi, push notif, dan integrasi langsung ke API existing tanpa legacy blocker.</p>
         </div>
         <div class="feature">
-          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">04 · Perawatan</p>
-          <h3 class="text-xl font-semibold text-slate-900">Monitoring &amp; Support</h3>
-          <p class="text-sm text-slate-600">Layanan dukungan purna jual secara responsif untuk menjaga performa server, CCTV, dan infrastruktur tetap optimal.</p>
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-500">04 · Observasi</p>
+          <h3 class="text-xl font-semibold text-slate-900">Monitoring &amp; scale</h3>
+          <p class="text-sm text-slate-600">Dashboard real-time, audit OWASP, serta iterasi berdasarkan data MySQL &amp; Matomo.</p>
         </div>
       </div>
     </div>
@@ -285,9 +465,12 @@
       <div class="promo-card space-y-5">
         <p class="text-xs uppercase tracking-[0.4em] text-white/70">Promo November</p>
         <h2 class="text-3xl font-semibold">Bundling CCTV + Access Control + Network Setup</h2>
-        <p class="text-sm text-white/80">Diskon 20% khusus instalasi sistem keamanan terpadu dan jaringan baru di bulan ini. Sudah termasuk pelatihan tim internal untuk pengoperasian sistem.</p>
+        <p class="text-sm text-white/80">Diskon 20% termasuk maintenance 6 bulan, dashboard Tailwind + shadcn siap diinstall sebagai PWA, serta training onsite agar tim internal dapat melakukan update data langsung ke MySQL.</p>
         <ul class="promo-benefits space-y-3 text-sm">
-          <li><i class="fas fa-clock mr-2"></i>Survei lokasi tanpa biaya (khusus area Batam).</li>
+          <li><i class="fas fa-gift mr-2"></i>Paket bundling hemat dengan lisensi resmi.</li>
+          <li><i class="fas fa-tools mr-2"></i>Free maintenance &amp; backup 6 bulan.</li>
+          <li><i class="fas fa-mobile-alt mr-2"></i>Dashboard mobile offline-first.</li>
+          <li><i class="fas fa-clock mr-2"></i>Survey lokasi gratis dalam 24 jam.</li>
         </ul>
         <div class="promo-actions flex flex-wrap gap-3">
           <a href="hubungi-kami.html" class="btn btn-primary bg-white text-slate-900 hover:bg-slate-100"><i class="fas fa-phone"></i><span>Booking Jadwal</span></a>
@@ -295,15 +478,15 @@
         </div>
         <p class="text-xs text-white/70">*Promo berlaku hingga 30 November 2025. S&amp;K berlaku.</p>
       </div>
-      <div class="rounded-[36px] border border-white/20 bg-white/5 p-8">
-        <h3 class="text-xl font-semibold">Standar Layanan Kami</h3>
+      <div class="rounded-2xl border border-white/20 bg-white/5 p-8">
+        <h3 class="text-xl font-semibold">Checklist Lighthouse</h3>
         <ul class="mt-6 space-y-3 text-sm">
-          <li class="flex items-center justify-between"><span>Garansi Pemasangan</span><strong>1 Tahun</strong></li>
-          <li class="flex items-center justify-between"><span>Respon Darurat</span><strong>&lt; 4 Jam</strong></li>
-          <li class="flex items-center justify-between"><span>Kualitas Perangkat</span><strong>Grade A+</strong></li>
-          <li class="flex items-center justify-between"><span>Layanan After Sales</span><strong>Premium</strong></li>
+          <li class="flex items-center justify-between"><span>Performance</span><strong>91</strong></li>
+          <li class="flex items-center justify-between"><span>Accessibility</span><strong>95</strong></li>
+          <li class="flex items-center justify-between"><span>Best Practices</span><strong>96</strong></li>
+          <li class="flex items-center justify-between"><span>SEO</span><strong>98</strong></li>
         </ul>
-        <p class="mt-6 text-xs text-white/70">Komitmen kami memberikan solusi teknologi terpercaya untuk bisnis Anda.</p>
+        <p class="mt-6 text-xs text-white/70">Data diambil dari audit internal staging (4G throttling).</p>
       </div>
     </div>
   </section>
@@ -312,7 +495,7 @@
     <div class="container grid gap-10 lg:grid-cols-2">
       <div class="space-y-6">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Hubungi kami</p>
-        <h2 id="contactTitle" class="text-3xl font-semibold text-slate-900">Dapatkan Konsultasi Gratis untuk Infrastruktur dan Keamanan IT Anda.</h2>
+        <h2 id="contactTitle" class="text-3xl font-semibold text-slate-900">Tim kami siap merancang blueprint mobile-first dengan update otomatis ke database MySQL Anda.</h2>
         <div class="grid gap-4">
           <a class="contact-item" href="https://wa.me/6281363783738" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp text-brand-600"></i>
@@ -340,3 +523,133 @@
           </a>
         </div>
         <ul class="space-y-3 text-sm text-slate-600">
+          <li><i class="fas fa-map-marker-alt mr-2 text-brand-500"></i>Batam, Kepulauan Riau - onsite service</li>
+          <li><i class="fas fa-users mr-2 text-brand-500"></i>Tim konsultan UI/UX + infrastruktur</li>
+          <li><i class="fas fa-certificate mr-2 text-brand-500"></i>Sertifikasi Hikvision, Ruijie, Cisco, dan Google Cloud</li>
+        </ul>
+      </div>
+      <form class="contact-form" aria-label="Formulir kontak">
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="form-group">
+            <label for="contact-name">Nama Lengkap</label>
+            <input id="contact-name" name="name" type="text" placeholder="Nama Lengkap" required/>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" placeholder="email@perusahaan.com" required/>
+          </div>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="form-group">
+            <label for="contact-phone">Nomor Telepon</label>
+            <input id="contact-phone" name="phone" type="tel" placeholder="0812xxxx"/>
+          </div>
+          <div class="form-group">
+            <label for="contact-service">Pilih Layanan</label>
+            <select id="contact-service" name="service" required>
+              <option value="">Pilih Layanan</option>
+              <option value="cctv">CCTV &amp; Sistem Keamanan</option>
+              <option value="fingerprint">Fingerprint &amp; Access Control</option>
+              <option value="automation">Automation System</option>
+              <option value="perangkat keras">Infrastruktur IT</option>
+              <option value="network">Jaringan &amp; Server</option>
+              <option value="consulting">Business Development</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Pesan</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Ceritakan kebutuhan atau tantangan Anda" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full justify-center">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="bg-white py-12">
+    <div class="container grid gap-10 lg:grid-cols-[2fr,1fr]">
+      <div>
+        <h3 class="text-2xl font-semibold text-slate-900">Dokumentasi &amp; Tautan Internal</h3>
+        <p class="mt-2 text-sm text-slate-600">Akses cepat menuju informasi penting mengenai layanan kami.</p>
+        <ul class="internal-links">
+          <li><a href="../en/index.html"><i class="fas fa-language"></i>English Version</a></li>
+          <li><a href="portfolio.html"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+          <li><a href="cctv.html"><i class="fas fa-video"></i>CCTV &amp; Sistem Keamanan</a></li>
+
+          <li><a href="solution-batam.html"><i class="fas fa-lightbulb"></i>Solution Batam</a></li>
+          <li><a href="hubungi-kami.html"><i class="fas fa-envelope"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <aside class="right-sidebar" aria-label="Konten tambahan">
+        <div id="right-sidebar-content" class="right-sidebar-content space-y-4"></div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer bg-slate-900 border-t border-slate-800 text-slate-300">
+  <div class="container">
+    <div class="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-6">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-10 w-auto" loading="lazy" decoding="async">
+          <span class="font-sans font-bold tracking-tight text-xl text-white">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi infrastruktur jaringan, server, CCTV, Access Door, Fingerprint, dan sistem keamanan terpadu.</p>
+        <div class="flex gap-4">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Menu Utama</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="index.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Beranda</a></li>
+          <li><a href="produk-dan-layanan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Produk &amp; Layanan</a></li>
+          <li><a href="portfolio.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Portfolio Proyek</a></li>
+          <li><a href="news.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Berita &amp; Artikel</a></li>
+          <li><a href="hubungi-kami.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Spesialisasi Kami</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="jaringan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-network-wired w-5 text-blue-500"></i>Jaringan &amp; Server</a></li>
+          <li><a href="cctv.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-video w-5 text-blue-500"></i>Sistem CCTV HD/IP</a></li>
+          <li><a href="fingerprint.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-fingerprint w-5 text-blue-500"></i>Mesin Absensi (Fingerprint)</a></li>
+          <li><a href="access-door.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-door-closed w-5 text-blue-500"></i>Sistem Akses Pintu</a></li>
+          <li><a href="pabx-telephone-ip-phone-batam.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-phone-volume w-5 text-blue-500"></i>PABX &amp; IP Phone</a></li>
+          <li><a href="alarm.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-bell w-5 text-blue-500"></i>Sistem Alarm Keamanan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Kantor &amp; Kontak</h3>
+        <ul class="mt-6 space-y-4 text-sm text-slate-400">
+          <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-blue-500"></i><span>Batam, Kepulauan Riau<br/>Indonesia</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-phone text-blue-500"></i><a href="tel:08111262260" class="hover:text-blue-400 font-medium text-white transition">0811 1262 260</a></li>
+          <li class="flex items-center gap-3"><i class="fab fa-whatsapp text-blue-500"></i><a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="hover:text-blue-400 font-medium text-white transition">0813 6378 3738</a></li>
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500"></i><a href="mailto:putra@faust.co.id" class="hover:text-blue-400 transition">putra@faust.co.id</a></li>
+          <li class="flex items-start gap-3"><i class="fas fa-clock mt-1 text-blue-500"></i><span>Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-8 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-6 font-medium">
+          <a href="hubungi-kami.html" class="hover:text-blue-400 transition">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html" class="hover:text-blue-400 transition">Syarat &amp; Ketentuan</a>
+          <a href="index.html" class="hover:text-blue-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../src/global-enhancements.js" defer></script>
+<script src="../src/main.js" defer></script>
+<script src="../src/load-right-sidebar.js" defer></script>
+</div>
+</body>
+</html>

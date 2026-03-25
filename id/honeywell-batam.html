@@ -71,7 +71,454 @@
 </head>
 <body class="page-theme-purple">
     <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
-<header class="header">
+<header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+  <div class="container flex items-center justify-between gap-4 py-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
+        <span class="font-sans font-bold tracking-tight text-lg text-slate-900">Solusi Teknologi Batam</span>
+      </a>
+    </div>
+    <!-- Desktop Nav -->
+    <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
+      <ul class="nav-list flex items-center gap-6">
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition" href="index.html">Beranda</a></li>
+        <li class="nav-item dropdown group relative">
+          <a href="#" class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-blue-600"></i>
+            <span>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="dropdown-menu absolute left-0 top-full mt-2 w-64 rounded-lg bg-white p-2 shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-video w-5"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-fingerprint w-5"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-door-closed w-5"></i>Access Door &amp; Barrier Gate</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-bell w-5"></i>Alarm &amp; Early Warning</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-shield-alt w-5"></i>Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-network-wired w-5"></i>Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-phone-volume w-5"></i>PABX &amp; IP Phone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="portfolio.html"><i class="fas fa-briefcase text-blue-600"></i><span>Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="hubungi-kami.html"><i class="fas fa-phone text-blue-600"></i><span>Hubungi Kami</span></a></li>
+      </ul>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div class="lang-dropdown relative">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500 hover:bg-slate-50 transition">
+          <span class="current-lang">ID</span>
+          <i class="fas fa-chevron-down text-[10px]"></i>
+        </button>
+        <div class="lang-menu absolute right-0 top-full mt-2 w-20 rounded-md bg-white p-1 shadow-md border border-slate-100 opacity-0 invisible transition-all">
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="en">EN</a>
+        </div>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <a class="social-link flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-blue-600 hover:border-blue-200 bg-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a class="btn btn-primary hidden lg:inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-blue-700 transition shadow-sm" href="hubungi-kami.html">
+        <i class="fas fa-headset"></i>
+        <span>Konsultasi Gratis</span>
+      </a>
+      <button class="mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-slate-700 lg:hidden hover:bg-slate-50 transition" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-header flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto" loading="lazy" decoding="async">
+        <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </div>
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200" aria-label="Tutup menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
+      <ul>
+        <li><a href="index.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-home w-6 text-blue-600"></i>Beranda</a></li>
+        <li class="mobile-dropdown">
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs w-6 text-blue-600"></i>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-slate-700">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-slate-700">Fingerprint &amp; Access</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-slate-700">Access Door &amp; Barrier</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-slate-700">Alarm &amp; Sensor</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-slate-700">Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-slate-700">Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-slate-700">PABX &amp; IP Phone</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-briefcase w-6 text-blue-600"></i>Portfolio</a></li>
+        <li><a href="hubungi-kami.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-headset w-6 text-blue-600"></i>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="grid gap-3 mt-6">
+      <a class="btn btn-primary w-full justify-center rounded-md bg-blue-600 text-white font-medium py-3" href="hubungi-kami.html"><i class="fas fa-phone mr-2"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center rounded-md bg-emerald-500 text-white font-medium py-3" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp mr-2"></i> Chat WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main class="main-content" id="main-content">
+<section class="page-header"><div class="container"><div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>Honeywell Batam</span></div>
+<div class="page-header-content">
+<h1>Honeywell Batam</h1>
+<p class="page-title-subtitle">Fire detection, building automation, dan security dari Honeywell untuk proteksi dan efisiensi gedung di Batam.</p>
+</div></div></section>
+<!-- Hero Section -->
+<section class="hero-section">
 <div class="container">
-<div class="header-content">
-<div class="logo"><a href="index.html"><img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/ loading="lazy" decoding="async"><span>Solusi Teknologi Batam</span></a></div>
+<div class="hero-content">
+<div class="hero-text">
+<h2>Spesialis Honeywell &amp; Sistem Keamanan di Batam &amp; Kepulauan Riau</h2>
+<p class="paragraph-style-2">Sebagai penyedia layanan Honeywell terdepan di Batam, kami menyediakan solusi fire detection, building automation, dan security yang komprehensif untuk rumah, kantor, pabrik, dan industri di seluruh wilayah Kepulauan Riau. Dengan tim teknisi berpengalaman lebih dari 10 tahun dan teknologi Honeywell terdepan, kami membantu melindungi aset berharga Anda dengan sistem keamanan dan otomasi yang reliable dan canggih.</p>
+<div class="hero-features">
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Fire Detection System</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Building Automation</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Security Integration</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Support Lokal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Section -->
+<section class="services">
+<div class="container">
+<div class="section-header">
+<h2>Layanan Honeywell Batam yang Kami Sediakan</h2>
+<p class="para-bg-blue">Solusi keamanan dan otomasi terdepan untuk berbagai kebutuhan di Batam &amp; Kepulauan Riau</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-fire"></i></div>
+<h3>Fire Detection &amp; Alarm System</h3>
+<p class="paragraph-style-3">Perencanaan, instalasi, dan pengujian sistem fire alarm Honeywell sesuai standar keselamatan untuk rumah, kantor, dan industri di Batam. Kami melayani instalasi di seluruh wilayah Kepulauan Riau dengan teknologi terdepan dan kualitas terjamin.</p>
+<ul>
+<li>Survey lokasi gratis di Batam &amp; sekitarnya</li>
+<li>Perencanaan sistem fire detection optimal</li>
+<li>Instalasi smoke detector &amp; heat detector</li>
+<li>Konfigurasi fire alarm control panel</li>
+<li>Testing &amp; commissioning sistem</li>
+<li>Training penggunaan sistem untuk user</li>
+</ul>
+<div class="service-highlight">
+<strong>Area Layanan:</strong> Batam, Tanjung Pinang, Karimun, Bintan, Natuna, Lingga, Anambas
+                    </div>
+</div>
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-building"></i></div>
+<h3>Building Automation System</h3>
+<p class="para-bg-green">Integrasi HVAC, pencahayaan, dan keamanan untuk efisiensi energi dan kontrol terpusat. Kami menyediakan solusi building automation Honeywell yang memungkinkan monitoring dan kontrol semua sistem gedung dari satu platform.</p>
+<ul>
+<li>HVAC control &amp; optimization</li>
+<li>Lighting control &amp; scheduling</li>
+<li>Energy management system</li>
+<li>Environmental monitoring</li>
+<li>Centralized control dashboard</li>
+<li>Mobile app untuk remote control</li>
+</ul>
+<div class="service-highlight">
+<strong>Keunggulan:</strong> Mengurangi konsumsi energi hingga 30%
+                    </div>
+</div>
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Security System Integration</h3>
+<p class="paragraph-style-4">Integrasi access control, CCTV, dan alarm untuk perlindungan menyeluruh. Kami menyediakan solusi security terpadu yang mengintegrasikan semua sistem keamanan dalam satu platform monitoring.</p>
+<ul>
+<li>Access control system integration</li>
+<li>CCTV &amp; video surveillance</li>
+<li>Intrusion detection system</li>
+<li>Centralized monitoring &amp; management</li>
+<li>Mobile app untuk monitoring jarak jauh</li>
+<li>Emergency response system</li>
+</ul>
+<div class="service-highlight">
+<strong>Support Area:</strong> Seluruh Kepulauan Riau dengan tim lokal
+                    </div>
+</div>
+</div>
+<!-- Product Categories -->
+<div class="product-categories">
+<h3>Produk Honeywell yang Kami Sediakan di Batam</h3>
+<div class="categories-grid">
+<div class="category-item">
+<i class="fas fa-fire"></i>
+<h4>Fire Detection</h4>
+<p class="para-bg-orange">Sistem deteksi kebakaran untuk berbagai aplikasi</p>
+<ul>
+<li>Honeywell XLS series fire panels</li>
+<li>Smoke &amp; heat detectors</li>
+<li>Manual call points</li>
+<li>Fire alarm sounders &amp; strobes</li>
+<li>Emergency voice evacuation</li>
+<li>Fire suppression system integration</li>
+</ul>
+</div>
+<div class="category-item">
+<i class="fas fa-building"></i>
+<h4>Building Automation</h4>
+<p class="paragraph-style-6">Sistem otomasi gedung untuk efisiensi energi</p>
+<ul>
+<li>HVAC control systems</li>
+<li>Lighting control &amp; dimming</li>
+<li>Energy management platforms</li>
+<li>Environmental sensors</li>
+<li>Building management system</li>
+<li>Mobile &amp; web applications</li>
+</ul>
+</div>
+<div class="category-item">
+<i class="fas fa-shield-alt"></i>
+<h4>Security Systems</h4>
+<p>Sistem keamanan terpadu untuk perlindungan</p>
+<ul>
+<li>Access control systems</li>
+<li>Video surveillance solutions</li>
+<li>Intrusion detection systems</li>
+<li>Perimeter security systems</li>
+<li>Integrated security platforms</li>
+<li>Mobile security applications</li>
+</ul>
+</div>
+<div class="category-item">
+<i class="fas fa-industry"></i>
+<h4>Industrial Solutions</h4>
+<p>Solusi industri untuk pabrik dan manufaktur</p>
+<ul>
+<li>Process automation systems</li>
+<li>Safety &amp; emergency systems</li>
+<li>Environmental monitoring</li>
+<li>Asset management solutions</li>
+<li>Predictive maintenance systems</li>
+<li>Industrial IoT platforms</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Honeywell Technology Features -->
+<div class="honeywell-technology">
+<h3>Teknologi Terdepan Honeywell yang Kami Implementasikan</h3>
+<div class="technology-grid">
+<div class="tech-feature">
+<div class="tech-icon">
+<i class="fas fa-fire"></i>
+</div>
+<div class="tech-content">
+<h4>Advanced Fire Detection</h4>
+<p class="paragraph-style-1">Teknologi deteksi kebakaran terdepan untuk keamanan maksimal</p>
+<ul>
+<li>Multi-criteria fire detection</li>
+<li>Aspirating smoke detection</li>
+<li>Flame detection technology</li>
+<li>Gas detection systems</li>
+<li>False alarm reduction algorithms</li>
+<li>Emergency communication systems</li>
+</ul>
+</div>
+</div>
+<div class="tech-feature">
+<div class="tech-icon">
+<i class="fas fa-brain"></i>
+</div>
+<div class="tech-content">
+<h4>Smart Building Intelligence</h4>
+<p class="paragraph-style-2">Kecerdasan buatan untuk optimasi gedung</p>
+<ul>
+<li>AI-powered energy optimization</li>
+<li>Predictive maintenance algorithms</li>
+<li>Occupancy-based control</li>
+<li>Weather-responsive systems</li>
+<li>Machine learning optimization</li>
+<li>Automated fault detection</li>
+</ul>
+</div>
+</div>
+<div class="tech-feature">
+<div class="tech-icon">
+<i class="fas fa-cloud"></i>
+</div>
+<div class="tech-content">
+<h4>Cloud &amp; IoT Integration</h4>
+<p class="para-bg-blue">Integrasi cloud dan IoT untuk monitoring jarak jauh</p>
+<ul>
+<li>Cloud-based monitoring platforms</li>
+<li>IoT sensor integration</li>
+<li>Remote system management</li>
+<li>Data analytics &amp; insights</li>
+<li>Mobile application access</li>
+<li>Scalable infrastructure</li>
+</ul>
+</div>
+</div>
+<div class="tech-feature">
+<div class="tech-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<div class="tech-content">
+<h4>Cybersecurity &amp; Compliance</h4>
+<p class="paragraph-style-3">Keamanan siber dan compliance untuk perlindungan data</p>
+<ul>
+<li>End-to-end encryption</li>
+<li>Secure authentication protocols</li>
+<li>Regular security updates</li>
+<li>Compliance with standards</li>
+<li>Network security monitoring</li>
+<li>Data privacy protection</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Choose Us -->
+<div class="why-choose-us">
+<h3>Mengapa Memilih Kami untuk Honeywell di Batam?</h3>
+<div class="reasons-grid">
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-certificate"></i>
+</div>
+<div class="reason-content">
+<h4>Berpengalaman &amp; Terpercaya</h4>
+<p class="para-bg-green">Tim kami memiliki pengalaman lebih dari 10 tahun dalam instalasi dan maintenance sistem Honeywell di Batam. Kami telah melayani ratusan klien di seluruh Kepulauan Riau dengan kepuasan tinggi.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="reason-content">
+<h4>Coverage Seluruh Kepri</h4>
+<p class="paragraph-style-4">Melayani instalasi sistem Honeywell di seluruh wilayah Kepulauan Riau termasuk Batam, Tanjung Pinang, Karimun, Bintan, Natuna, dan pulau-pulau terluar. Tim teknis lokal siap melayani kebutuhan Anda.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-headset"></i>
+</div>
+<div class="reason-content">
+<h4>Support 24/7 &amp; Garansi Lengkap</h4>
+<p class="para-bg-orange">Dukungan teknis 24 jam dengan SLA response time kurang dari 4 jam. Garansi produk dan pekerjaan pemasangan 2 tahun untuk ketenangan Anda.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<div class="reason-content">
+<h4>Harga Kompetitif &amp; Transparan</h4>
+<p class="paragraph-style-6">Harga sistem Honeywell yang kompetitif dengan kualitas terbaik. Tidak ada hidden cost, semua biaya transparan dari awal hingga selesai instalasi.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cta-buttons" style="margin-top: 40px;">
+<a class="btn btn-primary" href="hubungi-kami.html">
+<i class="fas fa-phone"></i>
+<span>Konsultasi Honeywell</span>
+</a>
+<a class="btn btn-secondary" href="portfolio.html">
+<i class="fas fa-briefcase"></i>
+<span>Lihat Portfolio Honeywell</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Related Links -->
+<section class="related-links">
+</section>
+</main>
+<div class="container">
+<!-- Right Sidebar --><aside class="right-sidebar"><div id="right-sidebar-content"></div></aside>
+<ul>
+<li><a href="../en/honeywell-batam.html">English Version</a></li>
+<li><a href="automation.html">Automation System - Smart Building &amp; IoT Integration</a></li><li><a href="smart-home-security-batam.html">Smart Home Security Batam - Home Automation &amp; Security</a></li><li><a href="../en/automation.html">Automation System - Smart Building &amp; IoT Integration</a></li><li><a href="../en/smart-home-security-batam.html">Smart Home Security Batam - Home Automation &amp; Security</a></li></ul>
+</div>
+<footer class="footer bg-slate-900 border-t border-slate-800 text-slate-300">
+  <div class="container">
+    <div class="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-6">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-10 w-auto" loading="lazy" decoding="async">
+          <span class="font-sans font-bold tracking-tight text-xl text-white">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi infrastruktur jaringan, server, CCTV, Access Door, Fingerprint, dan sistem keamanan terpadu.</p>
+        <div class="flex gap-4">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Menu Utama</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="index.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Beranda</a></li>
+          <li><a href="produk-dan-layanan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Produk &amp; Layanan</a></li>
+          <li><a href="portfolio.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Portfolio Proyek</a></li>
+          <li><a href="news.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Berita &amp; Artikel</a></li>
+          <li><a href="hubungi-kami.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Spesialisasi Kami</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="jaringan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-network-wired w-5 text-blue-500"></i>Jaringan &amp; Server</a></li>
+          <li><a href="cctv.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-video w-5 text-blue-500"></i>Sistem CCTV HD/IP</a></li>
+          <li><a href="fingerprint.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-fingerprint w-5 text-blue-500"></i>Mesin Absensi (Fingerprint)</a></li>
+          <li><a href="access-door.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-door-closed w-5 text-blue-500"></i>Sistem Akses Pintu</a></li>
+          <li><a href="pabx-telephone-ip-phone-batam.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-phone-volume w-5 text-blue-500"></i>PABX &amp; IP Phone</a></li>
+          <li><a href="alarm.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-bell w-5 text-blue-500"></i>Sistem Alarm Keamanan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Kantor &amp; Kontak</h3>
+        <ul class="mt-6 space-y-4 text-sm text-slate-400">
+          <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-blue-500"></i><span>Batam, Kepulauan Riau<br/>Indonesia</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-phone text-blue-500"></i><a href="tel:08111262260" class="hover:text-blue-400 font-medium text-white transition">0811 1262 260</a></li>
+          <li class="flex items-center gap-3"><i class="fab fa-whatsapp text-blue-500"></i><a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="hover:text-blue-400 font-medium text-white transition">0813 6378 3738</a></li>
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500"></i><a href="mailto:putra@faust.co.id" class="hover:text-blue-400 transition">putra@faust.co.id</a></li>
+          <li class="flex items-start gap-3"><i class="fas fa-clock mt-1 text-blue-500"></i><span>Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-8 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-6 font-medium">
+          <a href="hubungi-kami.html" class="hover:text-blue-400 transition">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html" class="hover:text-blue-400 transition">Syarat &amp; Ketentuan</a>
+          <a href="index.html" class="hover:text-blue-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../src/global-enhancements.js" defer></script>
+    <script src="../src/main.js" defer></script>
+    <script src="../src/load-right-sidebar.js" defer></script><script src="../src/load-right-sidebar.js" defer></script>
+</body>
+</html>

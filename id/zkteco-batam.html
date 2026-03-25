@@ -71,27 +71,104 @@
 </head>
 <body class="page-theme-green">
     <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
-<header class="header">
-<div class="container">
-<div class="header-content">
-<div class="logo"><a href="index.html"><img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/ loading="lazy" decoding="async"><span>Solusi Teknologi Batam</span></a></div>
-<nav class="nav">
-<ul class="nav-list">
-<li class="nav-item dropdown"><a class="nav-link" href="#"><i class="fas fa-cogs"></i><span>Layanan</span><i class="fas fa-chevron-down"></i></a>
-<ul class="dropdown-menu">
-<li><a href="jaringan.html"><i class="fas fa-network-wired"></i> Jaringan &amp; Server</a></li>
-</ul>
-</li>
-<li class="nav-item"><a class="nav-link" data-page="news" href="news.html"><i class="fas fa-newspaper"></i><span>Berita</span></a></li>
-<li class="nav-item"><a class="nav-link" data-page="portfolio" href="portfolio.html"><i class="fas fa-briefcase"></i><span>Portfolio</span></a></li>
-</ul>
-</nav>
-<div class="header-social"><a class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank"><i class="fab fa-tiktok"></i></a><a class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a><a class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
-<div class="header-cta"><a class="btn btn-primary" href="hubungi-kami.html"><i class="fas fa-phone"></i><span>Konsultasi Gratis</span></a></div>
-<button aria-label="Toggle menu" class="mobile-menu-toggle"><span></span><span></span><span></span></button>
-</div>
-</div>
+<header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+  <div class="container flex items-center justify-between gap-4 py-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
+        <span class="font-sans font-bold tracking-tight text-lg text-slate-900">Solusi Teknologi Batam</span>
+      </a>
+    </div>
+    <!-- Desktop Nav -->
+    <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
+      <ul class="nav-list flex items-center gap-6">
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition" href="index.html">Beranda</a></li>
+        <li class="nav-item dropdown group relative">
+          <a href="#" class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-blue-600"></i>
+            <span>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="dropdown-menu absolute left-0 top-full mt-2 w-64 rounded-lg bg-white p-2 shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-video w-5"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-fingerprint w-5"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-door-closed w-5"></i>Access Door &amp; Barrier Gate</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-bell w-5"></i>Alarm &amp; Early Warning</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-shield-alt w-5"></i>Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-network-wired w-5"></i>Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-phone-volume w-5"></i>PABX &amp; IP Phone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="portfolio.html"><i class="fas fa-briefcase text-blue-600"></i><span>Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="hubungi-kami.html"><i class="fas fa-phone text-blue-600"></i><span>Hubungi Kami</span></a></li>
+      </ul>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div class="lang-dropdown relative">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500 hover:bg-slate-50 transition">
+          <span class="current-lang">ID</span>
+          <i class="fas fa-chevron-down text-[10px]"></i>
+        </button>
+        <div class="lang-menu absolute right-0 top-full mt-2 w-20 rounded-md bg-white p-1 shadow-md border border-slate-100 opacity-0 invisible transition-all">
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="en">EN</a>
+        </div>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <a class="social-link flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-blue-600 hover:border-blue-200 bg-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a class="btn btn-primary hidden lg:inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-blue-700 transition shadow-sm" href="hubungi-kami.html">
+        <i class="fas fa-headset"></i>
+        <span>Konsultasi Gratis</span>
+      </a>
+      <button class="mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-slate-700 lg:hidden hover:bg-slate-50 transition" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
 </header>
+<div class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-header flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto" loading="lazy" decoding="async">
+        <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
+      </div>
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200" aria-label="Tutup menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
+      <ul>
+        <li><a href="index.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-home w-6 text-blue-600"></i>Beranda</a></li>
+        <li class="mobile-dropdown">
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs w-6 text-blue-600"></i>Layanan</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-slate-700">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-slate-700">Fingerprint &amp; Access</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-slate-700">Access Door &amp; Barrier</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-slate-700">Alarm &amp; Sensor</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-slate-700">Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-slate-700">Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-slate-700">PABX &amp; IP Phone</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-briefcase w-6 text-blue-600"></i>Portfolio</a></li>
+        <li><a href="hubungi-kami.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-headset w-6 text-blue-600"></i>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="grid gap-3 mt-6">
+      <a class="btn btn-primary w-full justify-center rounded-md bg-blue-600 text-white font-medium py-3" href="hubungi-kami.html"><i class="fas fa-phone mr-2"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center rounded-md bg-emerald-500 text-white font-medium py-3" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp mr-2"></i> Chat WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <main class="main-content" id="main-content">
 <section class="page-header"><div class="container"><div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>ZKTeco Batam</span></div>
 <div class="page-header-content">
@@ -138,3 +215,349 @@
 <h3>Instalasi &amp; Konfigurasi ZKTeco</h3>
 <p class="paragraph-style-3">Pemasangan dan konfigurasi perangkat ZKTeco dengan standar internasional. Kami menyediakan instalasi yang mencakup terminal fingerprint, face recognition, door controller, dan reader sesuai dengan kebutuhan keamanan bisnis Anda di Batam.</p>
 <ul>
+<li>Terminal fingerprint &amp; face recognition</li>
+<li>Door controller &amp; access reader</li>
+<li>Penempatan perangkat optimal</li>
+<li>Penarikan kabel &amp; power supply</li>
+<li>Network configuration &amp; setup</li>
+<li>Pengujian akses &amp; troubleshooting</li>
+</ul>
+<div class="service-highlight">
+<strong>Benefit:</strong> Meningkatkan keamanan hingga 90%
+                </div>
+</div>
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-door-closed"></i></div>
+<h3>Integrasi Sistem Kontrol Akses</h3>
+<p class="para-bg-green">Integrasi komprehensif dengan electric strike, magnetic lock, dan sistem keamanan lainnya. Kami menyediakan integrasi yang mencakup fail-safe/fail-secure configuration, emergency override, dan event-based logging untuk keamanan maksimal.</p>
+<ul>
+<li>Electric strike &amp; magnetic lock integration</li>
+<li>Exit button &amp; sensor integration</li>
+<li>Fire alarm system integration</li>
+<li>Fail-safe/fail-secure configuration</li>
+<li>Emergency override systems</li>
+<li>Event-based logging &amp; monitoring</li>
+</ul>
+<div class="service-highlight">
+<strong>Result:</strong> Mengurangi security incidents hingga 80%
+                </div>
+</div>
+<div class="service-card">
+<div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+<h3>Absensi &amp; Laporan Management</h3>
+<p class="paragraph-style-4">Springs ZKTeco untuk sistem absensi dan laporan yang komprehensif. Kami menyediakan konfigurasi perangkat keras absensi, export laporan otomatis, dan integrasi dengan sistem payroll untuk efisiensi HR management.</p>
+<ul>
+<li>ZKTeco attendance perangkat keras configuration</li>
+<li>User management &amp; template setup</li>
+<li>Schedule &amp; shift management</li>
+<li>Automatic report generation</li>
+<li>Payroll system integration</li>
+<li>Mobile app &amp; remote access</li>
+</ul>
+<div class="service-highlight">
+<strong>Impact:</strong> Meningkatkan akurasi absensi hingga 99%
+                </div>
+</div>
+</div>
+<!-- ZKTeco Product Categories -->
+<div class="zkteco-products">
+<h3>Produk ZKTeco yang Kami Tawarkan</h3>
+<div class="products-grid">
+<div class="product-item">
+<i class="fas fa-fingerprint"></i>
+<h4>Fingerprint Terminals</h4>
+<p class="para-bg-orange">Terminal fingerprint ZKTeco untuk kontrol akses</p>
+<ul>
+<li>ZK-Teco iClock Series</li>
+<li>ZK-Teco F18 Series</li>
+<li>ZK-Teco F19 Series</li>
+<li>ZK-Teco K Series</li>
+<li>ZK-Teco Pro Series</li>
+<li>ZK-Teco Ultra Series</li>
+</ul>
+</div>
+<div class="product-item">
+<i class="fas fa-user-check"></i>
+<h4>Face Recognition Terminals</h4>
+<p class="paragraph-style-6">Terminal face recognition ZKTeco untuk akses tanpa sentuh</p>
+<ul>
+<li>ZK-Teco FaceKiosk Series</li>
+<li>ZK-Teco FaceTerminal Series</li>
+<li>ZK-Teco Multi-Bio Series</li>
+<li>ZK-Teco FaceCam Series</li>
+<li>ZK-Teco FaceReader Series</li>
+<li>ZK-Teco SmartFace Series</li>
+</ul>
+</div>
+<div class="product-item">
+<i class="fas fa-door-open"></i>
+<h4>Access Control Systems</h4>
+<p class="para-bg-purple">Sistem kontrol akses ZKTeco untuk keamanan pintu</p>
+<ul>
+<li>ZK-Teco Door Controller Series</li>
+<li>ZK-Teco Access Reader Series</li>
+<li>ZK-Teco Electric Strike Series</li>
+<li>ZK-Teco Magnetic Lock Series</li>
+<li>ZK-Teco Exit Button Series</li>
+<li>ZK-Teco Sensor Series</li>
+</ul>
+</div>
+<div class="product-item">
+<i class="fas fa-id-card"></i>
+<h4>Card &amp; Proximity Systems</h4>
+<p class="para-with-icon">Sistem kartu dan proximity ZKTeco untuk akses</p>
+<ul>
+<li>ZK-Teco Card Reader Series</li>
+<li>ZK-Teco Proximity Reader Series</li>
+<li>ZK-Teco RFID Reader Series</li>
+<li>ZK-Teco Smart Card Series</li>
+<li>ZK-Teco NFC Reader Series</li>
+<li>ZK-Teco Multi-Card Series</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ZKTeco Technology Features -->
+<div class="zkteco-technology">
+<h3>Fitur Teknologi ZKTeco yang Kami Implementasikan</h3>
+<div class="technology-grid">
+<div class="tech-item">
+<i class="fas fa-brain"></i>
+<h4>AI-Powered Recognition</h4>
+<p class="paragraph-style-1">Teknologi AI untuk pengenalan yang akurat</p>
+<ul>
+<li>Advanced fingerprint algorithms</li>
+<li>Deep learning face recognition</li>
+<li>Anti-spoofing technology</li>
+<li>Multi-modal biometric fusion</li>
+<li>Real-time processing</li>
+<li>High accuracy recognition</li>
+</ul>
+</div>
+<div class="tech-item">
+<i class="fas fa-cloud"></i>
+<h4>Cloud &amp; Mobile Integration</h4>
+<p class="paragraph-style-2">Integrasi cloud dan mobile untuk akses remote</p>
+<ul>
+<li>Cloud-based management</li>
+<li>Mobile app access</li>
+<li>Remote configuration</li>
+<li>Real-time monitoring</li>
+<li>Data synchronization</li>
+<li>Backup &amp; recovery</li>
+</ul>
+</div>
+<div class="tech-item">
+<i class="fas fa-shield-alt"></i>
+<h4>Advanced Security Features</h4>
+<p class="para-bg-blue">Fitur keamanan canggih untuk perlindungan maksimal</p>
+<ul>
+<li>Encrypted communication</li>
+<li>Tamper detection</li>
+<li>Anti-tamper protection</li>
+<li>Secure data storage</li>
+<li>Access audit trails</li>
+<li>Compliance standards</li>
+</ul>
+</div>
+<div class="tech-item">
+<i class="fas fa-cogs"></i>
+<h4>System Integration</h4>
+<p class="paragraph-style-3">Integrasi sistem untuk solusi terpadu</p>
+<ul>
+<li>Third-party system integration</li>
+<li>API &amp; SDK support</li>
+<li>Database connectivity</li>
+<li>Event-driven automation</li>
+<li>Custom workflow creation</li>
+<li>Scalable architecture</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ZKTeco Applications -->
+<div class="zkteco-applications">
+<h3>Aplikasi ZKTeco di Berbagai Sektor di Batam</h3>
+<div class="applications-grid">
+<div class="application-item">
+<i class="fas fa-building"></i>
+<h4>Office &amp; Corporate</h4>
+<p class="para-bg-green">Sistem ZKTeco untuk perkantoran dan korporat</p>
+<ul>
+<li>Employee access control</li>
+<li>Visitor management systems</li>
+<li>Time &amp; attendance tracking</li>
+<li>Meeting room access</li>
+<li>Parking access control</li>
+<li>Elevator access management</li>
+</ul>
+</div>
+<div class="application-item">
+<i class="fas fa-industry"></i>
+<h4>Industrial &amp; Manufacturing</h4>
+<p class="paragraph-style-4">Sistem ZKTeco untuk industri dan manufaktur</p>
+<ul>
+<li>Factory access control</li>
+<li>Employee time tracking</li>
+<li>Safety zone access</li>
+<li>Equipment access control</li>
+<li>Shift management</li>
+<li>Compliance monitoring</li>
+</ul>
+</div>
+<div class="application-item">
+<i class="fas fa-graduation-cap"></i>
+<h4>Education &amp; Training</h4>
+<p class="para-bg-orange">Sistem ZKTeco untuk institusi pendidikan</p>
+<ul>
+<li>Student access control</li>
+<li>Staff attendance tracking</li>
+<li>Classroom access management</li>
+<li>Library access control</li>
+<li>Dormitory access control</li>
+<li>Event access management</li>
+</ul>
+</div>
+<div class="application-item">
+<i class="fas fa-heart"></i>
+<h4>Healthcare &amp; Medical</h4>
+<p class="paragraph-style-6">Sistem ZKTeco untuk fasilitas kesehatan</p>
+<ul>
+<li>Patient area access control</li>
+<li>Staff access management</li>
+<li>Medical equipment access</li>
+<li>Pharmacy access control</li>
+<li>Emergency access protocols</li>
+<li>Compliance tracking</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Why Choose Us -->
+<div class="why-choose-us">
+<h3>Mengapa Memilih Kami untuk ZKTeco di Batam?</h3>
+<div class="reasons-grid">
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-fingerprint"></i>
+</div>
+<div class="reason-content">
+<h4>Pemahaman Mendalam ZKTeco</h4>
+<p class="para-bg-purple">Tim kami memiliki pemahaman mendalam tentang produk dan teknologi ZKTeco. Kami telah mengimplementasikan berbagai sistem ZKTeco untuk berbagai industri di Batam dan Kepulauan Riau dengan hasil yang terbukti.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<div class="reason-content">
+<h4>Teknologi ZKTeco Terdepan</h4>
+<p class="para-with-icon">Menggunakan produk ZKTeco terbaru dengan teknologi AI, cloud integration, dan security features yang canggih. Solusi yang scalable dan future-proof untuk mendukung pertumbuhan bisnis jangka panjang.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="reason-content">
+<h4>Coverage Seluruh Kepri &amp; Support Lokal</h4>
+<p class="paragraph-style-1">Melayani instalasi dan maintenance ZKTeco di seluruh wilayah Kepulauan Riau termasuk Batam, Tanjung Pinang, Karimun, Bintan, Natuna, Lingga, dan Anambas. Tim support lokal siap memberikan assistance 24/7.</p>
+</div>
+</div>
+<div class="reason-item">
+<div class="reason-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<div class="reason-content">
+<h4>ROI Terukur &amp; Security Excellence</h4>
+<p class="paragraph-style-2">Solusi ZKTeco yang memberikan ROI terukur melalui peningkatan security, operational efficiency, dan cost reduction. Investasi teknologi yang memberikan nilai tambah nyata untuk bisnis Anda.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cta-buttons" style="margin-top: 40px;">
+<a class="btn btn-primary" href="hubungi-kami.html">
+<i class="fas fa-phone"></i>
+                Konsultasi ZKTeco
+            </a>
+<a class="btn btn-secondary" href="portfolio.html">
+<i class="fas fa-briefcase"></i>
+                Lihat Portfolio ZKTeco
+            </a>
+</div>
+</div></section>
+<!-- Related Links -->
+<section class="related-links">
+</section>
+</main>
+<div class="container">
+<!-- Right Sidebar --><aside class="right-sidebar"><div id="right-sidebar-content"></div></aside>
+<ul>
+<li><a href="../en/zkteco-batam.html">English Version</a></li>
+<li><a href="fingerprint.html">Fingerprint &amp; Access Control - Sistem Biometric Profesional</a></li><li><a href="../en/fingerprint.html">Fingerprint &amp; Access Control - Professional Biometric System</a></li><li><a href="../en/access-door.html">Access Door System - Automatic Door Access Control</a></li><li><a href="access-door.html">Access Door System - Kontrol Akses Pintu Otomatis</a></li></ul>
+</div>
+<footer class="footer bg-slate-900 border-t border-slate-800 text-slate-300">
+  <div class="container">
+    <div class="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-6">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-10 w-auto" loading="lazy" decoding="async">
+          <span class="font-sans font-bold tracking-tight text-xl text-white">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi infrastruktur jaringan, server, CCTV, Access Door, Fingerprint, dan sistem keamanan terpadu.</p>
+        <div class="flex gap-4">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Menu Utama</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="index.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Beranda</a></li>
+          <li><a href="produk-dan-layanan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Produk &amp; Layanan</a></li>
+          <li><a href="portfolio.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Portfolio Proyek</a></li>
+          <li><a href="news.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Berita &amp; Artikel</a></li>
+          <li><a href="hubungi-kami.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Spesialisasi Kami</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="jaringan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-network-wired w-5 text-blue-500"></i>Jaringan &amp; Server</a></li>
+          <li><a href="cctv.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-video w-5 text-blue-500"></i>Sistem CCTV HD/IP</a></li>
+          <li><a href="fingerprint.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-fingerprint w-5 text-blue-500"></i>Mesin Absensi (Fingerprint)</a></li>
+          <li><a href="access-door.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-door-closed w-5 text-blue-500"></i>Sistem Akses Pintu</a></li>
+          <li><a href="pabx-telephone-ip-phone-batam.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-phone-volume w-5 text-blue-500"></i>PABX &amp; IP Phone</a></li>
+          <li><a href="alarm.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-bell w-5 text-blue-500"></i>Sistem Alarm Keamanan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Kantor &amp; Kontak</h3>
+        <ul class="mt-6 space-y-4 text-sm text-slate-400">
+          <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-blue-500"></i><span>Batam, Kepulauan Riau<br/>Indonesia</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-phone text-blue-500"></i><a href="tel:08111262260" class="hover:text-blue-400 font-medium text-white transition">0811 1262 260</a></li>
+          <li class="flex items-center gap-3"><i class="fab fa-whatsapp text-blue-500"></i><a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="hover:text-blue-400 font-medium text-white transition">0813 6378 3738</a></li>
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500"></i><a href="mailto:putra@faust.co.id" class="hover:text-blue-400 transition">putra@faust.co.id</a></li>
+          <li class="flex items-start gap-3"><i class="fas fa-clock mt-1 text-blue-500"></i><span>Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-8 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-6 font-medium">
+          <a href="hubungi-kami.html" class="hover:text-blue-400 transition">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html" class="hover:text-blue-400 transition">Syarat &amp; Ketentuan</a>
+          <a href="index.html" class="hover:text-blue-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../src/global-enhancements.js" defer></script>
+    <script src="../src/main.js" defer></script>
+    <script src="../src/load-right-sidebar.js" defer></script><script src="../src/load-right-sidebar.js" defer></script>
+</body>
+</html>
