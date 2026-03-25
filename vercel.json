@@ -17,16 +17,6 @@
       "permanent": false
     },
     {
-      "source": "/en",
-      "destination": "/en/index.html",
-      "permanent": false
-    },
-    {
-      "source": "/en/",
-      "destination": "/en/index.html",
-      "permanent": false
-    },
-    {
       "source": "/favicon.ico",
       "destination": "/src/itbatam.ico",
       "permanent": false
@@ -40,14 +30,6 @@
     {
       "source": "/en",
       "destination": "/en/index.html"
-    },
-    {
-      "source": "/en/:path*",
-      "destination": "/en/:path*"
-    },
-    {
-      "source": "/id/:path*",
-      "destination": "/id/:path*"
     }
   ],
   "headers": [
