@@ -4,34 +4,45 @@
     {
       "source": "/",
       "destination": "/id/index.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/index",
       "destination": "/id/index.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/index.html",
       "destination": "/id/index.html",
-      "permanent": false
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/en/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/",
+      "destination": "/en/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/id",
+      "destination": "/id/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/id/",
+      "destination": "/id/index.html",
+      "permanent": true
     },
     {
       "source": "/favicon.ico",
       "destination": "/src/itbatam.ico",
-      "permanent": false
+      "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/id",
-      "destination": "/id/index.html"
-    },
-    {
-      "source": "/en",
-      "destination": "/en/index.html"
-    }
-  ],
+  "rewrites": [],
   "headers": [
     {
       "source": "/(.*)",

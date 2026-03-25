@@ -1,18 +1,27 @@
 {
   "name": "Solusi Teknologi Batam - IT Solution & Sistem Keamanan",
   "short_name": "SolusiTech",
-  "description": "Penyedia IT Solution terpercaya di Batam untuk CCTV, Fingerprint, Automation, Software Development, dan Jaringan. PWA offline-ready dengan performa optimal.",
+  "description": "Penyedia IT Solution terpercaya di Batam untuk CCTV, Fingerprint, Automation, Server, dan Infrastruktur Jaringan. PWA offline-ready dengan performa optimal.",
   "start_url": "/id/index.html?source=pwa",
   "scope": "/",
   "id": "solusi-teknologi-batam",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
-  "background_color": "#ffffff",
-  "theme_color": "#6366f1",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#f8fafc",
+  "theme_color": "#1e40af",
   "lang": "id",
   "dir": "ltr",
   "orientation": "portrait-primary",
-  "categories": ["business", "productivity", "utilities", "security"],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities",
+    "security"
+  ],
   "iarc_rating_id": "",
   "prefer_related_applications": false,
   "icons": [
@@ -87,34 +96,57 @@
       "short_name": "Kontak",
       "description": "Konsultasi gratis dengan tim ahli",
       "url": "/id/hubungi-kami.html?source=shortcut",
-      "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/src/logo-solusi-teknologi.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "CCTV & Keamanan",
       "short_name": "CCTV",
       "description": "Sistem CCTV dan keamanan profesional",
       "url": "/id/cctv.html?source=shortcut",
-      "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/src/logo-solusi-teknologi.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Portfolio",
       "short_name": "Portfolio",
       "description": "Lihat project implementasi",
       "url": "/id/portfolio.html?source=shortcut",
-      "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/src/logo-solusi-teknologi.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Promo Terbaru",
       "short_name": "Promo",
       "description": "Penawaran dan diskon spesial",
       "url": "/id/promo.html?source=shortcut",
-      "icons": [{ "src": "/src/logo-solusi-teknologi.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/src/logo-solusi-teknologi.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "related_applications": [],
   "handle_links": "preferred",
   "launch_handler": {
-    "client_mode": ["navigate-existing", "auto"]
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
   },
   "edge_side_panel": {
     "preferred_width": 400
