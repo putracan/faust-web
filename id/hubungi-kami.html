@@ -104,58 +104,60 @@
 <body class="page-theme-orange page-contact bg-background text-foreground antialiased">
     <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
 <div class="relative flex min-h-screen flex-col">
-<header class="header">
+<header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
   <div class="container flex items-center justify-between gap-4 py-4">
     <div class="flex items-center gap-3">
       <a href="index.html" class="logo inline-flex items-center gap-3" aria-label="Solusi Teknologi Batam">
         <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi Batam" class="brand-logo h-8 w-auto" loading="lazy"/>
-        <span class="font-display text-lg font-semibold text-slate-900">Solusi Teknologi Batam</span>
+        <span class="font-sans font-bold tracking-tight text-lg text-slate-900">Solusi Teknologi Batam</span>
       </a>
     </div>
+    <!-- Desktop Nav -->
     <nav class="nav hidden items-center gap-6 lg:flex" aria-label="Navigasi utama">
-      <ul class="nav-list">
+      <ul class="nav-list flex items-center gap-6">
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition" href="index.html">Beranda</a></li>
         <li class="nav-item dropdown group relative">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-cogs text-slate-500"></i>
+          <a href="#" class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs text-blue-600"></i>
             <span>Layanan</span>
             <i class="fas fa-chevron-down text-xs"></i>
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="cctv.html"><i class="fas fa-video"></i>CCTV &amp; Sistem Keamanan</a></li>
-            <li><a href="fingerprint.html"><i class="fas fa-fingerprint"></i>Fingerprint &amp; Access Control</a></li>
-            <li><a href="access-door.html"><i class="fas fa-door-closed"></i>Access Door &amp; Barrier Gate</a></li>
-            <li><a href="alarm.html"><i class="fas fa-bell"></i>Alarm &amp; Early Warning</a></li>
-            <li><a href="smart-home-security-batam.html"><i class="fas fa-shield-alt"></i>Smart Home Security</a></li>
-            <li><a href="hubungi-kami.html"><i class="fas fa-headset"></i>Konsultasi Proyek</a></li>
+          <ul class="dropdown-menu absolute left-0 top-full mt-2 w-64 rounded-lg bg-white p-2 shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-video w-5"></i>CCTV &amp; Sistem Keamanan</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-fingerprint w-5"></i>Fingerprint &amp; Access Control</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-door-closed w-5"></i>Access Door &amp; Barrier Gate</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-bell w-5"></i>Alarm &amp; Early Warning</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-shield-alt w-5"></i>Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-network-wired w-5"></i>Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600"><i class="fas fa-phone-volume w-5"></i>PABX &amp; IP Phone</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="cctv-batam.html"><i class="fas fa-map-marker-alt"></i><span>CCTV Batam</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="fingerprint.html"><i class="fas fa-fingerprint"></i><span>Access Control</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="hubungi-kami.html"><i class="fas fa-phone"></i><span>Hubungi Kami</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="portfolio.html"><i class="fas fa-briefcase text-blue-600"></i><span>Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link font-medium text-slate-700 hover:text-blue-600 transition inline-flex items-center gap-2" href="hubungi-kami.html"><i class="fas fa-phone text-blue-600"></i><span>Hubungi Kami</span></a></li>
       </ul>
     </nav>
     <div class="flex items-center gap-3">
       <div class="lang-dropdown relative">
-        <button class="lang-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500">
+        <button class="lang-toggle inline-flex items-center gap-2 rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold tracking-[0.3em] text-slate-500 hover:bg-slate-50 transition">
           <span class="current-lang">ID</span>
           <i class="fas fa-chevron-down text-[10px]"></i>
         </button>
-        <div class="lang-menu">
-          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="id">ID</a>
-          <a href="#" class="lang-option block rounded-xl px-3 py-2 text-center" data-lang="en">EN</a>
+        <div class="lang-menu absolute right-0 top-full mt-2 w-20 rounded-md bg-white p-1 shadow-md border border-slate-100 opacity-0 invisible transition-all">
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="id">ID</a>
+          <a href="#" class="lang-option block rounded px-3 py-2 text-center text-sm font-medium hover:bg-slate-50" data-lang="en">EN</a>
         </div>
       </div>
       <div class="hidden items-center gap-2 md:flex">
-        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-900" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-link flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:-translate-y-0.5 hover:text-blue-600 hover:border-blue-200 bg-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <a class="btn btn-primary hidden lg:inline-flex" href="hubungi-kami.html">
+      <a class="btn btn-primary hidden lg:inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-blue-700 transition shadow-sm" href="hubungi-kami.html">
         <i class="fas fa-headset"></i>
         <span>Konsultasi Gratis</span>
       </a>
-      <button class="mobile-menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 lg:hidden" aria-label="Buka menu">
-        <i class="fas fa-bars text-lg"></i>
+      <button class="mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-slate-700 lg:hidden hover:bg-slate-50 transition" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </div>
@@ -164,108 +166,42 @@
   <div class="mobile-nav-content">
     <div class="mobile-nav-header flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/ loading="lazy" decoding="async">
+        <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto" loading="lazy" decoding="async">
         <span class="font-semibold text-slate-900">Solusi Teknologi Batam</span>
       </div>
-      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200" aria-label="Tutup menu">
+      <button class="mobile-nav-close inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200" aria-label="Tutup menu">
         <i class="fas fa-times"></i>
       </button>
     </div>
     <nav class="mobile-nav-menu" aria-label="Navigasi mobile">
       <ul>
+        <li><a href="index.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-home w-6 text-blue-600"></i>Beranda</a></li>
         <li class="mobile-dropdown">
-          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3" href="#">
-            <span><i class="fas fa-cogs mr-2"></i>Layanan</span>
+          <a class="mobile-dropdown-toggle flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3" href="#">
+            <span><i class="fas fa-cogs w-6 text-blue-600"></i>Layanan</span>
             <i class="fas fa-chevron-down text-xs"></i>
           </a>
           <ul class="mobile-dropdown-menu">
-            <li><a href="cctv.html" class="block rounded-2xl px-3 py-2">CCTV &amp; Monitoring</a></li>
-            <li><a href="fingerprint.html" class="block rounded-2xl px-3 py-2">Fingerprint &amp; Access</a></li>
-            <li><a href="access-door.html" class="block rounded-2xl px-3 py-2">Access Door &amp; Barrier</a></li>
-            <li><a href="alarm.html" class="block rounded-2xl px-3 py-2">Alarm &amp; Sensor</a></li>
-            <li><a href="smart-home-security-batam.html" class="block rounded-2xl px-3 py-2">Smart Home Security</a></li>
+            <li><a href="cctv.html" class="block rounded-md px-3 py-2 text-slate-700">CCTV &amp; Monitoring</a></li>
+            <li><a href="fingerprint.html" class="block rounded-md px-3 py-2 text-slate-700">Fingerprint &amp; Access</a></li>
+            <li><a href="access-door.html" class="block rounded-md px-3 py-2 text-slate-700">Access Door &amp; Barrier</a></li>
+            <li><a href="alarm.html" class="block rounded-md px-3 py-2 text-slate-700">Alarm &amp; Sensor</a></li>
+            <li><a href="smart-home-security-batam.html" class="block rounded-md px-3 py-2 text-slate-700">Smart Home Security</a></li>
+            <li><a href="jaringan.html" class="block rounded-md px-3 py-2 text-slate-700">Jaringan &amp; Server</a></li>
+            <li><a href="pabx-telephone-ip-phone-batam.html" class="block rounded-md px-3 py-2 text-slate-700">PABX &amp; IP Phone</a></li>
           </ul>
         </li>
-        <li><a href="cctv-batam.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-video mr-2"></i>CCTV Batam</a></li>
-        <li><a href="access-door.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-door-closed mr-2"></i>Access Door</a></li>
-        <li><a href="hubungi-kami.html" class="block rounded-2xl border border-slate-200 px-4 py-3"><i class="fas fa-headset mr-2"></i>Hubungi Kami</a></li>
+        <li><a href="portfolio.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-briefcase w-6 text-blue-600"></i>Portfolio</a></li>
+        <li><a href="hubungi-kami.html" class="block rounded-lg border border-slate-200 px-4 py-3"><i class="fas fa-headset w-6 text-blue-600"></i>Hubungi Kami</a></li>
       </ul>
     </nav>
-    <div class="grid gap-3">
-      <a class="btn btn-primary w-full justify-center" href="hubungi-kami.html"><i class="fas fa-phone"></i> Konsultasi Gratis</a>
-      <a class="btn btn-tertiary w-full justify-center" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+    <div class="grid gap-3 mt-6">
+      <a class="btn btn-primary w-full justify-center rounded-md bg-blue-600 text-white font-medium py-3" href="hubungi-kami.html"><i class="fas fa-phone mr-2"></i> Konsultasi Gratis</a>
+      <a class="btn btn-tertiary w-full justify-center rounded-md bg-emerald-500 text-white font-medium py-3" href="https://wa.me/6281363783738" target="_blank" rel="noopener"><i class="fab fa-whatsapp mr-2"></i> Chat WhatsApp</a>
     </div>
   </div>
 </div>
-<!-- Google Form Section -->
-<section class="google-form-section" style="padding: 40px 0; background: #f8fafc;">
-<div class="container">
-<div class="google-form-container" style="max-width: 900px; margin: 0 auto; background: #ffffff; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-<h2 style="text-align: center; margin-bottom: 20px; color: #0b1723; font-size: 1.8rem;">Konsultasi Gratis</h2>
-<p style="text-align: center; margin-bottom: 30px; color: #64748b; font-size: 1rem;">Isi form di bawah ini untuk mendapatkan konsultasi gratis dari tim ahli kami. Kami akan menghubungi Anda dalam waktu 24 jam.</p>
-<div style="position: relative; width: 100%; min-height: 1200px; border-radius: 8px; overflow: hidden;">
-<iframe src="https://forms.gle/B83so2MLq3DLGthv9" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0" style="border: none; width: 100%; min-height: 1200px;" loading="lazy" title="Konsultasi Gratis Form">Memuat…</iframe>
-</div>
-<p style="text-align: center; margin-top: 20px;">
-<a href="https://forms.gle/B83so2MLq3DLGthv9" target="_blank" rel="noopener" style="color: #0b66c3; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
-<i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
-Buka form di halaman baru jika form tidak muncul
-</a>
-</p>
-</div>
-</div>
-</section>
-<!-- Social Share Section -->
-<section class="social-share-section" style="padding: 30px 0; background: #ffffff; border-top: 1px solid rgba(15,23,36,0.1);">
-<div class="container">
-<div class="social-share-container" style="max-width: 900px; margin: 0 auto; text-align: center;">
-<h3 style="color: #0b1723; font-size: 1.5rem; font-weight: 600; margin-bottom: 10px;">Bagikan Ke Teman &amp; Rekan Bisnis Anda</h3>
-<p style="color: #64748b; font-size: 1rem; margin-bottom: 30px;">Bantu teman Anda menemukan solusi teknologi terbaik!</p>
-<div class="social-share-buttons" style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center;">
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://faust.co.id/id/hubungi-kami.html" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #1877f2; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(24,119,242,0.2);">
-<i class="fab fa-facebook-f"></i>
-<span>Share di Facebook</span>
-</a>
-<a href="https://twitter.com/intent/tweet?url=https://faust.co.id/id/hubungi-kami.html&text=Solusi Teknologi Batam - IT Solution & Sistem Keamanan Terpercaya" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #1da1f2; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(29,161,242,0.2);">
-<i class="fab fa-twitter"></i>
-<span>Share di Twitter</span>
-</a>
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://faust.co.id/id/hubungi-kami.html" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #0077b5; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,119,181,0.2);">
-<i class="fab fa-linkedin-in"></i>
-<span>Share di LinkedIn</span>
-</a>
-<a href="https://wa.me/?text=Solusi Teknologi Batam - IT Solution & Sistem Keamanan Terpercaya%20https://faust.co.id/id/hubungi-kami.html" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #25d366; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(37,211,102,0.2);">
-<i class="fab fa-whatsapp"></i>
-<span>Share via WhatsApp</span>
-</a>
-<a href="mailto:?subject=Solusi Teknologi Batam - IT Solution & Sistem Keamanan&body=Saya ingin berbagi informasi tentang Solusi Teknologi Batam:%0A%0Ahttps://faust.co.id/id/hubungi-kami.html" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #ea4335; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(234,67,53,0.2);">
-<i class="fas fa-envelope"></i>
-<span>Share via Email</span>
-</a>
-<a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #000000; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-<i class="fab fa-tiktok"></i>
-<span>Share ke TikTok</span>
-</a>
-<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(188,24,136,0.2);">
-<i class="fab fa-instagram"></i>
-<span>Share ke Instagram</span>
-</a>
-<a href="https://wa.me/?text=Solusi Teknologi Batam - IT Solution & Sistem Keamanan Terpercaya%20https://faust.co.id/id/hubungi-kami.html" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #25d366; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(37,211,102,0.2);">
-<i class="fab fa-whatsapp"></i>
-<span>WhatsApp Status</span>
-</a>
-<a href="https://www.google.com/maps/place/?q=Solusi+Teknologi+Batam" target="_blank" rel="noopener" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #4285f4; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(66,133,244,0.2);">
-<i class="fab fa-google"></i>
-<span>Google Business</span>
-</a>
-<button onclick="copyToClipboard('https://faust.co.id/id/hubungi-kami.html')" class="social-share-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #64748b; color: #ffffff; border: none; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(100,116,139,0.2); cursor: pointer;">
-<i class="fas fa-link"></i>
-<span>Copy Link</span>
-</button>
-</div>
-    </div>
-</div>
-</section>
+
 <main class="flex-1" id="main-content">
 <!-- Page Header -->
 <section class="page-header">
@@ -496,137 +432,68 @@ Buka form di halaman baru jika form tidak muncul
 <!-- Right Sidebar --><aside class="right-sidebar"><div id="right-sidebar-content"></div></aside>
 <ul>
 <li><a href="../en/hubungi-kami.html">English Version</a></li>
-<li><a href="index.html">Solusi Teknologi Batam - IT Solution &amp; Sistem Keamanan Terpercaya</a></li><li><a href="jasa-it-batam.html">Jasa IT Profesional - Solusi Teknologi untuk Bisnis Anda</a></li><li><a href="news.html">Berita Teknologi Terbaru Batam - Solusi Teknologi Batam</a></li><li><a href="portfolio.html">Portfolio Solusi Teknologi Batam - Project IT Solution Terbaik</a></li><li><a href="produk-dan-layanan.html">Produk dan Layanan - Solusi Teknologi Batam</a></li></ul>
+<li><a href="index.html">Solusi Teknologi Batam - IT Solution &amp; Sistem Keamanan Terpercaya</a></li><li><a href="news.html">Berita Teknologi Terbaru Batam - Solusi Teknologi Batam</a></li><li><a href="portfolio.html">Portfolio Solusi Teknologi Batam - Project IT Solution Terbaik</a></li><li><a href="produk-dan-layanan.html">Produk dan Layanan - Solusi Teknologi Batam</a></li></ul>
 </div>
 <!-- Footer -->
-<footer class="footer">
-<div class="container">
-<div class="footer-content">
-<!-- Company Info -->
-<div class="footer-section">
-<div class="footer-logo">
-<img alt="Solusi Teknologi Batam" class="brand-logo" src="../src/logo-solusi-teknologi.png"/ loading="lazy" decoding="async">
-<span>Solusi Teknologi Batam</span>
-</div>
-<p class="footer-description">
-                Penyedia IT Solution Batam terpercaya dengan spesialisasi Pengembangan Teknologi Batam,
-                CCTV, Fingerprint, Access Door, Automation System, Software Development, dan Sistem Keamanan
-                untuk mendukung Bisnis Development Batam.
-            </p>
-<div class="footer-social">
-<a aria-label="TikTok" class="social-link" href="https://www.tiktok.com/@itbatam" rel="noopener" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/itbatam" rel="noopener" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-<a aria-label="Google" class="social-link" href="https://share.google/exfpqXuWsLvxFWOCk" rel="noopener" target="_blank">
-<i class="fab fa-google"></i>
-</a>
-<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6281363783738" rel="noopener" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-</div>
-</div>
-<!-- Quick Links -->
-<div class="footer-section">
-<h3>Menu Cepat</h3>
-<ul class="footer-links">
-<li><a href="index.html">Beranda</a></li>
-<li><a href="produk-dan-layanan.html">Produk &amp; Layanan</a></li>
-<li><a href="news.html">Berita Teknologi</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="hubungi-kami.html">Hubungi Kami</a></li>
-<li><a href="hubungi-kami.html">Kebijakan Privasi</a></li>
-<li><a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a></li>
-</ul>
-</div>
-<!-- Services -->
-<div class="footer-section">
-<h3>Layanan Kami</h3>
-<ul class="footer-links">
-<li><a href="cctv.html">CCTV &amp; Sistem Keamanan</a></li>
-<li><a href="fingerprint.html">Fingerprint &amp; Access Control</a></li>
-<li><a href="automation.html">Automation System</a></li>
-<li><a href="software.html">Software Development</a></li>
-<li><a href="jaringan.html">Jaringan &amp; Server</a></li>
-<li><a href="business-development.html">Business Development</a></li>
-<li><a href="hubungi-kami.html">Maintenance &amp; Support</a></li>
-</ul>
-</div>
-<!-- Contact Info -->
-<div class="footer-section">
-<h3>Kontak Kami</h3>
-<div class="footer-contact">
-<div class="contact-item">
-<i class="fas fa-map-marker-alt"></i>
-<div>
-<h4>Alamat</h4>
-<p class="paragraph-style-3">Batam, Kepulauan Riau<br/>Indonesia</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-phone"></i>
-<div>
-<h4>Telepon</h4>
-<p class="para-bg-green">08111262260</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-envelope"></i>
-<div>
-<h4>Email</h4>
-<p class="paragraph-style-4">putra@faust.co.id</p>
-<p class="para-bg-orange">putra@faust.co.id</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fab fa-whatsapp"></i>
-<div>
-<h4>WhatsApp</h4>
-<p class="paragraph-style-6">081363783738</p>
-</div>
-</div>
-<div class="contact-item">
-<i class="fas fa-clock"></i>
-<div>
-<h4>Jam Operasional</h4>
-<p class="para-bg-purple">Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Newsletter -->
-<div class="footer-newsletter">
-<div class="newsletter-content">
-<div class="newsletter-text">
-<h3>Berlangganan Newsletter Teknologi</h3>
-<p class="para-with-icon">Dapatkan update terbaru tentang teknologi, IT Solution, dan inovasi di Batam</p>
-</div>
-<form class="newsletter-form">
-<input placeholder="Masukkan email Anda" required="" type="email"/>
-<button class="btn btn-primary" type="submit">
-<i class="fas fa-paper-plane"></i>
-<span>Berlangganan</span>
-</button>
-</form>
-</div>
-</div>
-<!-- Footer Bottom -->
-<div class="footer-bottom">
-<div class="footer-bottom-content">
-<div class="copyright">
-<p class="paragraph-style-1">© 2024 Solusi Teknologi Batam. Semua hak dilindungi.</p>
-</div>
-<div class="footer-bottom-links">
-<a href="hubungi-kami.html">Kebijakan Privasi</a>
-<a href="produk-dan-layanan.html">Syarat &amp; Ketentuan</a>
-<a href="index.html">Sitemap</a>
-</div>
-</div>
-</div>
-</div>
+<footer class="footer bg-slate-900 border-t border-slate-800 text-slate-300">
+  <div class="container">
+    <div class="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-6">
+        <div class="footer-logo flex items-center gap-3">
+          <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-10 w-auto" loading="lazy" decoding="async">
+          <span class="font-sans font-bold tracking-tight text-xl text-white">Solusi Teknologi Batam</span>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi infrastruktur jaringan, server, CCTV, Access Door, Fingerprint, dan sistem keamanan terpadu.</p>
+        <div class="flex gap-4">
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://share.google/exfpqXuWsLvxFWOCk" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google"></i></a>
+          <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-300 transition hover:-translate-y-1 hover:border-blue-500 hover:text-white" href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Menu Utama</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="index.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Beranda</a></li>
+          <li><a href="produk-dan-layanan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Produk &amp; Layanan</a></li>
+          <li><a href="portfolio.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Portfolio Proyek</a></li>
+          <li><a href="news.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Berita &amp; Artikel</a></li>
+          <li><a href="hubungi-kami.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i>Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Spesialisasi Kami</h3>
+        <ul class="mt-6 space-y-3 text-sm text-slate-400">
+          <li><a href="jaringan.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-network-wired w-5 text-blue-500"></i>Jaringan &amp; Server</a></li>
+          <li><a href="cctv.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-video w-5 text-blue-500"></i>Sistem CCTV HD/IP</a></li>
+          <li><a href="fingerprint.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-fingerprint w-5 text-blue-500"></i>Mesin Absensi (Fingerprint)</a></li>
+          <li><a href="access-door.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-door-closed w-5 text-blue-500"></i>Sistem Akses Pintu</a></li>
+          <li><a href="pabx-telephone-ip-phone-batam.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-phone-volume w-5 text-blue-500"></i>PABX &amp; IP Phone</a></li>
+          <li><a href="alarm.html" class="hover:text-blue-400 transition inline-flex items-center gap-2"><i class="fas fa-bell w-5 text-blue-500"></i>Sistem Alarm Keamanan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white tracking-tight">Kantor &amp; Kontak</h3>
+        <ul class="mt-6 space-y-4 text-sm text-slate-400">
+          <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-blue-500"></i><span>Batam, Kepulauan Riau<br/>Indonesia</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-phone text-blue-500"></i><a href="tel:08111262260" class="hover:text-blue-400 font-medium text-white transition">0811 1262 260</a></li>
+          <li class="flex items-center gap-3"><i class="fab fa-whatsapp text-blue-500"></i><a href="https://wa.me/6281363783738" target="_blank" rel="noopener" class="hover:text-blue-400 font-medium text-white transition">0813 6378 3738</a></li>
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500"></i><a href="mailto:putra@faust.co.id" class="hover:text-blue-400 transition">putra@faust.co.id</a></li>
+          <li class="flex items-start gap-3"><i class="fas fa-clock mt-1 text-blue-500"></i><span>Senin - Jumat: 08:00 - 17:00<br/>Sabtu: 08:00 - 12:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-8 text-sm text-slate-500">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Solusi Teknologi Batam. Semua hak dilindungi.</p>
+        <div class="flex flex-wrap gap-6 font-medium">
+          <a href="hubungi-kami.html" class="hover:text-blue-400 transition">Kebijakan Privasi</a>
+          <a href="produk-dan-layanan.html" class="hover:text-blue-400 transition">Syarat &amp; Ketentuan</a>
+          <a href="index.html" class="hover:text-blue-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <script>
         // FAQ Toggle Functionality
@@ -760,7 +627,7 @@ Buka form di halaman baru jika form tidak muncul
           <img src="../src/logo-solusi-teknologi.png" alt="Solusi Teknologi" class="h-8 w-auto"/ loading="lazy" decoding="async">
           <span class="font-semibold">Solusi Teknologi Batam</span>
         </div>
-        <p class="text-sm text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi CCTV, Fingerprint, Access Door, Automation, Software Development, dan sistem keamanan modern.</p>
+        <p class="text-sm text-slate-400">Penyedia IT Solution Batam terpercaya dengan spesialisasi CCTV, Fingerprint, Access Door, Automation, Infrastruktur IT, dan sistem keamanan modern.</p>
         <div class="flex gap-3">
           <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://www.tiktok.com/@itbatam" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
           <a class="social-link flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white" href="https://www.linkedin.com/company/itbatam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -786,7 +653,7 @@ Buka form di halaman baru jika form tidak muncul
           <li><a href="cctv.html">CCTV &amp; Sistem Keamanan</a></li>
           <li><a href="fingerprint.html">Fingerprint &amp; Access Control</a></li>
           <li><a href="automation.html">Automation System</a></li>
-          <li><a href="software.html">Software Development</a></li>
+
           <li><a href="jaringan.html">Jaringan &amp; Server</a></li>
           <li><a href="business-development.html">Business Development</a></li>
         </ul>
@@ -815,18 +682,9 @@ Buka form di halaman baru jika form tidak muncul
   </div>
 </footer>
 
-<div class="floating-actions" aria-label="Kontak cepat">
-  <a href="https://wa.me/6281363783738" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <a href="tel:08111262260" aria-label="Telepon">
-    <i class="fas fa-phone"></i>
-  </a>
-</div>
-
-<script src="../src/global-enhancements.js" defer defer></script>
-<script src="../src/main.js" defer defer></script>
-<script src="../src/load-right-sidebar.js" defer defer></script>
+<script src="../src/global-enhancements.js" defer></script>
+<script src="../src/main.js" defer></script>
+<script src="../src/load-right-sidebar.js" defer></script>
 </div>
 </body>
 </html>

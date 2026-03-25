@@ -11,9 +11,9 @@ button[type="submit"],
     background: var(--gradient-primary);
     color: white;
     padding: 0.875rem 2rem;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.25);
     transition: all var(--transition-base);
     border: none;
     cursor: pointer;
@@ -47,14 +47,14 @@ button[type="submit"]:hover::before,
 button[type="submit"]:hover,
 .button-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.35);
 }
 
 .btn-primary:active,
 button[type="submit"]:active,
 .button-primary:active {
     transform: translateY(0);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.25);
 }
 
 /* Enhanced Card with Hover Effects */
@@ -84,7 +84,7 @@ button[type="submit"]:active,
 .product-card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow:
-        0 12px 24px rgba(102, 126, 234, 0.15),
+        0 12px 24px rgba(30, 58, 138, 0.08),
         0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,7 +161,7 @@ a:not(.btn-primary):not(.button-primary):not(.skip-link):hover {
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 3px solid rgba(102, 126, 234, 0.1);
+    border: 3px solid rgba(30, 58, 138, 0.05);
     border-top: 3px solid var(--color-primary);
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -231,9 +231,9 @@ a:not(.btn-primary):not(.button-primary):not(.skip-link):hover {
 
 .animated-gradient,
 .gradient-animated {
-    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #4facfe);
+    background: var(--gradient-primary);
     background-size: 400% 400%;
-    animation: gradient-shift 15s ease infinite;
+    /* animation removed */
 }
 
 @keyframes gradient-shift {
@@ -339,7 +339,7 @@ textarea:focus,
 select:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.05);
     transform: translateY(-2px);
 }
 

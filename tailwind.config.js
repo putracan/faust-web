@@ -28,8 +28,8 @@ module.exports = {
           foreground: '#f8fafc',
         },
         brand: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
+          50: '#eff6ff',
+          100: '#dbeafe',
           300: '#c4b5fd',
           500: '#7c3aed',
           600: '#6d28d9',
