@@ -148,7 +148,7 @@
 </script>
 </head>
 <body class="page-theme-blue page-home bg-background text-foreground antialiased">
-    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
+    <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:z-[9999] focus:p-4 focus:bg-blue-600 focus:text-white"  >Skip to content</a>
 <div class="relative flex min-h-screen flex-col">
 <header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
   <div class="container flex items-center justify-between gap-4 py-4">
@@ -252,7 +252,7 @@
   <section class="hero-mobile-first relative overflow-hidden bg-slate-950 text-white">
     <div class="absolute inset-0 bg-grid-slate opacity-20"></div>
     <div class="absolute inset-0 bg-slate-900 opacity-70"></div>
-    <div class="container grid gap-12 py-20 lg:grid-cols-2">
+    <div class="container grid gap-16 py-24 lg:grid-cols-2 items-center">
       <div class="hero-copy space-y-6">
         <p class="hero-badge">Tailwind + shadcn · PWA Ready · Zero Legacy</p>
         <h1 class="text-4xl font-semibold leading-tight text-white md:text-5xl">
@@ -311,38 +311,38 @@
     <div class="container grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
       <article class="stat">
         <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Proyek selesai</p>
-        <h3 class="text-3xl font-semibold text-slate-900">500+</h3>
+        <h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">500+</h3>
         <p class="text-sm text-slate-600">Integrasi security &amp; cloud</p>
       </article>
       <article class="stat">
         <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Avg. uptime</p>
-        <h3 class="text-3xl font-semibold text-slate-900">99.5%</h3>
+        <h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">99.5%</h3>
         <p class="text-sm text-slate-600">Monitoring multi-site</p>
       </article>
       <article class="stat">
         <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Tim tersertifikasi</p>
-        <h3 class="text-3xl font-semibold text-slate-900">30+</h3>
+        <h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">30+</h3>
         <p class="text-sm text-slate-600">Network · DevOps · AppSec</p>
       </article>
       <article class="stat">
         <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Audit keamanan</p>
-        <h3 class="text-3xl font-semibold text-slate-900">4x / tahun</h3>
+        <h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">4x / tahun</h3>
         <p class="text-sm text-slate-600">Checklist OWASP + SNI</p>
       </article>
     </div>
   </section>
 
   <section class="home-services bg-white py-16" id="services" aria-labelledby="servicesTitle">
-    <div class="container space-y-12">
+    <div class="container space-y-16 py-12">
       <div class="section-heading space-y-3 text-center">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Layanan utama</p>
-        <h2 id="servicesTitle" class="text-3xl font-semibold text-slate-900">Stack ujung-ke-ujung untuk keamanan, infrastruktur, dan perangkat keras</h2>
+        <h2 id="servicesTitle" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Stack ujung-ke-ujung untuk keamanan, infrastruktur, dan perangkat keras</h2>
         <p class="text-slate-600">Setiap modul kami desain mobile-first dengan utilitas Tailwind, komponen shadcn, serta telemetry langsung ke database MySQL supaya laporan dan tindakan selalu relevan.</p>
       </div>
       <div class="home-services-grid grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-video"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">CCTV &amp; Sistem Keamanan</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">CCTV &amp; Sistem Keamanan</h3>
           <p class="text-sm text-slate-600">Perencanaan multi-camera, analitik AI, dan notifikasi WhatsApp dengan rekaman otomatis ke storage terenkripsi.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Live dashboard PWA siap offline</li>
@@ -351,9 +351,9 @@
           </ul>
           <a href="cctv.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-fingerprint"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Fingerprint &amp; Access Control</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Fingerprint &amp; Access Control</h3>
           <p class="text-sm text-slate-600">Single sign-on untuk gedung, boarding room, dan cabang dengan audit trail otomatis.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>RFID + biometrik dengan auto sync MySQL</li>
@@ -362,9 +362,9 @@
           </ul>
           <a href="fingerprint.html" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">Detail layanan<i class="fas fa-arrow-right text-xs"></i></a>
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-robot"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Automation &amp; IoT</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Automation &amp; IoT</h3>
           <p class="text-sm text-slate-600">Kontrol energi, lighting, dan produksi dengan sensor IoT, MQTT, dan workflow zero legacy.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Edge gateway dengan fallback offline</li>
@@ -373,9 +373,9 @@
           </ul>
 
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-code"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Infrastruktur IT &amp; Server</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Infrastruktur IT &amp; Server</h3>
           <p class="text-sm text-slate-600">Kami merancang sistem infrastruktur server dan database yang andal, scalable, dan aman.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Instalasi Server &amp; Data Center</li>
@@ -384,9 +384,9 @@
           </ul>
 
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-network-wired"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Jaringan &amp; Server</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Jaringan &amp; Server</h3>
           <p class="text-sm text-slate-600">Desain arsitektur zero-touch provisioning, SD-WAN, dan backup hybrid multi site.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Audit &amp; hardening LAN/WAN</li>
@@ -395,9 +395,9 @@
           </ul>
 
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-chart-line"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Business Development</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Business Development</h3>
           <p class="text-sm text-slate-600">Konsultasi transformasi digital dari blueprint proses sampai enablement tim.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Roadmap &amp; budgeting</li>
@@ -414,7 +414,7 @@
     <div class="container grid gap-12 lg:grid-cols-2">
       <div class="space-y-4">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Blueprint eksekusi</p>
-        <h2 class="text-3xl font-semibold text-slate-900">Konten prioritas seluler + data MySQL sinkron otomatis</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Konten prioritas seluler + data MySQL sinkron otomatis</h2>
         <p class="text-slate-600">Kami memulai dari layout 360px, memastikan UI Tailwind + shadcn tetap ringan, lalu menghubungkan setiap aksi ke database MySQL sehingga dashboard manajemen, CCTV, hingga modul HR selalu up-to-date tanpa proses manual.</p>
         <ul class="space-y-3 text-sm text-slate-600">
           <li class="feature flex items-start gap-3 bg-white/0 p-0 shadow-none">
@@ -438,22 +438,22 @@
       <div class="timeline space-y-6">
         <div class="feature">
           <p class="text-xs uppercase tracking-[0.4em] text-slate-500">01 · Discovery &amp; Audit</p>
-          <h3 class="text-xl font-semibold text-slate-900">Inventaris perangkat &amp; SLA</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Inventaris perangkat &amp; SLA</h3>
           <p class="text-sm text-slate-600">Analisa jalur pengguna mobile, prioritas MySQL table, serta standar keamanan onsite.</p>
         </div>
         <div class="feature">
           <p class="text-xs uppercase tracking-[0.4em] text-slate-500">02 · Prototype PWA</p>
-          <h3 class="text-xl font-semibold text-slate-900">Wireframe &amp; motion micro</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Wireframe &amp; motion micro</h3>
           <p class="text-sm text-slate-600">Tailwind + shadcn komponen reusable, gesture-friendly, dan telemetry ke Firebase + MySQL.</p>
         </div>
         <div class="feature">
           <p class="text-xs uppercase tracking-[0.4em] text-slate-500">03 · Implementasi</p>
-          <h3 class="text-xl font-semibold text-slate-900">Deploy service worker</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Deploy service worker</h3>
           <p class="text-sm text-slate-600">Caching strategi, push notif, dan integrasi langsung ke API existing tanpa legacy blocker.</p>
         </div>
         <div class="feature">
           <p class="text-xs uppercase tracking-[0.4em] text-slate-500">04 · Observasi</p>
-          <h3 class="text-xl font-semibold text-slate-900">Monitoring &amp; scale</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Monitoring &amp; scale</h3>
           <p class="text-sm text-slate-600">Dashboard real-time, audit OWASP, serta iterasi berdasarkan data MySQL &amp; Matomo.</p>
         </div>
       </div>
@@ -495,7 +495,7 @@
     <div class="container grid gap-10 lg:grid-cols-2">
       <div class="space-y-6">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Hubungi kami</p>
-        <h2 id="contactTitle" class="text-3xl font-semibold text-slate-900">Tim kami siap merancang blueprint mobile-first dengan update otomatis ke database MySQL Anda.</h2>
+        <h2 id="contactTitle" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Tim kami siap merancang blueprint mobile-first dengan update otomatis ke database MySQL Anda.</h2>
         <div class="grid gap-4">
           <a class="contact-item" href="https://wa.me/6281363783738" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp text-brand-600"></i>
@@ -528,23 +528,23 @@
           <li><i class="fas fa-certificate mr-2 text-brand-500"></i>Sertifikasi Hikvision, Ruijie, Cisco, dan Google Cloud</li>
         </ul>
       </div>
-      <form class="contact-form" aria-label="Formulir kontak">
+      <form class="contact-form bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-slate-100" aria-label="Formulir kontak">
         <div class="grid gap-4 md:grid-cols-2">
-          <div class="form-group">
+          <div class="form-group mb-5">
             <label for="contact-name">Nama Lengkap</label>
             <input id="contact-name" name="name" type="text" placeholder="Nama Lengkap" required/>
           </div>
-          <div class="form-group">
+          <div class="form-group mb-5">
             <label for="contact-email">Email</label>
             <input id="contact-email" name="email" type="email" placeholder="email@perusahaan.com" required/>
           </div>
         </div>
         <div class="grid gap-4 md:grid-cols-2">
-          <div class="form-group">
+          <div class="form-group mb-5">
             <label for="contact-phone">Nomor Telepon</label>
             <input id="contact-phone" name="phone" type="tel" placeholder="0812xxxx"/>
           </div>
-          <div class="form-group">
+          <div class="form-group mb-5">
             <label for="contact-service">Pilih Layanan</label>
             <select id="contact-service" name="service" required>
               <option value="">Pilih Layanan</option>
@@ -557,7 +557,7 @@
             </select>
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group mb-5">
           <label for="contact-message">Pesan</label>
           <textarea id="contact-message" name="message" rows="5" placeholder="Ceritakan kebutuhan atau tantangan Anda" required></textarea>
         </div>
