@@ -57,7 +57,7 @@
 <meta property="og:site_name" content="Solusi Teknologi Batam"/>
 </head>
 <body class="page-theme-blue page-service bg-background text-foreground antialiased">
-    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:1em;background:#6366f1;color:#fff;text-decoration:none" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
+    <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:z-[9999] focus:p-4 focus:bg-blue-600 focus:text-white"  >Skip to content</a>
 <div class="relative flex min-h-screen flex-col">
 <header class="header bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
   <div class="container flex items-center justify-between gap-4 py-4">
@@ -161,7 +161,7 @@
   <section class="relative overflow-hidden bg-slate-950 text-white">
     <div class="absolute inset-0 bg-grid-slate opacity-20"></div>
     <div class="absolute inset-0 bg-slate-900 opacity-70"></div>
-    <div class="container grid gap-12 py-20 lg:grid-cols-2">
+    <div class="container grid gap-16 py-24 lg:grid-cols-2 items-center">
       <div class="space-y-6">
         <p class="hero-badge">Fingerprint · Access Door · Auto Sync MySQL</p>
         <h1 class="text-4xl font-semibold leading-tight text-white md:text-5xl">
@@ -210,24 +210,24 @@
 
   <section class="border-b border-border/60 bg-white/90">
     <div class="container grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
-      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Perangkat aktif</p><h3 class="text-3xl font-semibold text-slate-900">3.500+</h3><p class="text-sm text-slate-600">Fingerprint, face, RFID</p></article>
-      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Rata-rata uptime</p><h3 class="text-3xl font-semibold text-slate-900">99.5%</h3><p class="text-sm text-slate-600">Monitoring proaktif 24/7</p></article>
-      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Sinkronisasi data</p><h3 class="text-3xl font-semibold text-slate-900">&lt; 60 dtk</h3><p class="text-sm text-slate-600">API streaming ke MySQL</p></article>
-      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Audit kepatuhan</p><h3 class="text-3xl font-semibold text-slate-900">4x / tahun</h3><p class="text-sm text-slate-600">Checklist ISO, K3, SNI</p></article>
+      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Perangkat aktif</p><h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">3.500+</h3><p class="text-sm text-slate-600">Fingerprint, face, RFID</p></article>
+      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Rata-rata uptime</p><h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">99.5%</h3><p class="text-sm text-slate-600">Monitoring proaktif 24/7</p></article>
+      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Sinkronisasi data</p><h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">&lt; 60 dtk</h3><p class="text-sm text-slate-600">API streaming ke MySQL</p></article>
+      <article class="stat"><p class="text-sm uppercase tracking-[0.3em] text-slate-500">Audit kepatuhan</p><h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">4x / tahun</h3><p class="text-sm text-slate-600">Checklist ISO, K3, SNI</p></article>
     </div>
   </section>
 
   <section class="bg-white py-16" id="services">
-    <div class="container space-y-12">
+    <div class="container space-y-16 py-12">
       <div class="text-center space-y-3">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Modul fingerprint & access</p>
-        <h2 class="text-3xl font-semibold text-slate-900">Blueprint biometrik siap scaling cabang baru</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Blueprint biometrik siap scaling cabang baru</h2>
         <p class="text-slate-600">Setiap modul menggunakan utility Tailwind yang seragam sehingga UI mobile/desktop konsisten, mudah dipersonalisasi, dan langsung terhubung ke database perusahaan Anda.</p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-fingerprint"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Fingerprint + Face Attendance</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Fingerprint + Face Attendance</h3>
           <p class="text-sm text-slate-600">Auto-sync jadwal shift, cuti, dan lembur; data langsung masuk tabel payroll MySQL.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Template sidik jari terenkripsi AES</li>
@@ -235,9 +235,9 @@
             <li>Laporan keterlambatan harian via WhatsApp bot</li>
           </ul>
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-door-open"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Access Door & Visitor</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Access Door & Visitor</h3>
           <p class="text-sm text-slate-600">Integrasi multi-door, anti-passback, serta pemantauan status pintu real-time.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Integrasi sirine, fire alarm, dan lift</li>
@@ -245,9 +245,9 @@
             <li>QR visitor terhubung ke WhatsApp tamu</li>
           </ul>
         </article>
-        <article class="service-card fade-in">
+        <article class="service-card fade-in bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition duration-300">
           <div class="service-icon-wrap mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600"><i class="fas fa-chart-line"></i></div>
-          <h3 class="text-xl font-semibold text-slate-900">Dashboard HR & SLA</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Dashboard HR & SLA</h3>
           <p class="text-sm text-slate-600">PWA responsif untuk HR, security, dan manajemen yang dapat bekerja offline.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-600">
             <li>Service worker stale-while-revalidate</li>
@@ -263,7 +263,7 @@
     <div class="container grid gap-12 lg:grid-cols-[1.3fr,0.7fr]">
       <div class="space-y-6">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Integrasi data</p>
-        <h2 class="text-3xl font-semibold text-slate-900">Workflow otomatis dari perangkat ke MySQL, HRIS, sampai notifikasi</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Workflow otomatis dari perangkat ke MySQL, HRIS, sampai notifikasi</h2>
         <p class="text-slate-600">Kami menyiapkan konektor siap pakai (REST, MQTT, WebSocket) sehingga laporan absensi atau akses pintu otomatis terbaca oleh payroll, ERP, hingga aplikasi custom perusahaan.</p>
         <div class="grid gap-4 sm:grid-cols-2">
           <div class="rounded-xl border border-slate-200 bg-white p-5">
@@ -285,7 +285,7 @@
         </div>
       </div>
       <div class="rounded-[32px] border border-slate-200 bg-white p-8 shadow-lg">
-        <h3 class="text-xl font-semibold text-slate-900">Rencana implementasi</h3>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Rencana implementasi</h3>
         <ul class="mt-6 space-y-5 text-sm text-slate-600">
           <li><span class="font-semibold text-slate-900">01 · Discovery</span><br/>Audit perangkat existing, standar SLA pintu, dan tabel MySQL yang perlu disinkronkan.</li>
           <li><span class="font-semibold text-slate-900">02 · Prototype</span><br/>UI Tailwind + shadcn siap mobile dalam 7 hari, termasuk simulasi data dummy.</li>
@@ -301,7 +301,7 @@
       <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Paket implementasi</p>
-          <h2 class="text-3xl font-semibold text-slate-900">Pilih paket sesuai kebutuhan lokasi & jumlah pintu</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Pilih paket sesuai kebutuhan lokasi & jumlah pintu</h2>
         </div>
         <p class="text-sm text-slate-500">Semua paket termasuk lisensi resmi, dokumentasi, auto update perangkat keras, dan integrasi database.</p>
       </div>
@@ -378,7 +378,7 @@
     <div class="container grid gap-10 lg:grid-cols-2">
       <div class="space-y-6">
         <p class="text-xs uppercase tracking-[0.4em] text-slate-500">Hubungi kami</p>
-        <h2 class="text-3xl font-semibold text-slate-900">Tim konsultan siap menyiapkan demo onsite, penawaran perangkat, dan integrasi MySQL</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Tim konsultan siap menyiapkan demo onsite, penawaran perangkat, dan integrasi MySQL</h2>
         <div class="grid gap-4">
           <a class="contact-item" href="https://wa.me/6281363783738" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp text-brand-600"></i>
@@ -411,14 +411,14 @@
           <li><i class="fas fa-certificate mr-2 text-brand-500"></i>Sertifikasi Dahua, Hikvision, Ruijie, Google Cloud</li>
         </ul>
       </div>
-      <form class="contact-form" aria-label="Formulir konsultasi fingerprint">
+      <form class="contact-form bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-slate-100" aria-label="Formulir konsultasi fingerprint">
         <div class="grid gap-4 md:grid-cols-2">
-          <div class="form-group"><label for="contact-name">Nama Lengkap</label><input id="contact-name" name="name" type="text" placeholder="Nama Lengkap" required/></div>
-          <div class="form-group"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" placeholder="email@perusahaan.com" required/></div>
+          <div class="form-group mb-5"><label for="contact-name">Nama Lengkap</label><input id="contact-name" name="name" type="text" placeholder="Nama Lengkap" required/></div>
+          <div class="form-group mb-5"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" placeholder="email@perusahaan.com" required/></div>
         </div>
         <div class="grid gap-4 md:grid-cols-2">
-          <div class="form-group"><label for="contact-phone">Nomor Telepon</label><input id="contact-phone" name="phone" type="tel" placeholder="0812xxxx"/></div>
-          <div class="form-group">
+          <div class="form-group mb-5"><label for="contact-phone">Nomor Telepon</label><input id="contact-phone" name="phone" type="tel" placeholder="0812xxxx"/></div>
+          <div class="form-group mb-5">
             <label for="contact-service">Pilih Kebutuhan</label>
             <select id="contact-service" name="service" required>
               <option value="">Pilih</option>
@@ -429,7 +429,7 @@
             </select>
           </div>
         </div>
-        <div class="form-group"><label for="contact-message">Pesan</label><textarea id="contact-message" name="message" rows="5" placeholder="Ceritakan jumlah pintu, lokasi, dan sistem yang ingin diintegrasikan" required></textarea></div>
+        <div class="form-group mb-5"><label for="contact-message">Pesan</label><textarea id="contact-message" name="message" rows="5" placeholder="Ceritakan jumlah pintu, lokasi, dan sistem yang ingin diintegrasikan" required></textarea></div>
         <button type="submit" class="btn btn-primary w-full justify-center">Kirim &amp; Jadwalkan Demo</button>
       </form>
     </div>
